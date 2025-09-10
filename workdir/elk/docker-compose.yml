@@ -43,7 +43,7 @@ services:
       xpack.security.http.ssl.enabled: "false"
       xpack.license.self_generated.type: basic
       discovery.type: single-node
-      ES_JAVA_OPTS: -Xms8G -Xmx8G
+      ES_JAVA_OPTS: -Xms16G -Xmx16G
       ELASTIC_PASSWORD: ${ELASTIC_PASSWORD:-}
     networks:
       - main_network
