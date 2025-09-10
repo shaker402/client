@@ -1,0 +1,10 @@
+
+ò
+F.D2V0KST1D4EAS“Å
+˚ª
+∏LET Server_Import_RegistryHunter_0_0 = SELECT * FROM Artifact.Server.Import.ArtifactExchange(ExchangeURL="https://registry-hunter.velocidex.com/Windows.Registry.Hunter.zip", Prefix="")s
+.SELECT * FROM Server_Import_RegistryHunter_0_0A$49d26a1abfec56b95ed96a436e6b93252fc9b1c9e94d364625b9b44e174dc60a Ë*∂
+Server.Import.ArtifactExchangel
+ExchangeURL]https://github.com/Velocidex/velociraptor-docs/raw/gh-pages/exchange/artifact_exchange_v2.zip
+Prefix	Exchange.
+ArchiveGlob/**/*.{yaml,yml}"Á˘LET X = SELECT artifact_set(prefix=Prefix, definition=Definition) AS Definition FROM foreach(row={ SELECT Content FROM http_client(remove_last=TRUE, tempfile_extension=".zip", url=ExchangeURL) }, query={ SELECT read_file(accessor="zip", filename=OSPath) AS Definition FROM glob(globs=ArchiveGlob, root=pathspec(DelegateAccessor="auto", DelegatePath=Content), accessor="zip") })iSELECT Definition.name AS Name, Definition.description AS Description, Definition.author AS Author FROM XRserver‚apiÄà–

@@ -1,0 +1,8 @@
+2025-09-09 00:18:49,280 - INFO - Started Z-SOAR interval task.
+2025-09-09 00:18:49,291 - ERROR - Error reading marker file: time data '' does not match format '%Y-%m-%d %H:%M:%S'
+2025-09-09 00:18:49,292 - INFO - Running Z-SOAR script...
+2025-09-09 00:18:50,648 - INFO - Z-SOAR run recorded.
+2025-09-09 00:19:32,784 - INFO - Started Z-SOAR interval task.
+2025-09-09 00:19:32,805 - ERROR - Error reading marker file: time data '' does not match format '%Y-%m-%d %H:%M:%S'
+2025-09-09 00:19:32,805 - INFO - Running Z-SOAR script...
+2025-09-09 00:19:34,187 - INFO - Z-SOAR run recorded.

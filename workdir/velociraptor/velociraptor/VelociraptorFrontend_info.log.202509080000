@@ -1,0 +1,1032 @@
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T00:03:25Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T00:13:43Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T00:24:19Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T00:35:07Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T00:45:25Z"}
+{"level":"info","msg":"http: TLS handshake error from 15.235.189.153:39489: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T00:46:40Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T00:55:13Z"}
+{"level":"info","msg":"http: TLS handshake error from 176.65.149.194:56530: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T01:03:08Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T01:06:07Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T01:15:49Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.131.83.239:41429: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T01:20:09Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T01:26:43Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T01:36:37Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T01:47:31Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.131.83.239:17394: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T01:47:42Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T01:56:31Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T02:06:01Z"}
+{"level":"info","msg":"http: TLS handshake error from 176.65.148.65:42688: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T02:06:04Z"}
+{"level":"info","msg":"<green>ClientInfo Manager</> Written snapshot for org Org <root> (root) in 411.768µs (2 records)","time":"2025-09-08T02:06:57Z"}
+{"level":"info","msg":"<green>ClientInfo Manager</> Written snapshot for org Org <root> (root) in 29.482925ms (2 records)","time":"2025-09-08T02:11:48Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T02:16:07Z"}
+{"level":"info","msg":"http: TLS handshake error from 87.120.222.241:43726: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T02:16:11Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T02:26:13Z"}
+{"level":"info","msg":"http: TLS handshake error from 205.210.31.211:58142: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T02:34:32Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T02:35:43Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.131.83.239:29843: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T02:40:42Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T02:45:37Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T02:56:25Z"}
+{"level":"info","msg":"http: TLS handshake error from 103.203.57.20:58452: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T02:59:30Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T03:07:19Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T03:17:55Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T03:27:43Z"}
+{"level":"info","msg":"http: TLS handshake error from 176.65.149.182:59658: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T03:30:22Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T03:37:43Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T03:48:13Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T03:57:19Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T04:06:31Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T04:17:01Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T04:27:01Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T04:36:31Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T04:45:55Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T04:55:43Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T05:06:07Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T05:17:01Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T05:26:49Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T05:37:37Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T05:48:25Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T05:58:37Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T06:08:43Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:58574: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:06Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:45076: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:20Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:45088: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:23Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:37938: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:25Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:37962: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:27Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:37992: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:28Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:53594: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:45Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:53604: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:49Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:53624: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:52Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:34926: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:13:57Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:34952: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:14:03Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:37848: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:14:06Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:37876: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:14:11Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:37884: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:14:13Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.180.246.174:42276: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T06:14:14Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T06:19:01Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T06:29:55Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T06:38:55Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T06:49:19Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T06:59:37Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T07:09:49Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T07:18:49Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T07:29:07Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T07:38:37Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T07:48:49Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T07:58:13Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T08:09:01Z"}
+{"level":"info","msg":"http: TLS handshake error from 137.184.166.169:54894: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T08:10:02Z"}
+{"level":"info","msg":"http: TLS handshake error from 137.184.166.169:54898: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T08:10:02Z"}
+{"level":"info","msg":"http: TLS handshake error from 137.184.166.169:54912: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T08:10:03Z"}
+{"level":"info","msg":"http: TLS handshake error from 137.184.166.169:54918: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T08:10:03Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T08:19:25Z"}
+{"level":"info","msg":"http: TLS handshake error from 18.97.19.132:47882: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T08:24:49Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T08:28:44Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T08:39:20Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T08:49:14Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T08:59:44Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T09:09:56Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T09:19:14Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T09:28:14Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T09:38:32Z"}
+{"level":"info","msg":"http: TLS handshake error from 180.149.126.5:50599: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T09:44:17Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T09:49:08Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T09:58:08Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T10:08:14Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T10:17:26Z"}
+{"level":"info","msg":"http: TLS handshake error from 45.95.147.173:37438: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T10:25:33Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T10:26:38Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T10:35:50Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T10:45:20Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T10:55:32Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T11:05:20Z"}
+{"level":"info","msg":"http: TLS handshake error from 206.168.34.207:35654: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T11:13:51Z"}
+{"level":"info","msg":"http: TLS handshake error from 206.168.34.207:35676: tls: client offered only unsupported versions: [302 301]\n","time":"2025-09-08T11:13:54Z"}
+{"level":"info","msg":"http: TLS handshake error from 206.168.34.207:37728: tls: client offered only unsupported versions: [301]\n","time":"2025-09-08T11:13:57Z"}
+{"level":"info","msg":"http: TLS handshake error from 206.168.34.207:37764: tls: client offered only unsupported versions: []\n","time":"2025-09-08T11:14:00Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T11:14:44Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T11:25:32Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T11:35:26Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T11:45:44Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T11:55:50Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T12:05:32Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:53540: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T12:10:52Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:53548: tls: client offered only unsupported versions: [301 302 303]\n","time":"2025-09-08T12:10:53Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:53564: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T12:10:54Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:53572: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T12:10:56Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:53578: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T12:10:57Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:53580: tls: client offered only unsupported versions: [302 301]\n","time":"2025-09-08T12:10:58Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:49260: EOF\n","time":"2025-09-08T12:11:04Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:49294: EOF\n","time":"2025-09-08T12:11:05Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:49302: tls: no cipher suite supported by both client and server\n","time":"2025-09-08T12:11:06Z"}
+{"level":"info","msg":"http: TLS handshake error from 167.94.138.50:49304: EOF\n","time":"2025-09-08T12:11:08Z"}
+{"level":"info","msg":"http: TLS handshake error from 181.191.103.245:46350: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T12:14:43Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T12:14:44Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T12:24:14Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T12:35:02Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T12:45:44Z"}
+{"level":"info","msg":"http: TLS handshake error from 64.62.156.222:45250: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T12:55:08Z"}
+{"level":"info","msg":"http: TLS handshake error from 64.62.156.230:21325: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T12:55:44Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T12:55:50Z"}
+{"level":"info","msg":"http: TLS handshake error from 64.62.156.230:30333: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T12:55:55Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T13:06:32Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T13:15:44Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T13:26:14Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T13:36:20Z"}
+{"level":"info","msg":"http: TLS handshake error from 205.210.31.182:62660: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T13:40:19Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T13:46:08Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T13:56:02Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T14:05:32Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T14:15:56Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T14:26:26Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T14:36:26Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T14:45:50Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T14:55:38Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T15:05:03Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T15:15:51Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T15:25:45Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T15:36:03Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T15:45:45Z"}
+{"level":"info","msg":"http: TLS handshake error from 185.91.127.83:36430: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T15:51:23Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T15:55:27Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T16:06:09Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T16:15:57Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T16:25:57Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T16:34:57Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T16:45:21Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T16:55:09Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T17:05:15Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T17:14:27Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T17:24:45Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T17:35:03Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T17:44:57Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T17:55:15Z"}
+{"level":"info","msg":"http: TLS handshake error from 3.134.148.59:44044: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T18:01:45Z"}
+{"level":"info","msg":"http: TLS handshake error from 3.134.148.59:58390: unexpected EOF\n","time":"2025-09-08T18:04:04Z"}
+{"level":"info","msg":"http: TLS handshake error from 3.134.148.59:36860: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T18:04:15Z"}
+{"level":"info","msg":"http: TLS handshake error from 3.134.148.59:32900: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T18:05:07Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T18:06:09Z"}
+{"level":"info","msg":"http: TLS handshake error from 3.134.148.59:37102: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T18:09:17Z"}
+{"level":"info","msg":"http: TLS handshake error from 3.134.148.59:53168: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T18:09:47Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T18:16:51Z"}
+{"level":"info","msg":"http: TLS handshake error from 20.83.165.36:56740: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T18:18:15Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T18:27:09Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T18:37:03Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T18:47:45Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T18:58:21Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T19:07:27Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T19:16:51Z"}
+{"level":"info","msg":"http: TLS handshake error from 18.97.26.57:40668: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T19:23:27Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T19:26:09Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T19:35:27Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T19:44:51Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T19:54:09Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T20:03:21Z"}
+{"level":"info","msg":"http: TLS handshake error from 64.62.197.122:47192: tls: client offered only unsupported versions: []\n","time":"2025-09-08T20:03:57Z"}
+{"level":"info","msg":"http: TLS handshake error from 64.62.197.128:10739: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T20:04:04Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T20:14:15Z"}
+{"level":"info","msg":"http: TLS handshake error from 216.131.83.239:26828: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T20:16:08Z"}
+{"level":"info","msg":"http: TLS handshake error from 20.163.15.97:39666: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T20:19:31Z"}
+{"level":"info","msg":"http: TLS handshake error from 20.163.15.97:39672: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T20:19:31Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T20:25:09Z"}
+{"level":"info","msg":"http: TLS handshake error from 176.65.149.194:54026: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T20:34:01Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T20:35:33Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T20:46:15Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T20:57:03Z"}
+{"level":"info","msg":"http: TLS handshake error from 45.135.193.100:52478: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T21:04:20Z"}
+{"level":"info","msg":"BackupService: <green>Completed Backup to fs:/backups/backup_2025-09-08T21_05_00Z.zip (size 2942311) in 9.116679677s</>","time":"2025-09-08T21:05:09Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T21:07:27Z"}
+{"level":"info","msg":"http: TLS handshake error from 198.235.24.97:62206: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T21:08:25Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T21:17:21Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T21:26:57Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T21:36:03Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T21:45:09Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T21:55:33Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T22:05:45Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T22:14:45Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T22:25:03Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:39107: EOF\n","time":"2025-09-08T22:25:24Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:51611: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T22:25:40Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:51081: tls: client offered only unsupported versions: [301 302 303]\n","time":"2025-09-08T22:25:41Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:33407: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T22:25:42Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:52375: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T22:25:42Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:49331: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T22:25:44Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:46163: tls: client offered only unsupported versions: [302 301]\n","time":"2025-09-08T22:25:44Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:36915: read tcp 172.18.0.2:8000->164.52.24.182:36915: read: connection reset by peer\n","time":"2025-09-08T22:25:45Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:46561: read tcp 172.18.0.2:8000->164.52.24.182:46561: read: connection reset by peer\n","time":"2025-09-08T22:25:46Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:57125: tls: no cipher suite supported by both client and server\n","time":"2025-09-08T22:25:46Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:53041: read tcp 172.18.0.2:8000->164.52.24.182:53041: read: connection reset by peer\n","time":"2025-09-08T22:25:47Z"}
+{"level":"info","msg":"http: TLS handshake error from 164.52.24.182:57687: read tcp 172.18.0.2:8000->164.52.24.182:57687: read: connection reset by peer\n","time":"2025-09-08T22:25:50Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T22:34:09Z"}
+{"level":"info","msg":"http: TLS handshake error from 162.142.125.201:35054: read tcp 172.18.0.2:8000->162.142.125.201:35054: read: connection reset by peer\n","time":"2025-09-08T22:34:47Z"}
+{"level":"info","msg":"http: TLS handshake error from 162.142.125.201:35098: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T22:34:51Z"}
+{"level":"info","msg":"http: TLS handshake error from 162.142.125.201:42874: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T22:34:58Z"}
+{"level":"info","msg":"http: TLS handshake error from 162.142.125.201:42886: tls: first record does not look like a TLS handshake\n","time":"2025-09-08T22:34:58Z"}
+{"level":"info","msg":"http: TLS handshake error from 162.142.125.201:40466: tls: client offered only unsupported versions: [303 302 301]\n","time":"2025-09-08T22:35:08Z"}
+{"level":"info","msg":"http: TLS handshake error from 162.142.125.201:40474: tls: client offered only unsupported versions: [302 301]\n","time":"2025-09-08T22:35:10Z"}
+{"level":"info","msg":"http: TLS handshake error from 162.142.125.201:56686: tls: client offered only unsupported versions: [301]\n","time":"2025-09-08T22:35:12Z"}
+{"level":"info","msg":"http: TLS handshake error from 162.142.125.201:56702: tls: client offered only unsupported versions: []\n","time":"2025-09-08T22:35:15Z"}
+{"level":"info","msg":"http: TLS handshake error from 162.142.125.201:52448: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T22:35:30Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T22:43:45Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T22:53:39Z"}
+{"level": "info", "msg": "Starting...", "time": "2025-09-08T23:45:21.994531388Z"}
+{"level": "info", "msg": "Starting...", "time": "2025-09-08T23:45:22.114840827Z"}
+{"level": "info", "msg": "Starting...", "time": "2025-09-08T23:45:22.120082789Z"}
+{"build_time":"2025-07-03T16:12:10Z","commit":"049040963","level":"info","msg":"<green>Starting</> Frontend.","time":"2025-09-08T23:45:22Z","version":"0.74.5"}
+{"level":"info","msg":"Increased open file limit to 999999","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>Starting</> Org Manager service.","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Starting services for Org <root> (root)","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Starting <green>Backup Services</> for Org <root> (root) every 24h0m0s","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>Frontend:</> Server will be master.","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>Filestore implementation</> FileBaseDataStore.","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>Starting</> Journal service for Org <root> (root).","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>Starting</> user manager service for org root","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"UserManagerService: Watching for events from Server.Internal.UserManager","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"FrontendService: Watching for events from Server.Internal.FrontendMetrics","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Starting Server Scheduler Service","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>Starting</> the notification service for Org <root> (root).","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"NotificationService: Watching for events from Server.Internal.Ping","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"NotificationService: Watching for events from Server.Internal.Pong","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"NotificationService: Watching for events from Server.Internal.Notifications","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"InventoryService: Watching for events from Server.Internal.Inventory","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>Starting</> Inventory Service for Org <root> (root)","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Starting repository manager for Org <root> (root)","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"RepositoryManager: Watching for events from Server.Internal.ArtifactModification","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded 421 built in artifacts in 287.598222ms","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Generic/Detection/YaraFile.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Generic/Detection/YaraWebshell.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Linux/Detection/YaraProcessLinux.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Macos/Detection/YaraProcessMacos.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Server/ManageContent.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Server/StartHunts.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/Amcache.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/Applications.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/BinaryRename.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/Bootloaders.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/Evtx.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/HijackLibsEnv.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/HijackLibsMFT.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/LolDriversMalicious.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/LolDriversVulnerable.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/LolRMM.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/MFT.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/NamedPipes.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/Powershell/ISEAutoSave.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/Powershell/PSReadline.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/Webhistory.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/Yara/LolDrivers.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/YaraProcessWin.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Detection/ZoneIdentifier.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/DetectRaptor/Windows/Registry/NetworkProvider.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/ETW/Monitoring.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Elastic/Flows/Upload.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Elastic/Flows/upload2_Clients_testing.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Elastic/Flows/upload3_simulate_attack.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Alert/Windows/EVTX/PowerPickHostVersion.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/CyberTriage/Collector.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Detection/Application/CursedChrome.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Docker/Image/Export.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/FreeBSD/Sys/Utx.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Collection/UAC.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/CommonLogFormat/AccessLogs.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Detection/Confluence_CVE_2023_22527.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Detection/EffluenceWebshell.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Detection/LunasecLog4shell.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Detection/ManageEngineLog.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Detection/WebShells.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Detection/Yara/SSH.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Detection/log4jRCE.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Events/TrackNetworkConnections.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Generic/Forensics/CyLR.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/HashRunKeys.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/IPCheck/Virustotal.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/IRIS/Sync/Asset.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/IRIS/Timeline/Add.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Label/DomainController.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Label/User.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Applications/Docker/Ps.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Applications/WgetHSTS.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Carving/SSHLogs.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/Autoruns.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/BrowserExtensions.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/BrowserHistory.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/CatScale.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/DBConfig.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/History.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/NetworkConfig.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/SysConfig.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/SysLogs.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Collection/UserConfig.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Debian/GPGKeys.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Detection/BruteForce.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Detection/CVE20214034.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Detection/ConfluenceLogs.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Detection/Honeyfiles.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Detection/IncorrectPermissions.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Detection/MemFD.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Detection/SSHKeyFileCmd.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Detection/vRealizeLogInsightExploitation.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Event/Network/Nethogs.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/ExtractKthread.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Forensics/EnvironmentVariables.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Forensics/ProcFD.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Forensics/RecentlyUsed.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Forensics/Targets.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Kunai.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/LogAnalysis/ChopChopGo.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Memory/AVML.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Network/NM/Connections.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Network/Nethogs.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Network/Netstat/Watcher.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Persistence/LdPreload.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Remediation/Quarantine/IPTables.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Sys/APTHistory.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Sys/Getcap.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Sys/JournalCtl.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Sys/Modinfo.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Sys/SystemdTimer.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Sysinternals/Sysmon.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Sysinternals/SysmonEvent.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/System/BashLogout.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/System/PAM.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Linux/Volatility/Create/Profile.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Applications/Cache.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Applications/Firefox/History.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Applications/KnowledgeC.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Applications/NetworkUsage.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Applications/Notes.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Applications/Safari/Downloads.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Applications/Safari/History.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Applications/SavedState.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Collection/Aftermath.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Files/FileMonitor.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Forensics/ASL.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Forensics/KnockKnock.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Logs/MacMonitor.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Network/ApplicationLayerFirewall.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Network/Bluetooth.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Network/DHCP.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Network/LittleSnitch.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Network/RecentWifiNetworks.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/ParallelsVM/SuspendedMemory.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Sys/Automator.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/Sys/BashHistory.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/System/LocationServices.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/System/Man.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/System/MountedDiskImages.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/UnifiedLogHunter.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/MacOS/UnifiedLogParser.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Notebooks/Admin/Flows.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/PSList/VTLookup.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Alerts/GenericMonitor.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Alerts/IRIS/Case/Create.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Alerts/Mattermost.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Alerts/Monitor/IRIS.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Alerts/TrackNetworkConnections.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Analysis/CyberChefServer.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/AI/Anthropic.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/AI/Gemini.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/AI/Ollama.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/AI/OpenAI.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/EchoTrail.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/Gimphash.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/IRIS/IOCLookup.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/MalwareBazaar.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/SecureAnnex.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/Strelka/FileScan.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/Sublime/EmailAnalysis.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/ThreatFox.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Enrichment/Virustotal/FileScan.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Findflows.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Hunt/Comparison.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Import/DetectRaptor.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Import/WatchLocalDirectory.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Import/WatchS3Directory.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Monitor/Autolabeling/Clients.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Notification/Mastodon.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Notification/Mattermost.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/PostProcess/FluentBit.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Slack/Clients/Enrolled.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Telegram/Clients/Enrolled.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Utils/BackupAzure.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Utils/DeleteClientLabel.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Utils/OrphanedFlows.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Utils/QuerySummary.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Server/Utils/ScheduledDeletion.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Splunk/Events/Clients.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/ActiveDirectory/PrivilegedUsers.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Analysis/Capa.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Analysis/SuspiciousWMIConsumers.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/AnyDesk/LogParser.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/AnyDesk.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/Cylance.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/DIEC.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/DefenderDHParser.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/DefenderHistory.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/DefenderQuarantineExtract.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/FTKImager.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/FreeFileSync.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/GoodSync.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/KACE_SW_Process.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/LECmd.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/MouseWithoutBorders.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/OfficeMacros/MacroRaptor.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Applications/OfficeServerCache.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/AttackSimulation/AtomicRedTeam.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Audit/CISCat_Lite.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Binary/Exports.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Bulk/File.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Carving/BRc4.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Carving/BumbleBee.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Carving/Qakbot.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Carving/SquirrelWaffle.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Carving/SystemBC.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/BruteRatel.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/Honeyfiles.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/ISOMount.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/IdatLoader.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/Keylogger.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/MagicWeb.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/Malfind.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/MoveIt.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/MsdtFollina.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/Network/Changed.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/Ntdsutil.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/Onenote.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/PipeHunter.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/PrefetchHunter.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/PrintNightmare.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/ProxyHunter.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/ProxyLogon/ProxyShell.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/PublicIP.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/RemoteIconForcedAuth.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/ScmanagerBackdoor.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/SmoothOperator.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/SysAid.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/TeamViewerLanguage.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/Termsrv.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/USBYara.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/UnattendXML.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/WS_FTP.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Detection/WonkaVision.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/ESET/Logs.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/ETW/AMSI.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/ETW/DNSOfflineCollector.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/ETW/DetectProcessSpoofing.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/ETW/Powershell.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/ETW/ScreenshotTaken.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/ETW/WMIEventing.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/Aurora.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/Bitsadmin.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/Chainsaw.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/CondensedAccountUsage.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/DeepBlueCLI.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/EvtxHussar.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/Hayabusa/Takajo.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/Hayabusa.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/LogonSessions.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/MoveIt.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/RDPClientActivity.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/RPCFirewall.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/RecordIDCheck.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/RemoteAccessVPN.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/SysmonProcessEnriched/yaml.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/WonkaVision.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/EventLogs/Zircolite.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Events/SysmonArchiveMonitor.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Events/SysmonRegistry.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Events/TrackProcesses/UseExistingSysmonOnly.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/AdvancedPortScanner.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/AngryIPScanner.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/Clipboard.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/FileZilla.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/Jumplists_JLECmd.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/NotificationsDatabase.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/PersistenceSniper.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/RecentFileCache.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/SoftPerfectNetworkScanner.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/TabState.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/ThumbCache.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/Trawler.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/UEFI/BootApplication.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Forensics/WindowsNotepadParser.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Generic/Internet/BlockAccess.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Hunter/Yara/LOLDrivers.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/LastDomainUsers.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Memory/HollowsHunter.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Memory/InjectedThreadEx.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/MobaXterm/Passwords.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Monitor/USBPlugIn.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Monitoring/PrintNightmare.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Mounted/Mass/Storage.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/NTFS/MFT/HiveNightmare.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/NTFS/Timestomp.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Nirsoft/LastActivityView.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Office/MRU.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Persistence/VscodeTasks.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/AteraNetworks.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/Bulk/ComputerName.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/COMAutoApprovalList.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/CVE_2021_40444.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/CapabilityAccessManager.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/CortexEDRDisabled.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/DefenderConfig.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/Domain.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/HVCI.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/HiddenUsers.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/NetshHelperDLLs.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/PrintNightmare.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/ScheduledTasks.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Registry/TaskCache/HiddenTasks.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Remediation/Glob.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Remediation/KillProcess.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Remediation/PrintSpooler.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Remediation/Process.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Remediation/Registry.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Scanner/Yara/Parsed.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Services/Hijacking.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Ssh/AuthorizedKeys.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Sys/BitLocker.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Sys/LoggedInUsers.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Sysinternals/PSShutdown.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Sysinternals/SysmonArchive.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/AccessControlList.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/AppCompatPCA.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/BinaryVersion.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/PowerEfficiencyDiagnostics.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/PowerShell/DetectResponder.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/Powershell/ISEAutoSave.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/PrinterDriver.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/Recall/AllWindowEvents.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/Recall/WindowCaptureEvent.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/Services/SliverPsexec.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/WMIProviders.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/System/WindowsErrorReporting.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Timeline/Prefetch/Improved.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Triage/HighValueMemory.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Triage/ScreenConnect.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Triage/Sysmon.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Utils/DefenderExclusion.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Veeam/RestorePoints/BackupFiles.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/Veeam/RestorePoints/MetadataFiles.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Exchange/Windows/WinSCP/Passwords.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Hayabusa/Monitoring.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Hayabusa/Rules.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Linux/EBPF/Monitoring.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Linux/Sigma/Base/CaptureTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Linux/Sigma/Base/ReplayTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Linux/Sigma/Base.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Linux/Sigma/EBPFBase/CaptureTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Linux/Sigma/EBPFBase/ReplayTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Linux/Sigma/EBPFBase.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Linux/Sigma/Triage.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Registry/Hunter.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/Base/CaptureTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/Base/ReplayTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/Base.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/BaseEvents/CaptureTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/BaseEvents.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/BaseVQL.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/ETWBase/CaptureTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/ETWBase/ReplayTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/ETWBase.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/Events/ReplayTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Sigma/Triage.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Client.Windows.Sigcheck.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.FileSystem.FileCollector.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.FileSystem.FileCollectorNoHashses.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.FileSystem.FileCollectorWithHashes.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.PSList.MalwareBazaarLookup.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Server.Import.TenRoot.Artifacts.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Server.Slack.Clients.Online.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Server.Utils.KAPEtoGCP.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Server.Utils.KAPEtoS3.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.DensityScout.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.Detection.Usn.malwareTest.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.Events.Kerberoasting.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.GoldFinger.TGT.Analyzer.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.HardeningKitty.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.MSRT.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.Monitor.Downloads.Folders.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.Monitor.User.Public.Folders.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.Mounted.Mass.Storage.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Custom.Windows.Network.PacketCapture.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/DetectRaptor.Windows.Detection.MFT.Erasing.Tools.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Exchange.Custom.Windows.Nirsoft.LastActivityView.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Exchange.Windows.EventLogs.Hayabusa2.11.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Fixed.Generic.Scanner.ThorZIP.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Linux.Detection.AnomalousFiles.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/PSList.VTLookup.ServerMetaData.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/RunAnyTool.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Sigma.Windows.Hayabusa.Monitoring.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.Applications.Disk2VHD.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.Applications.FTKImager.Fixed.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.Audit.Pingcastle.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.EventLogs.EvtxHunter.Network.Connections.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.EventLogs.Network.Share.Access.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.EventLogs.Process.Creation/Windows.EventLogs.Process.Creation.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.System.PowerShell.Encoded.With.Json.Upload.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.System.PowerShell.Encoded.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.System.Powershell.PSReadline.QuickWins.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Velociraptor-Artifacts-main/Windows.Timeline.Prefetch.Remote_Management_Tools.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/ETW/Monitoring.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Hayabusa/Monitoring.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Hayabusa/Rules.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Registry/Hunter.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/Base/CaptureTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/Base/ReplayTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/Base.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/BaseEvents/CaptureTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/BaseEvents.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/BaseVQL.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/ETWBase/CaptureTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/ETWBase/ReplayTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/ETWBase.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/Events/ReplayTestSet.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded custom artifact /artifact_definitions/Windows/Sigma/Triage.yaml","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Loaded 391 custom artifacts in 1.061644315s","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"HuntDispatcher: Watching for events from Server.Internal.HuntUpdate","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>Starting</> hunt manager service for Org <root> (root) with rate limit 30/s.","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"HuntManager: Watching for events from Server.Internal.HuntModification","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"HuntManager: Watching for events from System.Hunt.Participation","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"HuntManager: Watching for events from Server.Internal.Label","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"HuntManager: Watching for events from Server.Internal.Interrogation","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"HuntManager: Watching for events from System.Flow.Completion","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>Starting</> Enrollment service for Org <root> (root).","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"InterrogationService for Generic.Client.Info/BasicInformation: Watching for events from System.Flow.Completion","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"InterrogationService for Custom.Generic.Client.Info/BasicInformation: Watching for events from System.Flow.Completion","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"InterrogationService: Watching for events from Server.Internal.Enrollment","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>ClientInfo Manager</> Loaded snapshot in 73.431µs for org Org <root> (root) (2 records)","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>Starting</> Client Info service for Org <root> (root).","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"ClientInfoManager: Watching for events from Server.Internal.ClientTasks","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"ClientInfoManager: Watching for events from System.Flow.Completion","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"ClientInfoManager: Watching for events from Server.Internal.ClientScheduled","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"ClientInfoManager: Watching for events from Server.Internal.ClientPing","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>Starting</> Indexing Service for Org <root> (root). Refreshing every 5m0s","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>Starting</> VFS writing service for Org <root> (root).","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"VFSService for System.VFS.ListDirectory: Watching for events from System.Flow.Completion","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"VFSService for System.VFS.ListDirectory/Stats: Watching for events from System.Flow.Completion","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"VFSService for System.VFS.DownloadFile: Watching for events from System.Flow.Completion","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"Labeler: Watching for events from Server.Internal.Label","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>Starting</> Server Artifact Runner Service for Org <root> (root)","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>Starting</> Hunt Dispatcher Service for Org <root> (root).","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>Starting</> Label service.","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"NotebookWorker: <green> Connecting to master scheduler with worker local_notebook_1</>","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"NotebookWorker: <green> Connecting to master scheduler with worker local_notebook_0</>","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"NotebookWorker: <green> Connecting to master scheduler with worker local_notebook_3</>","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"NotebookWorker: <green> Connecting to master scheduler with worker local_notebook_2</>","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"NotebookWorker: <green> Connecting to master scheduler with worker local_notebook_4</>","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"<green>Starting</> Client Monitoring Service for Org <root> (root)","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"client_monitoring_service: Watching for events from Server.Internal.ArtifactModification","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"client_monitoring_service: Watching for events from Server.Internal.MetadataModifications","time":"2025-09-08T23:45:23Z"}
+{"level":"info","msg":"server_monitoring: <green>Starting</> Server Monitoring Service for Org <root> (root)","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"<green>server_monitoring</>: Updating monitoring table","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"server_monitoring_service: Watching for events from Server.Internal.ArtifactModification","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"server_monitoring_service: Watching for events from Server.Internal.MetadataModifications","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"Converting legacy client index to new format","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"watch_monitoring plugin: Watching for events from Windows.Hayabusa.Monitoring","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"watch_monitoring plugin: Watching for events from System.Flow.Completion","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"CryptoServerManager: Watching for events from Server.Internal.ClientDelete","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"Throttling connections to 100 QPS","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"<green>Starting</> gRPC API server on 0.0.0.0:8001 ","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"Launched Prometheus monitoring server on 0.0.0.0:8003 ","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"Frontend is ready to handle client TLS requests at <green>https://75.119.148.152:8000/","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"Compiled all artifacts.","time":"2025-09-08T23:45:24Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-08T23:56:16Z"}
+{"level":"info","msg":"http: TLS handshake error from 134.122.106.248:36620: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T23:58:47Z"}
+{"level":"info","msg":"http: TLS handshake error from 134.122.106.248:36636: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T23:58:48Z"}
+{"level":"info","msg":"http: TLS handshake error from 134.122.106.248:36652: client sent an HTTP request to an HTTPS server\n","time":"2025-09-08T23:58:49Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-09T00:06:10Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-09T00:16:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.ActiveDirectory.PrivilegedUsers was updated","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.AI.Anthropic was updated","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.AteraNetworks was updated","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Carving.BRc4 was updated","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.BinaryVersion was updated","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.Bitsadmin was updated","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.UEFI.BootApplication was updated","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Carving.BumbleBee was updated","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.CVE_2021_40444 was updated","time":"2025-09-09T00:18:52Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.CondensedAccountUsage was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Detection.ConfluenceLogs was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Detection.Confluence_CVE_2023_22527 was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.MobaXterm.Passwords was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.WinSCP.Passwords was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Analysis.CyberChefServer was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.CyberTriage.Collector was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.Cylance was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.DIEC was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.DefenderConfig was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.DefenderDHParser was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Utils.DefenderExclusion was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.DefenderQuarantineExtract was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Utils.DeleteClientLabel was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Import.DetectRaptor was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Detection.Application.CursedChrome was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Docker.Image.Export was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.ESET.Logs was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Detection.EffluenceWebshell was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Label.User was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.Gimphash was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.Hayabusa.Takajo was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.PowerShell.DetectResponder was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Binary.Exports was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.FTKImager was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.FileZilla was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Findflows was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.PostProcess.FluentBit was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.FreeBSD.Sys.Utx was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.AI.Gemini was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Collection.UAC was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Detection.LunasecLog4shell was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Detection.WebShells was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Events.TrackNetworkConnections was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Forensics.CyLR was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Alerts.GenericMonitor was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Sys.Getcap was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Remediation.Glob was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.HVCI was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.HiddenUsers was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Memory.HollowsHunter was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.IPCheck.Virustotal was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.IRIS.Sync.Asset was updated","time":"2025-09-09T00:18:53Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.IRIS.Timeline.Add was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.Powershell.ISEAutoSave was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.IdatLoader was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Memory.InjectedThreadEx was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.KACE_SW_Process was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Remediation.KillProcess was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Forensics.KnockKnock was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Label.DomainController was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Persistence.LdPreload was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Applications.Docker.Ps was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Applications.WgetHSTS was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Carving.SSHLogs was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.Autoruns was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.BrowserExtensions was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.BrowserHistory was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.CatScale was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.DBConfig was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.History was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.ExtractKthread was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.NetworkConfig was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.SysConfig was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.SysLogs was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Collection.UserConfig was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Linux.Sigma.Base.CaptureTestSet was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Linux.Sigma.Base.ReplayTestSet was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Debian.GPGKeys was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Linux.Sigma.Base was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Linux.EBPF.Monitoring was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Linux.Sigma.EBPFBase.CaptureTestSet was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Detection.BruteForce was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Linux.Sigma.EBPFBase.ReplayTestSet was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Detection.CVE20214034 was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Linux.Sigma.EBPFBase was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Linux.Sigma.Triage was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Detection.Honeyfiles was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Detection.IncorrectPermissions was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Detection.MemFD was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Detection.SSHKeyFileCmd was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Detection.vRealizeLogInsightExploitation was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Event.Network.Nethogs was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Forensics.EnvironmentVariables was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Forensics.ProcFD was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Forensics.RecentlyUsed was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Forensics.Targets was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.LogAnalysis.ChopChopGo was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Memory.AVML was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Network.NM.Connections was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Network.Nethogs was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Network.Netstat.Watcher was updated","time":"2025-09-09T00:18:54Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Remediation.Quarantine.IPTables was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Sys.APTHistory was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Sys.JournalCtl was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Sys.SystemdTimer was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Sysinternals.Sysmon was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Sysinternals.SysmonEvent was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.System.BashLogout was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.System.PAM was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Applications.Cache was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Applications.Firefox.History was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Applications.KnowledgeC was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Applications.NetworkUsage was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Applications.Notes was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Applications.Safari.Downloads was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Applications.Safari.History was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Applications.SavedState was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Collection.Aftermath was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Files.FileMonitor was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Forensics.ASL was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Logs.MacMonitor was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Network.ApplicationLayerFirewall was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Network.Bluetooth was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Network.DHCP was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Network.LittleSnitch was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Network.RecentWifiNetworks was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.ParallelsVM.SuspendedMemory was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Hayabusa.Monitoring was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Sys.Automator was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.Sys.BashHistory was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.System.LocationServices was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.System.Man was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.System.MountedDiskImages was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.UnifiedLogHunter was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.MacOS.UnifiedLogParser was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.OfficeMacros.MacroRaptor was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.MagicWeb was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Detection.ManageEngineLog was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.MoveIt was updated","time":"2025-09-09T00:18:55Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.MoveIt was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.MsdtFollina was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Notebooks.Admin.Flows was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.Ntdsutil was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.OfficeServerCache was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.AI.Ollama was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.Onenote was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.PSList.VTLookup was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.PowerEfficiencyDiagnostics was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Alert.Windows.EVTX.PowerPickHostVersion was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.ETW.Powershell was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.PrefetchHunter was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.PrintNightmare was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Monitoring.PrintNightmare was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Remediation.PrintSpooler was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.PrinterDriver was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Remediation.Process was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.ProxyHunter was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.PublicIP was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Carving.Qakbot was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.RecordIDCheck was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Remediation.Registry was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.RemoteIconForcedAuth was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Detection.Yara.SSH was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.ScheduledTasks was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Triage.ScreenConnect was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Alerts.IRIS.Case.Create was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Hayabusa.Rules was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.ETW.Monitoring was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Alerts.Mattermost was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.Base.CaptureTestSet was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.Base.ReplayTestSet was updated","time":"2025-09-09T00:18:56Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Alerts.Monitor.IRIS was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Alerts.TrackNetworkConnections was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.EchoTrail was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.IRIS.IOCLookup was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.MalwareBazaar was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.AI.OpenAI was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.Base was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.SecureAnnex was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.Strelka.FileScan was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.BaseEvents.CaptureTestSet was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.Sublime.EmailAnalysis was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.ThreatFox was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.Events.ReplayTestSet was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Enrichment.Virustotal.FileScan was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Hunt.Comparison was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Import.WatchLocalDirectory was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Import.WatchS3Directory was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Monitor.Autolabeling.Clients was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Notification.Mastodon was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Notification.Mattermost was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Slack.Clients.Enrolled was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Telegram.Clients.Enrolled was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Utils.BackupAzure was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Utils.OrphanedFlows was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Utils.QuerySummary was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Server.Utils.ScheduledDeletion was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.BaseEvents was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.SmoothOperator was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Splunk.Events.Clients was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Carving.SquirrelWaffle was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Analysis.SuspiciousWMIConsumers was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.BaseVQL was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.ETWBase.CaptureTestSet was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.SysAid was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Sysinternals.SysmonArchive was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.ETWBase.ReplayTestSet was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Events.SysmonArchiveMonitor was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Events.SysmonRegistry was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Triage.Sysmon was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Carving.SystemBC was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.TabState was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.ETWBase was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.TeamViewerLanguage was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.Termsrv was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Sigma.Triage was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.ThumbCache was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.NTFS.Timestomp was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.Trawler was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Monitor.USBPlugIn was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.USBYara was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.UnattendXML was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Volatility.Create.Profile was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Persistence.VscodeTasks was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.ETW.WMIEventing was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.WS_FTP was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Analysis.Capa was updated","time":"2025-09-09T00:18:57Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.AnyDesk.LogParser was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.AnyDesk was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.DefenderHistory was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.FreeFileSync was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.GoodSync was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.LECmd was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Applications.MouseWithoutBorders was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.AttackSimulation.AtomicRedTeam was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Audit.CISCat_Lite was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.DeepBlueCLI was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.BruteRatel was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.Honeyfiles was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.ISOMount was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.Keylogger was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.Network.Changed was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.PipeHunter was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.ProxyLogon.ProxyShell was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.ScmanagerBackdoor was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.WonkaVision was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Scanner.Yara.Parsed was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.ETW.DNSOfflineCollector was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.ETW.DetectProcessSpoofing was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.ETW.ScreenshotTaken was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.Aurora was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.Chainsaw was updated","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:58Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.EvtxHussar was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Windows.Registry.Hunter was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.Hayabusa was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.LogonSessions was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.RDPClientActivity was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.RPCFirewall was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.RemoteAccessVPN was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.SysmonProcessEnriched.yaml was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.WonkaVision was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.EventLogs.Zircolite was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Events.TrackProcesses.UseExistingSysmonOnly was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.AdvancedPortScanner was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.AngryIPScanner was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.Clipboard was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.Jumplists_JLECmd was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.NotificationsDatabase was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.PersistenceSniper was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.RecentFileCache was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.SoftPerfectNetworkScanner was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Forensics.WindowsNotepadParser was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Generic.Internet.BlockAccess was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Hunter.Yara.LOLDrivers was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.LastDomainUsers was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Mounted.Mass.Storage was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.NTFS.MFT.HiveNightmare was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Nirsoft.LastActivityView was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Office.MRU was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.Bulk.ComputerName was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.COMAutoApprovalList was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.CapabilityAccessManager was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.CortexEDRDisabled was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.Domain was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.NetshHelperDLLs was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.PrintNightmare was updated","time":"2025-09-09T00:18:59Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Registry.TaskCache.HiddenTasks was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Services.Hijacking was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Ssh.AuthorizedKeys was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Sys.BitLocker was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Sys.LoggedInUsers was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Sysinternals.PSShutdown was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.AccessControlList was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.AppCompatPCA was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.Recall.AllWindowEvents was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.Recall.WindowCaptureEvent was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.Services.SliverPsexec was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.WMIProviders was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.System.WindowsErrorReporting was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Timeline.Prefetch.Improved was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Triage.HighValueMemory was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Veeam.RestorePoints.BackupFiles was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Veeam.RestorePoints.MetadataFiles was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.ETW.AMSI was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Bulk.File was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.HashRunKeys was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Kunai was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Generic.Detection.log4jRCE was updated","time":"2025-09-09T00:19:00Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Windows.Detection.Malfind was updated","time":"2025-09-09T00:19:01Z"}
+{"level":"info","msg":"server_monitoring: Reloading table because artifact Exchange.Linux.Sys.Modinfo was updated","time":"2025-09-09T00:19:01Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:19:01Z"}
+{"level":"info","msg":"server_monitoring: Skipping table update because queries have not changed.","time":"2025-09-09T00:19:01Z"}
+{"level":"info","msg":"<green>ClientInfo Manager</> Written snapshot for org Org <root> (root) in 401.451µs (2 records)","time":"2025-09-09T00:20:32Z"}
+{"level":"info","msg":"InventoryService: Reloading inventory from file for org root","time":"2025-09-09T00:27:28Z"}

@@ -1,0 +1,16 @@
+
+‡
+F.D2V0KSFJN7T5QÒð
+êj
+hLET UpdateAnyway <= get(field='UpdateAnyway') = TRUE OR get(field='UpdateAnyway') =~ '^(Y|TRUE|YES|OK)$'ª
+§LET content <= SELECT parse_json_array(data=Content)[0].assets[0] AS Content FROM http_client(url=ReleaseURL, headers=dict(`User-Agent`="Velociraptor - DetectRaptor"))ô
+ñLET check_version = SELECT Content.browser_download_url AS TargetUrl, Content.updated_at AS ZipTimestamp, if(condition=server_metadata().DetectRaptor, then=parse_json(data=server_metadata().DetectRaptor).Timestamp) AS InstalledTimestamp FROM content WHERE UpdateAnyway OR NOT server_metadata().DetectRaptor OR NOT InstalledTimestamp OR InstalledTimestamp < ZipTimestampš
+—LET get_content = SELECT ZipPath, ZipTimestamp, ZipSHA1 FROM foreach(row=check_version, query={ SELECT Content AS ZipPath, ZipTimestamp, hash(path=Content, hashselect='SHA1').SHA1 AS ZipSHA1, if(condition=server_metadata().DetectRaptor, then=parse_json(data=server_metadata().DetectRaptor).SHA1) AS InstalledZipSHA1 FROM http_client(remove_last=TRUE, tempfile_extension=".zip", url=TargetUrl, headers=dict(`User-Agent`="Velociraptor - DetectRaptor")) WHERE NOT if(condition=UpdateAnyway, then=False, else=ZipSHA1 = InstalledZipSHA1) })«
+¨LET set_artifacts <= SELECT artifact_set(prefix=Prefix, definition=Definition) AS Definition, SHA1, ZipTimestamp, ZipSHA1 FROM foreach(row=get_content, query={ SELECT read_file(accessor="zip", filename=OSPath) AS Definition, hash(path=OSPath, accessor='zip', hashselect='SHA1').SHA1 AS SHA1, ZipTimestamp, ZipSHA1 FROM glob(globs='/**/*.yaml', root=pathspec(DelegateAccessor="auto", DelegatePath=ZipPath), accessor="zip") })½
+ºLET add_new_metadata <= SELECT ZipSHA1, ZipTimestamp, server_set_metadata(metadata=dict(DetectRaptor=dict(Timestamp=ZipTimestamp, SHA1=ZipSHA1))) AS SetMeta FROM set_artifacts WHERE log(level='INFO', message='DetectRaptor Server MetaData added: Timestamp=%v,SHA1=%v', args=[ZipTimestamp, ZipSHA1]) GROUP BY ZipSHA1¬
+©LET Exchange_Server_Import_DetectRaptor_0_5 = SELECT Definition.name AS Name, Definition.description AS Description, Definition.author AS Author, SHA1 FROM set_artifactsš
+5SELECT * FROM Exchange_Server_Import_DetectRaptor_0_5a$a85c21e06105baa327c411c0a8ad08f122a580d14389a443ac7db5bb20e728c75a879a7e69a5dbac2cb09f15dee3a932I
+
+ReleaseURL;https://api.github.com/repos/mgreen27/DetectRaptor/releases
+PrefixDetectRaptor.
+UpdateAnyway èâapi€ˆÐ

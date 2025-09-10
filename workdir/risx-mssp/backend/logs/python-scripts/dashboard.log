@@ -1,0 +1,26 @@
+2025-09-09 00:18:48,239 - INFO - Reading env file!
+2025-09-09 00:18:48,242 - INFO - Connecting MySQL
+2025-09-09 00:18:48,243 - INFO - Trying to connect DB!
+2025-09-09 00:18:48,313 - INFO - Successfully connected to the database
+2025-09-09 00:18:51,261 - INFO - Reading the config!
+2025-09-09 00:18:51,273 - INFO - Executing SQL query:SELECT config FROM configjson LIMIT 1
+2025-09-09 00:18:51,802 - INFO - Starting to fill assets and modules to run!
+2025-09-09 00:18:51,802 - INFO - existing_modules: {}
+2025-09-09 00:18:51,803 - INFO - Assets per module:{}
+2025-09-09 00:18:51,803 - INFO - Getting Misp
+2025-09-09 00:18:51,806 - ERROR - Failed to read JSON file or find MISP tool: expected str, bytes or os.PathLike object, not NoneType
+2025-09-09 00:18:51,806 - INFO - Getting all tags
+2025-09-09 00:18:51,806 - ERROR - Error occurred while getting tags or attributes: Invalid URL 'None/tags': No scheme supplied. Perhaps you meant https://None/tags?
+2025-09-09 00:18:51,807 - INFO - Getting velociraptor!
+2025-09-09 00:18:51,812 - INFO - Setup connection!
+2025-09-09 00:18:51,812 - INFO - Reading config yaml!
+2025-09-09 00:18:51,852 - INFO - Secure channel established
+2025-09-09 00:18:51,853 - INFO - Getting responses!
+2025-09-09 00:18:51,976 - INFO - Getting responses!
+2025-09-09 00:18:52,020 - INFO - Getting responses!
+2025-09-09 00:18:52,047 - INFO - Getting TimeSketch!
+2025-09-09 00:18:52,051 - INFO - Connecting timesketch api
+2025-09-09 00:19:31,559 - INFO - Reading env file!
+2025-09-09 00:19:31,560 - INFO - Connecting MySQL
+2025-09-09 00:19:31,563 - INFO - Trying to connect DB!
+2025-09-09 00:19:31,693 - INFO - Successfully connected to the database

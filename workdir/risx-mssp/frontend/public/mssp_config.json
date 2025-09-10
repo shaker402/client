@@ -1,0 +1,130 @@
+{
+  "backendUrl": "https://75.119.148.152:5555",
+  "backendUrlPrevious": "http://37.27.38.128:5555",
+  "expiryDate": "28-09-2025",
+  "clientApi": "https://api.example.com/user",
+  "examInnterval_minutes": 15,
+  "moduleLinks": [
+    {
+      "toolName": "Velociraptor",
+      "toolID": "2000000",
+      "toolURL": "https://${FRONT_URL}:8444/velociraptor/"
+    },
+    {
+      "toolName": "Risx",
+      "toolID": "2001000",
+      "toolURL": "https://risxserverdev.westeurope.cloudapp.azure.com:3001/login/"
+    },
+    {
+      "toolName": "ELK",
+      "toolID": "2001001",
+      "toolURL": "https://${FRONT_URL}"
+    },
+    {
+      "toolName": "Timesketch",
+      "toolID": "2001002",
+      "toolURL": "https://${FRONT_URL}:8444"
+    },
+    {
+      "toolName": "Open CTI",
+      "toolID": "2001003",
+      "toolURL": "https://opencti.northeurope.cloudapp.azure.com:8080/"
+    },
+    {
+      "toolName": "10Root Osint",
+      "toolID": "2001004",
+      "toolURL": "https://inteltechniques.com/tools/Search.html"
+    },
+    {
+      "toolName": "Nuclei",
+      "toolID": "2001005",
+      "toolURL": "",
+      "expiretime": "25"
+    },
+    {
+      "toolName": "Strelka",
+      "toolID": "2001006",
+      "toolURL": "https://${FRONT_URL}:8843"
+    },
+    {
+      "toolName": "Ail",
+      "toolID": "2001008",
+      "toolURL": "https://tenroot-misp.northeurope.cloudapp.azure.com:7000/"
+    },
+    {
+      "toolName": "Dehashed",
+      "toolID": "2001009",
+      "toolURL": ""
+    },
+    {
+      "toolName": "IRIS",
+      "toolID": "2001010",
+      "toolURL": "https://${FRONT_URL}:8443"
+    },
+    {
+      "toolName": "Shodan",
+      "toolID": "2001011",
+      "toolURL": ""
+    },
+    {
+      "toolName": "MISP",
+      "toolID": "2001012",
+      "toolURL": "https://tenroot-misp.northeurope.cloudapp.azure.com"
+    },
+    {
+      "toolName": "LeakCheck",
+      "toolID": "2001013",
+      "toolURL": "https://leakcheck.io"
+    },
+    {
+      "toolName": "Nightingale",
+      "toolID": "2001014",
+      "toolURL": "https://${FRONT_URL}/nightingale"
+    },
+    {
+      "toolName": "CyberChef",
+      "toolID": "2001015",
+      "toolURL": "https://${FRONT_URL}/cyberchef"
+    },
+    {
+      "toolName": "Prowler",
+      "toolID": "2001016",
+      "toolURL": "https://${FRONT_URL}:3111"
+    },
+    {
+      "toolName": "Threat Hunting Dashboard",
+      "toolURL": "https://${FRONT_URL}/kibana/app/dashboards#/view/b118d331-2334-4da1-85d0-626610073555?embed=true&_g=(time:(from:'now-1124h',to:'now'))&show-time-filter=true",
+      "URLtype": "Dashboard"
+    },
+    {
+      "toolName": "ASM Dashboard",
+      "toolURL": "https://${FRONT_URL}/kibana/app/dashboards#/view/8de91d2f-fc7b-478b-972a-7e21e12b3ec4?embed=true&_g=(time:(from:'now-24h',to:'now'))&_a=()&show-time-filter=true",
+      "URLtype": "Dashboard"
+    },
+    {
+      "toolName": "CTI Dashboard",
+      "toolURL": "https://${FRONT_URL}/kibana/app/dashboards#/view/7f780b64-042d-4ddc-ae94-00c0d4c493ec?embed=true&_g=(filters:!(),refreshInterval:(pause:!t,value:60000),time:(from:'now-24h',to:'now'))&_a=()&show-time-filter=true",
+      "URLtype": "Dashboard"
+    },
+    {
+      "toolName": "Best Practice Dashboard",
+      "toolURL": "https://${FRONT_URL}/kibana/app/dashboards#/view/ec7b54c7-b91c-4a5a-a113-6099187939ac?embed=true&_g=(filters:!(),refreshInterval:(pause:!t,value:60000),time:(from:'now-24h',to:'now'))&_a=()&show-time-filter=true",
+      "URLtype": "Dashboard"
+    },
+    {
+      "toolName": "Asset Endpoints Dashboard",
+      "toolURL": "https://${FRONT_URL}/kibana/app/dashboards#/view/d095df78-5780-48d9-848d-af2cb08d42e0?embed=true&_g=(refreshInterval:(pause:!t,value:60000),time:(from:now-15M,to:now))&_a=()&show-time-filter=true",
+      "URLtype": "Dashboard"
+    },
+    {
+      "toolName": "Asset Rest Dashboard",
+      "toolURL": "https://${FRONT_URL}/kibana/app/dashboards#/view/3bdbcc4d-3bfd-4398-9e03-6f849a4916ff?embed=true&_g=(refreshInterval:(pause:!t,value:60000),time:(from:now-15M,to:now))&_a=()",
+      "URLtype": "Dashboard"
+    },
+    {
+      "toolName": "AI vulnerability Dashboard",
+      "toolURL": "https://${FRONT_URL}/kibana/app/dashboards#/view/9cfc66ca-7e2a-43ce-a2b3-bd0c92110780?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A60000)%2Ctime%3A(from%3Anow-15y%2Cto%3Anow))&show-time-filter=true",
+      "URLtype": "Dashboard"
+    }
+  ]
+}

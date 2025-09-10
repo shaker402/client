@@ -1,0 +1,4 @@
+{"Timestamp":1757377136027283,"Level":"DEFAULT","message":"Running query Exchange.Server.Import.DetectRaptor on behalf of user api\n"}
+{"Timestamp":1757377136027323,"Level":"DEFAULT","message":"\u003cgreen\u003eStarting\u003c/\u003e query Exchange.Server.Import.DetectRaptor execution.\n"}
+{"Timestamp":1757377136029888,"Level":"DEFAULT","message":"Fetching https://api.github.com/repos/mgreen27/DetectRaptor/releases\n"}
+{"Timestamp":1757377136417785,"Level":"DEBUG","message":"Query Stats: {\"RowsScanned\":2,\"PluginsCalled\":3,\"FunctionsCalled\":9,\"ProtocolSearch\":4,\"ScopeCopy\":9}\n"}

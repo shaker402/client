@@ -1,0 +1,25 @@
+services:
+  velociraptor:
+    container_name: velociraptor
+    image: velociraptor-tenroot
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        - VELOCIRAPTOR_VERSION=${VELOCIRAPTOR_VERSION}
+    volumes:
+      - ./velociraptor:/velociraptor/:rw
+      - ../tmp:/tmp/:rw
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+      - "8889:8889"
+    restart: unless-stopped
+    networks:
+      - main_network
+
+networks:
+  main_network:
+    external: true

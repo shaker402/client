@@ -1,0 +1,1739 @@
+
+”³
+F.D2V3K76RO7Q08Òü²
+ì²d
+bLET InstallART <= get(field='InstallART') = TRUE OR get(field='InstallART') =~ '^(Y|TRUE|YES|OK)$'m
+kLET EnsureExecLog <= get(field='EnsureExecLog') = TRUE OR get(field='EnsureExecLog') =~ '^(Y|TRUE|YES|OK)$'m
+kLET RemoveExecLog <= get(field='RemoveExecLog') = TRUE OR get(field='RemoveExecLog') =~ '^(Y|TRUE|YES|OK)$'[
+YLET Cleanup <= get(field='Cleanup') = TRUE OR get(field='Cleanup') =~ '^(Y|TRUE|YES|OK)$'X
+VLET RunAll <= get(field='RunAll') = TRUE OR get(field='RunAll') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1558.004 - 1` <= get(field='T1558.004 - 1') = TRUE OR get(field='T1558.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1056.004 - 1` <= get(field='T1056.004 - 1') = TRUE OR get(field='T1056.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1552.001 - 3` <= get(field='T1552.001 - 3') = TRUE OR get(field='T1552.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1552.001 - 4` <= get(field='T1552.001 - 4') = TRUE OR get(field='T1552.001 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1555 - 1` <= get(field='T1555 - 1') = TRUE OR get(field='T1555 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1555 - 2` <= get(field='T1555 - 2') = TRUE OR get(field='T1555 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1555 - 3` <= get(field='T1555 - 3') = TRUE OR get(field='T1555 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1555 - 4` <= get(field='T1555 - 4') = TRUE OR get(field='T1555 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1555 - 5` <= get(field='T1555 - 5') = TRUE OR get(field='T1555 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1555.003 - 1` <= get(field='T1555.003 - 1') = TRUE OR get(field='T1555.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1555.003 - 3` <= get(field='T1555.003 - 3') = TRUE OR get(field='T1555.003 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1555.003 - 4` <= get(field='T1555.003 - 4') = TRUE OR get(field='T1555.003 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1552.002 - 1` <= get(field='T1552.002 - 1') = TRUE OR get(field='T1552.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1552.002 - 2` <= get(field='T1552.002 - 2') = TRUE OR get(field='T1552.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.006 - 1` <= get(field='T1003.006 - 1') = TRUE OR get(field='T1003.006 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1187 - 1` <= get(field='T1187 - 1') = TRUE OR get(field='T1187 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1056.002 - 2` <= get(field='T1056.002 - 2') = TRUE OR get(field='T1056.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1558.001 - 1` <= get(field='T1558.001 - 1') = TRUE OR get(field='T1558.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1552.006 - 1` <= get(field='T1552.006 - 1') = TRUE OR get(field='T1552.006 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1552.006 - 2` <= get(field='T1552.006 - 2') = TRUE OR get(field='T1552.006 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1558.003 - 1` <= get(field='T1558.003 - 1') = TRUE OR get(field='T1558.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1558.003 - 2` <= get(field='T1558.003 - 2') = TRUE OR get(field='T1558.003 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1558.003 - 3` <= get(field='T1558.003 - 3') = TRUE OR get(field='T1558.003 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1558.003 - 4` <= get(field='T1558.003 - 4') = TRUE OR get(field='T1558.003 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1558.003 - 5` <= get(field='T1558.003 - 5') = TRUE OR get(field='T1558.003 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1056.001 - 1` <= get(field='T1056.001 - 1') = TRUE OR get(field='T1056.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.004 - 1` <= get(field='T1003.004 - 1') = TRUE OR get(field='T1003.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.001 - 1` <= get(field='T1003.001 - 1') = TRUE OR get(field='T1003.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.001 - 2` <= get(field='T1003.001 - 2') = TRUE OR get(field='T1003.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.001 - 3` <= get(field='T1003.001 - 3') = TRUE OR get(field='T1003.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.001 - 4` <= get(field='T1003.001 - 4') = TRUE OR get(field='T1003.001 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.001 - 5` <= get(field='T1003.001 - 5') = TRUE OR get(field='T1003.001 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.001 - 6` <= get(field='T1003.001 - 6') = TRUE OR get(field='T1003.001 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.001 - 7` <= get(field='T1003.001 - 7') = TRUE OR get(field='T1003.001 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.001 - 8` <= get(field='T1003.001 - 8') = TRUE OR get(field='T1003.001 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.001 - 9` <= get(field='T1003.001 - 9') = TRUE OR get(field='T1003.001 - 9') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1003.001 - 10` <= get(field='T1003.001 - 10') = TRUE OR get(field='T1003.001 - 10') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1003.001 - 11` <= get(field='T1003.001 - 11') = TRUE OR get(field='T1003.001 - 11') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1003.001 - 12` <= get(field='T1003.001 - 12') = TRUE OR get(field='T1003.001 - 12') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.003 - 1` <= get(field='T1003.003 - 1') = TRUE OR get(field='T1003.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.003 - 2` <= get(field='T1003.003 - 2') = TRUE OR get(field='T1003.003 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.003 - 3` <= get(field='T1003.003 - 3') = TRUE OR get(field='T1003.003 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.003 - 4` <= get(field='T1003.003 - 4') = TRUE OR get(field='T1003.003 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.003 - 5` <= get(field='T1003.003 - 5') = TRUE OR get(field='T1003.003 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.003 - 6` <= get(field='T1003.003 - 6') = TRUE OR get(field='T1003.003 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.003 - 7` <= get(field='T1003.003 - 7') = TRUE OR get(field='T1003.003 - 7') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1040 - 3` <= get(field='T1040 - 3') = TRUE OR get(field='T1040 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1040 - 4` <= get(field='T1040 - 4') = TRUE OR get(field='T1040 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1003 - 1` <= get(field='T1003 - 1') = TRUE OR get(field='T1003 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1003 - 2` <= get(field='T1003 - 2') = TRUE OR get(field='T1003 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1003 - 3` <= get(field='T1003 - 3') = TRUE OR get(field='T1003 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1110.002 - 1` <= get(field='T1110.002 - 1') = TRUE OR get(field='T1110.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1556.002 - 1` <= get(field='T1556.002 - 1') = TRUE OR get(field='T1556.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1110.001 - 1` <= get(field='T1110.001 - 1') = TRUE OR get(field='T1110.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1110.001 - 2` <= get(field='T1110.001 - 2') = TRUE OR get(field='T1110.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1110.003 - 1` <= get(field='T1110.003 - 1') = TRUE OR get(field='T1110.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1110.003 - 2` <= get(field='T1110.003 - 2') = TRUE OR get(field='T1110.003 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1110.003 - 3` <= get(field='T1110.003 - 3') = TRUE OR get(field='T1110.003 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1552.004 - 1` <= get(field='T1552.004 - 1') = TRUE OR get(field='T1552.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1552.004 - 6` <= get(field='T1552.004 - 6') = TRUE OR get(field='T1552.004 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1552.004 - 7` <= get(field='T1552.004 - 7') = TRUE OR get(field='T1552.004 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.002 - 1` <= get(field='T1003.002 - 1') = TRUE OR get(field='T1003.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.002 - 2` <= get(field='T1003.002 - 2') = TRUE OR get(field='T1003.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.002 - 3` <= get(field='T1003.002 - 3') = TRUE OR get(field='T1003.002 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.002 - 4` <= get(field='T1003.002 - 4') = TRUE OR get(field='T1003.002 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.002 - 5` <= get(field='T1003.002 - 5') = TRUE OR get(field='T1003.002 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1003.002 - 6` <= get(field='T1003.002 - 6') = TRUE OR get(field='T1003.002 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1560 - 1` <= get(field='T1560 - 1') = TRUE OR get(field='T1560 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1560.001 - 1` <= get(field='T1560.001 - 1') = TRUE OR get(field='T1560.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1560.001 - 2` <= get(field='T1560.001 - 2') = TRUE OR get(field='T1560.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1560.001 - 3` <= get(field='T1560.001 - 3') = TRUE OR get(field='T1560.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1560.001 - 4` <= get(field='T1560.001 - 4') = TRUE OR get(field='T1560.001 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1123 - 1` <= get(field='T1123 - 1') = TRUE OR get(field='T1123 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1119 - 1` <= get(field='T1119 - 1') = TRUE OR get(field='T1119 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1119 - 2` <= get(field='T1119 - 2') = TRUE OR get(field='T1119 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1119 - 3` <= get(field='T1119 - 3') = TRUE OR get(field='T1119 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1119 - 4` <= get(field='T1119 - 4') = TRUE OR get(field='T1119 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1115 - 1` <= get(field='T1115 - 1') = TRUE OR get(field='T1115 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1115 - 2` <= get(field='T1115 - 2') = TRUE OR get(field='T1115 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1115 - 4` <= get(field='T1115 - 4') = TRUE OR get(field='T1115 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1074.001 - 1` <= get(field='T1074.001 - 1') = TRUE OR get(field='T1074.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1074.001 - 3` <= get(field='T1074.001 - 3') = TRUE OR get(field='T1074.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1114.001 - 1` <= get(field='T1114.001 - 1') = TRUE OR get(field='T1114.001 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1113 - 5` <= get(field='T1113 - 5') = TRUE OR get(field='T1113 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1113 - 6` <= get(field='T1113 - 6') = TRUE OR get(field='T1113 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.008 - 1` <= get(field='T1546.008 - 1') = TRUE OR get(field='T1546.008 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.008 - 2` <= get(field='T1546.008 - 2') = TRUE OR get(field='T1546.008 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.010 - 1` <= get(field='T1546.010 - 1') = TRUE OR get(field='T1546.010 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.011 - 1` <= get(field='T1546.011 - 1') = TRUE OR get(field='T1546.011 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.011 - 2` <= get(field='T1546.011 - 2') = TRUE OR get(field='T1546.011 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.011 - 3` <= get(field='T1546.011 - 3') = TRUE OR get(field='T1546.011 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1055.004 - 1` <= get(field='T1055.004 - 1') = TRUE OR get(field='T1055.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1053.002 - 1` <= get(field='T1053.002 - 1') = TRUE OR get(field='T1053.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1548.002 - 1` <= get(field='T1548.002 - 1') = TRUE OR get(field='T1548.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1548.002 - 2` <= get(field='T1548.002 - 2') = TRUE OR get(field='T1548.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1548.002 - 3` <= get(field='T1548.002 - 3') = TRUE OR get(field='T1548.002 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1548.002 - 4` <= get(field='T1548.002 - 4') = TRUE OR get(field='T1548.002 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1548.002 - 5` <= get(field='T1548.002 - 5') = TRUE OR get(field='T1548.002 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1548.002 - 6` <= get(field='T1548.002 - 6') = TRUE OR get(field='T1548.002 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1548.002 - 7` <= get(field='T1548.002 - 7') = TRUE OR get(field='T1548.002 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1548.002 - 8` <= get(field='T1548.002 - 8') = TRUE OR get(field='T1548.002 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1548.002 - 9` <= get(field='T1548.002 - 9') = TRUE OR get(field='T1548.002 - 9') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1548.002 - 10` <= get(field='T1548.002 - 10') = TRUE OR get(field='T1548.002 - 10') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1548.002 - 11` <= get(field='T1548.002 - 11') = TRUE OR get(field='T1548.002 - 11') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1548.002 - 12` <= get(field='T1548.002 - 12') = TRUE OR get(field='T1548.002 - 12') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1548.002 - 13` <= get(field='T1548.002 - 13') = TRUE OR get(field='T1548.002 - 13') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1548.002 - 14` <= get(field='T1548.002 - 14') = TRUE OR get(field='T1548.002 - 14') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1548.002 - 15` <= get(field='T1548.002 - 15') = TRUE OR get(field='T1548.002 - 15') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1548.002 - 16` <= get(field='T1548.002 - 16') = TRUE OR get(field='T1548.002 - 16') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1548.002 - 17` <= get(field='T1548.002 - 17') = TRUE OR get(field='T1548.002 - 17') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1574.012 - 1` <= get(field='T1574.012 - 1') = TRUE OR get(field='T1574.012 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1574.012 - 2` <= get(field='T1574.012 - 2') = TRUE OR get(field='T1574.012 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1574.012 - 3` <= get(field='T1574.012 - 3') = TRUE OR get(field='T1574.012 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.001 - 1` <= get(field='T1546.001 - 1') = TRUE OR get(field='T1546.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1134.002 - 1` <= get(field='T1134.002 - 1') = TRUE OR get(field='T1134.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1574.001 - 1` <= get(field='T1574.001 - 1') = TRUE OR get(field='T1574.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1574.002 - 1` <= get(field='T1574.002 - 1') = TRUE OR get(field='T1574.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1078.001 - 1` <= get(field='T1078.001 - 1') = TRUE OR get(field='T1078.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1078.001 - 2` <= get(field='T1078.001 - 2') = TRUE OR get(field='T1078.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1055.001 - 1` <= get(field='T1055.001 - 1') = TRUE OR get(field='T1055.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.012 - 1` <= get(field='T1546.012 - 1') = TRUE OR get(field='T1546.012 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.012 - 2` <= get(field='T1546.012 - 2') = TRUE OR get(field='T1546.012 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1078.003 - 1` <= get(field='T1078.003 - 1') = TRUE OR get(field='T1078.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1037.001 - 1` <= get(field='T1037.001 - 1') = TRUE OR get(field='T1037.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.007 - 1` <= get(field='T1546.007 - 1') = TRUE OR get(field='T1546.007 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1134.004 - 1` <= get(field='T1134.004 - 1') = TRUE OR get(field='T1134.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1134.004 - 2` <= get(field='T1134.004 - 2') = TRUE OR get(field='T1134.004 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1134.004 - 3` <= get(field='T1134.004 - 3') = TRUE OR get(field='T1134.004 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1134.004 - 4` <= get(field='T1134.004 - 4') = TRUE OR get(field='T1134.004 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1134.004 - 5` <= get(field='T1134.004 - 5') = TRUE OR get(field='T1134.004 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1574.009 - 1` <= get(field='T1574.009 - 1') = TRUE OR get(field='T1574.009 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.010 - 1` <= get(field='T1547.010 - 1') = TRUE OR get(field='T1547.010 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.013 - 1` <= get(field='T1546.013 - 1') = TRUE OR get(field='T1546.013 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1055.012 - 1` <= get(field='T1055.012 - 1') = TRUE OR get(field='T1055.012 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1055.012 - 2` <= get(field='T1055.012 - 2') = TRUE OR get(field='T1055.012 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1055 - 1` <= get(field='T1055 - 1') = TRUE OR get(field='T1055 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1055 - 2` <= get(field='T1055 - 2') = TRUE OR get(field='T1055 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.001 - 1` <= get(field='T1547.001 - 1') = TRUE OR get(field='T1547.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.001 - 2` <= get(field='T1547.001 - 2') = TRUE OR get(field='T1547.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.001 - 3` <= get(field='T1547.001 - 3') = TRUE OR get(field='T1547.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.001 - 4` <= get(field='T1547.001 - 4') = TRUE OR get(field='T1547.001 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.001 - 5` <= get(field='T1547.001 - 5') = TRUE OR get(field='T1547.001 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.001 - 6` <= get(field='T1547.001 - 6') = TRUE OR get(field='T1547.001 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.001 - 7` <= get(field='T1547.001 - 7') = TRUE OR get(field='T1547.001 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1053.005 - 1` <= get(field='T1053.005 - 1') = TRUE OR get(field='T1053.005 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1053.005 - 2` <= get(field='T1053.005 - 2') = TRUE OR get(field='T1053.005 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1053.005 - 3` <= get(field='T1053.005 - 3') = TRUE OR get(field='T1053.005 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1053.005 - 4` <= get(field='T1053.005 - 4') = TRUE OR get(field='T1053.005 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1053.005 - 5` <= get(field='T1053.005 - 5') = TRUE OR get(field='T1053.005 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1053.005 - 6` <= get(field='T1053.005 - 6') = TRUE OR get(field='T1053.005 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.002 - 1` <= get(field='T1546.002 - 1') = TRUE OR get(field='T1546.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.005 - 1` <= get(field='T1547.005 - 1') = TRUE OR get(field='T1547.005 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1574.011 - 1` <= get(field='T1574.011 - 1') = TRUE OR get(field='T1574.011 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1574.011 - 2` <= get(field='T1574.011 - 2') = TRUE OR get(field='T1574.011 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.009 - 1` <= get(field='T1547.009 - 1') = TRUE OR get(field='T1547.009 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.009 - 2` <= get(field='T1547.009 - 2') = TRUE OR get(field='T1547.009 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1134.001 - 1` <= get(field='T1134.001 - 1') = TRUE OR get(field='T1134.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1134.001 - 2` <= get(field='T1134.001 - 2') = TRUE OR get(field='T1134.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1546.003 - 1` <= get(field='T1546.003 - 1') = TRUE OR get(field='T1546.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1543.003 - 1` <= get(field='T1543.003 - 1') = TRUE OR get(field='T1543.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1543.003 - 2` <= get(field='T1543.003 - 2') = TRUE OR get(field='T1543.003 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1543.003 - 3` <= get(field='T1543.003 - 3') = TRUE OR get(field='T1543.003 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.004 - 1` <= get(field='T1547.004 - 1') = TRUE OR get(field='T1547.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.004 - 2` <= get(field='T1547.004 - 2') = TRUE OR get(field='T1547.004 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1547.004 - 3` <= get(field='T1547.004 - 3') = TRUE OR get(field='T1547.004 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1197 - 1` <= get(field='T1197 - 1') = TRUE OR get(field='T1197 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1197 - 2` <= get(field='T1197 - 2') = TRUE OR get(field='T1197 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1197 - 3` <= get(field='T1197 - 3') = TRUE OR get(field='T1197 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1197 - 4` <= get(field='T1197 - 4') = TRUE OR get(field='T1197 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.003 - 1` <= get(field='T1218.003 - 1') = TRUE OR get(field='T1218.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.003 - 2` <= get(field='T1218.003 - 2') = TRUE OR get(field='T1218.003 - 2') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1070.003 - 10` <= get(field='T1070.003 - 10') = TRUE OR get(field='T1070.003 - 10') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1070.003 - 11` <= get(field='T1070.003 - 11') = TRUE OR get(field='T1070.003 - 11') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.001 - 1` <= get(field='T1070.001 - 1') = TRUE OR get(field='T1070.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.001 - 2` <= get(field='T1070.001 - 2') = TRUE OR get(field='T1070.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.001 - 3` <= get(field='T1070.001 - 3') = TRUE OR get(field='T1070.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1027.004 - 1` <= get(field='T1027.004 - 1') = TRUE OR get(field='T1027.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1027.004 - 2` <= get(field='T1027.004 - 2') = TRUE OR get(field='T1027.004 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.001 - 1` <= get(field='T1218.001 - 1') = TRUE OR get(field='T1218.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.001 - 2` <= get(field='T1218.001 - 2') = TRUE OR get(field='T1218.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.001 - 3` <= get(field='T1218.001 - 3') = TRUE OR get(field='T1218.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.001 - 4` <= get(field='T1218.001 - 4') = TRUE OR get(field='T1218.001 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.001 - 5` <= get(field='T1218.001 - 5') = TRUE OR get(field='T1218.001 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.001 - 6` <= get(field='T1218.001 - 6') = TRUE OR get(field='T1218.001 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.001 - 7` <= get(field='T1218.001 - 7') = TRUE OR get(field='T1218.001 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.002 - 1` <= get(field='T1218.002 - 1') = TRUE OR get(field='T1218.002 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1140 - 1` <= get(field='T1140 - 1') = TRUE OR get(field='T1140 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1140 - 2` <= get(field='T1140 - 2') = TRUE OR get(field='T1140 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1006 - 1` <= get(field='T1006 - 1') = TRUE OR get(field='T1006 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.002 - 1` <= get(field='T1562.002 - 1') = TRUE OR get(field='T1562.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.002 - 2` <= get(field='T1562.002 - 2') = TRUE OR get(field='T1562.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.002 - 3` <= get(field='T1562.002 - 3') = TRUE OR get(field='T1562.002 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.002 - 4` <= get(field='T1562.002 - 4') = TRUE OR get(field='T1562.002 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.002 - 5` <= get(field='T1562.002 - 5') = TRUE OR get(field='T1562.002 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.004 - 1` <= get(field='T1562.004 - 1') = TRUE OR get(field='T1562.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.004 - 2` <= get(field='T1562.004 - 2') = TRUE OR get(field='T1562.004 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.004 - 3` <= get(field='T1562.004 - 3') = TRUE OR get(field='T1562.004 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.004 - 4` <= get(field='T1562.004 - 4') = TRUE OR get(field='T1562.004 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.004 - 5` <= get(field='T1562.004 - 5') = TRUE OR get(field='T1562.004 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1562.004 - 6` <= get(field='T1562.004 - 6') = TRUE OR get(field='T1562.004 - 6') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 10` <= get(field='T1562.001 - 10') = TRUE OR get(field='T1562.001 - 10') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 11` <= get(field='T1562.001 - 11') = TRUE OR get(field='T1562.001 - 11') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 12` <= get(field='T1562.001 - 12') = TRUE OR get(field='T1562.001 - 12') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 13` <= get(field='T1562.001 - 13') = TRUE OR get(field='T1562.001 - 13') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 14` <= get(field='T1562.001 - 14') = TRUE OR get(field='T1562.001 - 14') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 15` <= get(field='T1562.001 - 15') = TRUE OR get(field='T1562.001 - 15') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 16` <= get(field='T1562.001 - 16') = TRUE OR get(field='T1562.001 - 16') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 17` <= get(field='T1562.001 - 17') = TRUE OR get(field='T1562.001 - 17') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 18` <= get(field='T1562.001 - 18') = TRUE OR get(field='T1562.001 - 18') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 19` <= get(field='T1562.001 - 19') = TRUE OR get(field='T1562.001 - 19') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 20` <= get(field='T1562.001 - 20') = TRUE OR get(field='T1562.001 - 20') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 21` <= get(field='T1562.001 - 21') = TRUE OR get(field='T1562.001 - 21') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 22` <= get(field='T1562.001 - 22') = TRUE OR get(field='T1562.001 - 22') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 23` <= get(field='T1562.001 - 23') = TRUE OR get(field='T1562.001 - 23') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1562.001 - 24` <= get(field='T1562.001 - 24') = TRUE OR get(field='T1562.001 - 24') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.004 - 4` <= get(field='T1070.004 - 4') = TRUE OR get(field='T1070.004 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.004 - 5` <= get(field='T1070.004 - 5') = TRUE OR get(field='T1070.004 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.004 - 6` <= get(field='T1070.004 - 6') = TRUE OR get(field='T1070.004 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.004 - 7` <= get(field='T1070.004 - 7') = TRUE OR get(field='T1070.004 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.004 - 9` <= get(field='T1070.004 - 9') = TRUE OR get(field='T1070.004 - 9') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1070.004 - 10` <= get(field='T1070.004 - 10') = TRUE OR get(field='T1070.004 - 10') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1564.001 - 3` <= get(field='T1564.001 - 3') = TRUE OR get(field='T1564.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1564.001 - 4` <= get(field='T1564.001 - 4') = TRUE OR get(field='T1564.001 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1564.003 - 1` <= get(field='T1564.003 - 1') = TRUE OR get(field='T1564.003 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1564 - 1` <= get(field='T1564 - 1') = TRUE OR get(field='T1564 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1564 - 2` <= get(field='T1564 - 2') = TRUE OR get(field='T1564 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1564 - 3` <= get(field='T1564 - 3') = TRUE OR get(field='T1564 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1070 - 1` <= get(field='T1070 - 1') = TRUE OR get(field='T1070 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1202 - 1` <= get(field='T1202 - 1') = TRUE OR get(field='T1202 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1202 - 2` <= get(field='T1202 - 2') = TRUE OR get(field='T1202 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1202 - 3` <= get(field='T1202 - 3') = TRUE OR get(field='T1202 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1553.004 - 4` <= get(field='T1553.004 - 4') = TRUE OR get(field='T1553.004 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1553.004 - 5` <= get(field='T1553.004 - 5') = TRUE OR get(field='T1553.004 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.004 - 1` <= get(field='T1218.004 - 1') = TRUE OR get(field='T1218.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.004 - 2` <= get(field='T1218.004 - 2') = TRUE OR get(field='T1218.004 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.004 - 3` <= get(field='T1218.004 - 3') = TRUE OR get(field='T1218.004 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.004 - 4` <= get(field='T1218.004 - 4') = TRUE OR get(field='T1218.004 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.004 - 5` <= get(field='T1218.004 - 5') = TRUE OR get(field='T1218.004 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.004 - 6` <= get(field='T1218.004 - 6') = TRUE OR get(field='T1218.004 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.004 - 7` <= get(field='T1218.004 - 7') = TRUE OR get(field='T1218.004 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.004 - 8` <= get(field='T1218.004 - 8') = TRUE OR get(field='T1218.004 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1127.001 - 1` <= get(field='T1127.001 - 1') = TRUE OR get(field='T1127.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1127.001 - 2` <= get(field='T1127.001 - 2') = TRUE OR get(field='T1127.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1553.005 - 1` <= get(field='T1553.005 - 1') = TRUE OR get(field='T1553.005 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1553.005 - 2` <= get(field='T1553.005 - 2') = TRUE OR get(field='T1553.005 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1553.005 - 3` <= get(field='T1553.005 - 3') = TRUE OR get(field='T1553.005 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.004 - 1` <= get(field='T1036.004 - 1') = TRUE OR get(field='T1036.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.004 - 2` <= get(field='T1036.004 - 2') = TRUE OR get(field='T1036.004 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1036 - 1` <= get(field='T1036 - 1') = TRUE OR get(field='T1036 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1112 - 1` <= get(field='T1112 - 1') = TRUE OR get(field='T1112 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1112 - 2` <= get(field='T1112 - 2') = TRUE OR get(field='T1112 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1112 - 3` <= get(field='T1112 - 3') = TRUE OR get(field='T1112 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1112 - 4` <= get(field='T1112 - 4') = TRUE OR get(field='T1112 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1112 - 5` <= get(field='T1112 - 5') = TRUE OR get(field='T1112 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1112 - 6` <= get(field='T1112 - 6') = TRUE OR get(field='T1112 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.005 - 1` <= get(field='T1218.005 - 1') = TRUE OR get(field='T1218.005 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.005 - 2` <= get(field='T1218.005 - 2') = TRUE OR get(field='T1218.005 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.005 - 3` <= get(field='T1218.005 - 3') = TRUE OR get(field='T1218.005 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.005 - 4` <= get(field='T1218.005 - 4') = TRUE OR get(field='T1218.005 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.005 - 5` <= get(field='T1218.005 - 5') = TRUE OR get(field='T1218.005 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.005 - 6` <= get(field='T1218.005 - 6') = TRUE OR get(field='T1218.005 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.005 - 7` <= get(field='T1218.005 - 7') = TRUE OR get(field='T1218.005 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.005 - 8` <= get(field='T1218.005 - 8') = TRUE OR get(field='T1218.005 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.005 - 9` <= get(field='T1218.005 - 9') = TRUE OR get(field='T1218.005 - 9') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1218.005 - 10` <= get(field='T1218.005 - 10') = TRUE OR get(field='T1218.005 - 10') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.007 - 1` <= get(field='T1218.007 - 1') = TRUE OR get(field='T1218.007 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.007 - 2` <= get(field='T1218.007 - 2') = TRUE OR get(field='T1218.007 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.007 - 3` <= get(field='T1218.007 - 3') = TRUE OR get(field='T1218.007 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1564.004 - 1` <= get(field='T1564.004 - 1') = TRUE OR get(field='T1564.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1564.004 - 2` <= get(field='T1564.004 - 2') = TRUE OR get(field='T1564.004 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1564.004 - 3` <= get(field='T1564.004 - 3') = TRUE OR get(field='T1564.004 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1564.004 - 4` <= get(field='T1564.004 - 4') = TRUE OR get(field='T1564.004 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.005 - 1` <= get(field='T1070.005 - 1') = TRUE OR get(field='T1070.005 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.005 - 2` <= get(field='T1070.005 - 2') = TRUE OR get(field='T1070.005 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.005 - 3` <= get(field='T1070.005 - 3') = TRUE OR get(field='T1070.005 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1027 - 2` <= get(field='T1027 - 2') = TRUE OR get(field='T1027 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1027 - 3` <= get(field='T1027 - 3') = TRUE OR get(field='T1027 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1027 - 4` <= get(field='T1027 - 4') = TRUE OR get(field='T1027 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1027 - 5` <= get(field='T1027 - 5') = TRUE OR get(field='T1027 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1027 - 6` <= get(field='T1027 - 6') = TRUE OR get(field='T1027 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1027 - 7` <= get(field='T1027 - 7') = TRUE OR get(field='T1027 - 7') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1027 - 8` <= get(field='T1027 - 8') = TRUE OR get(field='T1027 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.008 - 1` <= get(field='T1218.008 - 1') = TRUE OR get(field='T1218.008 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1550.002 - 1` <= get(field='T1550.002 - 1') = TRUE OR get(field='T1550.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1550.002 - 2` <= get(field='T1550.002 - 2') = TRUE OR get(field='T1550.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1550.003 - 1` <= get(field='T1550.003 - 1') = TRUE OR get(field='T1550.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1216.001 - 1` <= get(field='T1216.001 - 1') = TRUE OR get(field='T1216.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.009 - 1` <= get(field='T1218.009 - 1') = TRUE OR get(field='T1218.009 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.009 - 2` <= get(field='T1218.009 - 2') = TRUE OR get(field='T1218.009 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.010 - 1` <= get(field='T1218.010 - 1') = TRUE OR get(field='T1218.010 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.010 - 2` <= get(field='T1218.010 - 2') = TRUE OR get(field='T1218.010 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.010 - 3` <= get(field='T1218.010 - 3') = TRUE OR get(field='T1218.010 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.010 - 4` <= get(field='T1218.010 - 4') = TRUE OR get(field='T1218.010 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.010 - 5` <= get(field='T1218.010 - 5') = TRUE OR get(field='T1218.010 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.003 - 1` <= get(field='T1036.003 - 1') = TRUE OR get(field='T1036.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.003 - 3` <= get(field='T1036.003 - 3') = TRUE OR get(field='T1036.003 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.003 - 4` <= get(field='T1036.003 - 4') = TRUE OR get(field='T1036.003 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.003 - 5` <= get(field='T1036.003 - 5') = TRUE OR get(field='T1036.003 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.003 - 6` <= get(field='T1036.003 - 6') = TRUE OR get(field='T1036.003 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.003 - 7` <= get(field='T1036.003 - 7') = TRUE OR get(field='T1036.003 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.003 - 8` <= get(field='T1036.003 - 8') = TRUE OR get(field='T1036.003 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1036.003 - 9` <= get(field='T1036.003 - 9') = TRUE OR get(field='T1036.003 - 9') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1207 - 1` <= get(field='T1207 - 1') = TRUE OR get(field='T1207 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1014 - 3` <= get(field='T1014 - 3') = TRUE OR get(field='T1014 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.011 - 1` <= get(field='T1218.011 - 1') = TRUE OR get(field='T1218.011 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.011 - 2` <= get(field='T1218.011 - 2') = TRUE OR get(field='T1218.011 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.011 - 3` <= get(field='T1218.011 - 3') = TRUE OR get(field='T1218.011 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.011 - 4` <= get(field='T1218.011 - 4') = TRUE OR get(field='T1218.011 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.011 - 5` <= get(field='T1218.011 - 5') = TRUE OR get(field='T1218.011 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.011 - 6` <= get(field='T1218.011 - 6') = TRUE OR get(field='T1218.011 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.011 - 7` <= get(field='T1218.011 - 7') = TRUE OR get(field='T1218.011 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1218.011 - 8` <= get(field='T1218.011 - 8') = TRUE OR get(field='T1218.011 - 8') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1218 - 1` <= get(field='T1218 - 1') = TRUE OR get(field='T1218 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1218 - 2` <= get(field='T1218 - 2') = TRUE OR get(field='T1218 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1218 - 3` <= get(field='T1218 - 3') = TRUE OR get(field='T1218 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1218 - 4` <= get(field='T1218 - 4') = TRUE OR get(field='T1218 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1218 - 5` <= get(field='T1218 - 5') = TRUE OR get(field='T1218 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1218 - 6` <= get(field='T1218 - 6') = TRUE OR get(field='T1218 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1218 - 7` <= get(field='T1218 - 7') = TRUE OR get(field='T1218 - 7') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1218 - 8` <= get(field='T1218 - 8') = TRUE OR get(field='T1218 - 8') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1216 - 1` <= get(field='T1216 - 1') = TRUE OR get(field='T1216 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1216 - 2` <= get(field='T1216 - 2') = TRUE OR get(field='T1216 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1497.001 - 2` <= get(field='T1497.001 - 2') = TRUE OR get(field='T1497.001 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1221 - 1` <= get(field='T1221 - 1') = TRUE OR get(field='T1221 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.006 - 5` <= get(field='T1070.006 - 5') = TRUE OR get(field='T1070.006 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.006 - 6` <= get(field='T1070.006 - 6') = TRUE OR get(field='T1070.006 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.006 - 7` <= get(field='T1070.006 - 7') = TRUE OR get(field='T1070.006 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1070.006 - 8` <= get(field='T1070.006 - 8') = TRUE OR get(field='T1070.006 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1222.001 - 1` <= get(field='T1222.001 - 1') = TRUE OR get(field='T1222.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1222.001 - 2` <= get(field='T1222.001 - 2') = TRUE OR get(field='T1222.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1222.001 - 3` <= get(field='T1222.001 - 3') = TRUE OR get(field='T1222.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1222.001 - 4` <= get(field='T1222.001 - 4') = TRUE OR get(field='T1222.001 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1222.001 - 5` <= get(field='T1222.001 - 5') = TRUE OR get(field='T1222.001 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1220 - 1` <= get(field='T1220 - 1') = TRUE OR get(field='T1220 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1220 - 2` <= get(field='T1220 - 2') = TRUE OR get(field='T1220 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1220 - 3` <= get(field='T1220 - 3') = TRUE OR get(field='T1220 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1220 - 4` <= get(field='T1220 - 4') = TRUE OR get(field='T1220 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1098 - 1` <= get(field='T1098 - 1') = TRUE OR get(field='T1098 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1098 - 2` <= get(field='T1098 - 2') = TRUE OR get(field='T1098 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1137.006 - 1` <= get(field='T1137.006 - 1') = TRUE OR get(field='T1137.006 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1176 - 1` <= get(field='T1176 - 1') = TRUE OR get(field='T1176 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1176 - 2` <= get(field='T1176 - 2') = TRUE OR get(field='T1176 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1176 - 3` <= get(field='T1176 - 3') = TRUE OR get(field='T1176 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1176 - 4` <= get(field='T1176 - 4') = TRUE OR get(field='T1176 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1136.002 - 1` <= get(field='T1136.002 - 1') = TRUE OR get(field='T1136.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1136.002 - 2` <= get(field='T1136.002 - 2') = TRUE OR get(field='T1136.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1136.002 - 3` <= get(field='T1136.002 - 3') = TRUE OR get(field='T1136.002 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1133 - 1` <= get(field='T1133 - 1') = TRUE OR get(field='T1133 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1136.001 - 3` <= get(field='T1136.001 - 3') = TRUE OR get(field='T1136.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1136.001 - 4` <= get(field='T1136.001 - 4') = TRUE OR get(field='T1136.001 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1136.001 - 6` <= get(field='T1136.001 - 6') = TRUE OR get(field='T1136.001 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1137 - 1` <= get(field='T1137 - 1') = TRUE OR get(field='T1137 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1137.002 - 1` <= get(field='T1137.002 - 1') = TRUE OR get(field='T1137.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1137.004 - 1` <= get(field='T1137.004 - 1') = TRUE OR get(field='T1137.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1505.002 - 1` <= get(field='T1505.002 - 1') = TRUE OR get(field='T1505.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1505.003 - 1` <= get(field='T1505.003 - 1') = TRUE OR get(field='T1505.003 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1531 - 1` <= get(field='T1531 - 1') = TRUE OR get(field='T1531 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1531 - 2` <= get(field='T1531 - 2') = TRUE OR get(field='T1531 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1531 - 3` <= get(field='T1531 - 3') = TRUE OR get(field='T1531 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1485 - 1` <= get(field='T1485 - 1') = TRUE OR get(field='T1485 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1486 - 5` <= get(field='T1486 - 5') = TRUE OR get(field='T1486 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1490 - 1` <= get(field='T1490 - 1') = TRUE OR get(field='T1490 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1490 - 2` <= get(field='T1490 - 2') = TRUE OR get(field='T1490 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1490 - 3` <= get(field='T1490 - 3') = TRUE OR get(field='T1490 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1490 - 4` <= get(field='T1490 - 4') = TRUE OR get(field='T1490 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1490 - 5` <= get(field='T1490 - 5') = TRUE OR get(field='T1490 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1490 - 6` <= get(field='T1490 - 6') = TRUE OR get(field='T1490 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1490 - 7` <= get(field='T1490 - 7') = TRUE OR get(field='T1490 - 7') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1490 - 8` <= get(field='T1490 - 8') = TRUE OR get(field='T1490 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1491.001 - 1` <= get(field='T1491.001 - 1') = TRUE OR get(field='T1491.001 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1489 - 1` <= get(field='T1489 - 1') = TRUE OR get(field='T1489 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1489 - 2` <= get(field='T1489 - 2') = TRUE OR get(field='T1489 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1489 - 3` <= get(field='T1489 - 3') = TRUE OR get(field='T1489 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1529 - 1` <= get(field='T1529 - 1') = TRUE OR get(field='T1529 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1529 - 2` <= get(field='T1529 - 2') = TRUE OR get(field='T1529 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1010 - 1` <= get(field='T1010 - 1') = TRUE OR get(field='T1010 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1217 - 4` <= get(field='T1217 - 4') = TRUE OR get(field='T1217 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1217 - 5` <= get(field='T1217 - 5') = TRUE OR get(field='T1217 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1217 - 6` <= get(field='T1217 - 6') = TRUE OR get(field='T1217 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1217 - 7` <= get(field='T1217 - 7') = TRUE OR get(field='T1217 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.002 - 1` <= get(field='T1087.002 - 1') = TRUE OR get(field='T1087.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.002 - 2` <= get(field='T1087.002 - 2') = TRUE OR get(field='T1087.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.002 - 3` <= get(field='T1087.002 - 3') = TRUE OR get(field='T1087.002 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.002 - 4` <= get(field='T1087.002 - 4') = TRUE OR get(field='T1087.002 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.002 - 5` <= get(field='T1087.002 - 5') = TRUE OR get(field='T1087.002 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.002 - 6` <= get(field='T1087.002 - 6') = TRUE OR get(field='T1087.002 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.002 - 7` <= get(field='T1087.002 - 7') = TRUE OR get(field='T1087.002 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.002 - 8` <= get(field='T1087.002 - 8') = TRUE OR get(field='T1087.002 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.002 - 9` <= get(field='T1087.002 - 9') = TRUE OR get(field='T1087.002 - 9') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1087.002 - 10` <= get(field='T1087.002 - 10') = TRUE OR get(field='T1087.002 - 10') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.002 - 1` <= get(field='T1069.002 - 1') = TRUE OR get(field='T1069.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.002 - 2` <= get(field='T1069.002 - 2') = TRUE OR get(field='T1069.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.002 - 3` <= get(field='T1069.002 - 3') = TRUE OR get(field='T1069.002 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.002 - 4` <= get(field='T1069.002 - 4') = TRUE OR get(field='T1069.002 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.002 - 5` <= get(field='T1069.002 - 5') = TRUE OR get(field='T1069.002 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.002 - 6` <= get(field='T1069.002 - 6') = TRUE OR get(field='T1069.002 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.002 - 7` <= get(field='T1069.002 - 7') = TRUE OR get(field='T1069.002 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.002 - 8` <= get(field='T1069.002 - 8') = TRUE OR get(field='T1069.002 - 8') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1482 - 1` <= get(field='T1482 - 1') = TRUE OR get(field='T1482 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1482 - 2` <= get(field='T1482 - 2') = TRUE OR get(field='T1482 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1482 - 3` <= get(field='T1482 - 3') = TRUE OR get(field='T1482 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1482 - 4` <= get(field='T1482 - 4') = TRUE OR get(field='T1482 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1482 - 5` <= get(field='T1482 - 5') = TRUE OR get(field='T1482 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1482 - 6` <= get(field='T1482 - 6') = TRUE OR get(field='T1482 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1482 - 7` <= get(field='T1482 - 7') = TRUE OR get(field='T1482 - 7') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1083 - 1` <= get(field='T1083 - 1') = TRUE OR get(field='T1083 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1083 - 2` <= get(field='T1083 - 2') = TRUE OR get(field='T1083 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.001 - 8` <= get(field='T1087.001 - 8') = TRUE OR get(field='T1087.001 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1087.001 - 9` <= get(field='T1087.001 - 9') = TRUE OR get(field='T1087.001 - 9') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1087.001 - 10` <= get(field='T1087.001 - 10') = TRUE OR get(field='T1087.001 - 10') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.001 - 2` <= get(field='T1069.001 - 2') = TRUE OR get(field='T1069.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.001 - 3` <= get(field='T1069.001 - 3') = TRUE OR get(field='T1069.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.001 - 4` <= get(field='T1069.001 - 4') = TRUE OR get(field='T1069.001 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.001 - 5` <= get(field='T1069.001 - 5') = TRUE OR get(field='T1069.001 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1069.001 - 6` <= get(field='T1069.001 - 6') = TRUE OR get(field='T1069.001 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1046 - 3` <= get(field='T1046 - 3') = TRUE OR get(field='T1046 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1046 - 4` <= get(field='T1046 - 4') = TRUE OR get(field='T1046 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1135 - 3` <= get(field='T1135 - 3') = TRUE OR get(field='T1135 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1135 - 4` <= get(field='T1135 - 4') = TRUE OR get(field='T1135 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1135 - 5` <= get(field='T1135 - 5') = TRUE OR get(field='T1135 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1135 - 6` <= get(field='T1135 - 6') = TRUE OR get(field='T1135 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1201 - 5` <= get(field='T1201 - 5') = TRUE OR get(field='T1201 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1201 - 6` <= get(field='T1201 - 6') = TRUE OR get(field='T1201 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1120 - 1` <= get(field='T1120 - 1') = TRUE OR get(field='T1120 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1057 - 2` <= get(field='T1057 - 2') = TRUE OR get(field='T1057 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1012 - 1` <= get(field='T1012 - 1') = TRUE OR get(field='T1012 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1018 - 1` <= get(field='T1018 - 1') = TRUE OR get(field='T1018 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1018 - 2` <= get(field='T1018 - 2') = TRUE OR get(field='T1018 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1018 - 3` <= get(field='T1018 - 3') = TRUE OR get(field='T1018 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1018 - 4` <= get(field='T1018 - 4') = TRUE OR get(field='T1018 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1018 - 5` <= get(field='T1018 - 5') = TRUE OR get(field='T1018 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1018 - 8` <= get(field='T1018 - 8') = TRUE OR get(field='T1018 - 8') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1018 - 9` <= get(field='T1018 - 9') = TRUE OR get(field='T1018 - 9') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1018 - 10` <= get(field='T1018 - 10') = TRUE OR get(field='T1018 - 10') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1018 - 11` <= get(field='T1018 - 11') = TRUE OR get(field='T1018 - 11') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1518.001 - 1` <= get(field='T1518.001 - 1') = TRUE OR get(field='T1518.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1518.001 - 2` <= get(field='T1518.001 - 2') = TRUE OR get(field='T1518.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1518.001 - 5` <= get(field='T1518.001 - 5') = TRUE OR get(field='T1518.001 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1518.001 - 6` <= get(field='T1518.001 - 6') = TRUE OR get(field='T1518.001 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1518 - 1` <= get(field='T1518 - 1') = TRUE OR get(field='T1518 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1518 - 2` <= get(field='T1518 - 2') = TRUE OR get(field='T1518 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1082 - 1` <= get(field='T1082 - 1') = TRUE OR get(field='T1082 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1082 - 6` <= get(field='T1082 - 6') = TRUE OR get(field='T1082 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1082 - 8` <= get(field='T1082 - 8') = TRUE OR get(field='T1082 - 8') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1082 - 9` <= get(field='T1082 - 9') = TRUE OR get(field='T1082 - 9') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1082 - 10` <= get(field='T1082 - 10') = TRUE OR get(field='T1082 - 10') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1016 - 1` <= get(field='T1016 - 1') = TRUE OR get(field='T1016 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1016 - 2` <= get(field='T1016 - 2') = TRUE OR get(field='T1016 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1016 - 4` <= get(field='T1016 - 4') = TRUE OR get(field='T1016 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1016 - 5` <= get(field='T1016 - 5') = TRUE OR get(field='T1016 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1016 - 6` <= get(field='T1016 - 6') = TRUE OR get(field='T1016 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1016 - 7` <= get(field='T1016 - 7') = TRUE OR get(field='T1016 - 7') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1049 - 1` <= get(field='T1049 - 1') = TRUE OR get(field='T1049 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1049 - 2` <= get(field='T1049 - 2') = TRUE OR get(field='T1049 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1049 - 4` <= get(field='T1049 - 4') = TRUE OR get(field='T1049 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1033 - 1` <= get(field='T1033 - 1') = TRUE OR get(field='T1033 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1033 - 3` <= get(field='T1033 - 3') = TRUE OR get(field='T1033 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1007 - 1` <= get(field='T1007 - 1') = TRUE OR get(field='T1007 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1007 - 2` <= get(field='T1007 - 2') = TRUE OR get(field='T1007 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1124 - 1` <= get(field='T1124 - 1') = TRUE OR get(field='T1124 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1124 - 2` <= get(field='T1124 - 2') = TRUE OR get(field='T1124 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1071.004 - 1` <= get(field='T1071.004 - 1') = TRUE OR get(field='T1071.004 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1071.004 - 2` <= get(field='T1071.004 - 2') = TRUE OR get(field='T1071.004 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1071.004 - 3` <= get(field='T1071.004 - 3') = TRUE OR get(field='T1071.004 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1071.004 - 4` <= get(field='T1071.004 - 4') = TRUE OR get(field='T1071.004 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1573 - 1` <= get(field='T1573 - 1') = TRUE OR get(field='T1573 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1105 - 7` <= get(field='T1105 - 7') = TRUE OR get(field='T1105 - 7') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1105 - 8` <= get(field='T1105 - 8') = TRUE OR get(field='T1105 - 8') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1105 - 9` <= get(field='T1105 - 9') = TRUE OR get(field='T1105 - 9') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1105 - 10` <= get(field='T1105 - 10') = TRUE OR get(field='T1105 - 10') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1105 - 11` <= get(field='T1105 - 11') = TRUE OR get(field='T1105 - 11') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1105 - 12` <= get(field='T1105 - 12') = TRUE OR get(field='T1105 - 12') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1105 - 13` <= get(field='T1105 - 13') = TRUE OR get(field='T1105 - 13') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1105 - 15` <= get(field='T1105 - 15') = TRUE OR get(field='T1105 - 15') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1105 - 16` <= get(field='T1105 - 16') = TRUE OR get(field='T1105 - 16') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1105 - 17` <= get(field='T1105 - 17') = TRUE OR get(field='T1105 - 17') =~ '^(Y|TRUE|YES|OK)$'f
+dLET `T1105 - 18` <= get(field='T1105 - 18') = TRUE OR get(field='T1105 - 18') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1090.001 - 3` <= get(field='T1090.001 - 3') = TRUE OR get(field='T1090.001 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1095 - 1` <= get(field='T1095 - 1') = TRUE OR get(field='T1095 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1095 - 2` <= get(field='T1095 - 2') = TRUE OR get(field='T1095 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1095 - 3` <= get(field='T1095 - 3') = TRUE OR get(field='T1095 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1571 - 1` <= get(field='T1571 - 1') = TRUE OR get(field='T1571 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1572 - 1` <= get(field='T1572 - 1') = TRUE OR get(field='T1572 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1572 - 2` <= get(field='T1572 - 2') = TRUE OR get(field='T1572 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1572 - 3` <= get(field='T1572 - 3') = TRUE OR get(field='T1572 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1219 - 1` <= get(field='T1219 - 1') = TRUE OR get(field='T1219 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1219 - 2` <= get(field='T1219 - 2') = TRUE OR get(field='T1219 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1219 - 3` <= get(field='T1219 - 3') = TRUE OR get(field='T1219 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1219 - 4` <= get(field='T1219 - 4') = TRUE OR get(field='T1219 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1219 - 5` <= get(field='T1219 - 5') = TRUE OR get(field='T1219 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1132.001 - 2` <= get(field='T1132.001 - 2') = TRUE OR get(field='T1132.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1071.001 - 1` <= get(field='T1071.001 - 1') = TRUE OR get(field='T1071.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1071.001 - 2` <= get(field='T1071.001 - 2') = TRUE OR get(field='T1071.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1559.002 - 1` <= get(field='T1559.002 - 1') = TRUE OR get(field='T1559.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1559.002 - 2` <= get(field='T1559.002 - 2') = TRUE OR get(field='T1559.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1559.002 - 3` <= get(field='T1559.002 - 3') = TRUE OR get(field='T1559.002 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1204.002 - 1` <= get(field='T1204.002 - 1') = TRUE OR get(field='T1204.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1204.002 - 2` <= get(field='T1204.002 - 2') = TRUE OR get(field='T1204.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1204.002 - 3` <= get(field='T1204.002 - 3') = TRUE OR get(field='T1204.002 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1204.002 - 4` <= get(field='T1204.002 - 4') = TRUE OR get(field='T1204.002 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1204.002 - 5` <= get(field='T1204.002 - 5') = TRUE OR get(field='T1204.002 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1204.002 - 6` <= get(field='T1204.002 - 6') = TRUE OR get(field='T1204.002 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1204.002 - 7` <= get(field='T1204.002 - 7') = TRUE OR get(field='T1204.002 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1204.002 - 8` <= get(field='T1204.002 - 8') = TRUE OR get(field='T1204.002 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1204.002 - 9` <= get(field='T1204.002 - 9') = TRUE OR get(field='T1204.002 - 9') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1106 - 1` <= get(field='T1106 - 1') = TRUE OR get(field='T1106 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.001 - 1` <= get(field='T1059.001 - 1') = TRUE OR get(field='T1059.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.001 - 2` <= get(field='T1059.001 - 2') = TRUE OR get(field='T1059.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.001 - 3` <= get(field='T1059.001 - 3') = TRUE OR get(field='T1059.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.001 - 4` <= get(field='T1059.001 - 4') = TRUE OR get(field='T1059.001 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.001 - 5` <= get(field='T1059.001 - 5') = TRUE OR get(field='T1059.001 - 5') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.001 - 6` <= get(field='T1059.001 - 6') = TRUE OR get(field='T1059.001 - 6') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.001 - 7` <= get(field='T1059.001 - 7') = TRUE OR get(field='T1059.001 - 7') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.001 - 8` <= get(field='T1059.001 - 8') = TRUE OR get(field='T1059.001 - 8') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.001 - 9` <= get(field='T1059.001 - 9') = TRUE OR get(field='T1059.001 - 9') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 10` <= get(field='T1059.001 - 10') = TRUE OR get(field='T1059.001 - 10') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 11` <= get(field='T1059.001 - 11') = TRUE OR get(field='T1059.001 - 11') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 12` <= get(field='T1059.001 - 12') = TRUE OR get(field='T1059.001 - 12') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 13` <= get(field='T1059.001 - 13') = TRUE OR get(field='T1059.001 - 13') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 14` <= get(field='T1059.001 - 14') = TRUE OR get(field='T1059.001 - 14') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 15` <= get(field='T1059.001 - 15') = TRUE OR get(field='T1059.001 - 15') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 16` <= get(field='T1059.001 - 16') = TRUE OR get(field='T1059.001 - 16') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 17` <= get(field='T1059.001 - 17') = TRUE OR get(field='T1059.001 - 17') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 18` <= get(field='T1059.001 - 18') = TRUE OR get(field='T1059.001 - 18') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 19` <= get(field='T1059.001 - 19') = TRUE OR get(field='T1059.001 - 19') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 20` <= get(field='T1059.001 - 20') = TRUE OR get(field='T1059.001 - 20') =~ '^(Y|TRUE|YES|OK)$'r
+pLET `T1059.001 - 21` <= get(field='T1059.001 - 21') = TRUE OR get(field='T1059.001 - 21') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1569.002 - 1` <= get(field='T1569.002 - 1') = TRUE OR get(field='T1569.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1569.002 - 2` <= get(field='T1569.002 - 2') = TRUE OR get(field='T1569.002 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1072 - 1` <= get(field='T1072 - 1') = TRUE OR get(field='T1072 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.005 - 1` <= get(field='T1059.005 - 1') = TRUE OR get(field='T1059.005 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.005 - 2` <= get(field='T1059.005 - 2') = TRUE OR get(field='T1059.005 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.005 - 3` <= get(field='T1059.005 - 3') = TRUE OR get(field='T1059.005 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.003 - 1` <= get(field='T1059.003 - 1') = TRUE OR get(field='T1059.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.003 - 2` <= get(field='T1059.003 - 2') = TRUE OR get(field='T1059.003 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1059.003 - 3` <= get(field='T1059.003 - 3') = TRUE OR get(field='T1059.003 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1047 - 1` <= get(field='T1047 - 1') = TRUE OR get(field='T1047 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1047 - 2` <= get(field='T1047 - 2') = TRUE OR get(field='T1047 - 2') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1047 - 3` <= get(field='T1047 - 3') = TRUE OR get(field='T1047 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1047 - 4` <= get(field='T1047 - 4') = TRUE OR get(field='T1047 - 4') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1047 - 5` <= get(field='T1047 - 5') = TRUE OR get(field='T1047 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1047 - 6` <= get(field='T1047 - 6') = TRUE OR get(field='T1047 - 6') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1047 - 7` <= get(field='T1047 - 7') = TRUE OR get(field='T1047 - 7') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1047 - 8` <= get(field='T1047 - 8') = TRUE OR get(field='T1047 - 8') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1047 - 9` <= get(field='T1047 - 9') = TRUE OR get(field='T1047 - 9') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1020 - 1` <= get(field='T1020 - 1') = TRUE OR get(field='T1020 - 1') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1048 - 3` <= get(field='T1048 - 3') = TRUE OR get(field='T1048 - 3') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1041 - 1` <= get(field='T1041 - 1') = TRUE OR get(field='T1041 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1048.003 - 2` <= get(field='T1048.003 - 2') = TRUE OR get(field='T1048.003 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1048.003 - 4` <= get(field='T1048.003 - 4') = TRUE OR get(field='T1048.003 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1048.003 - 5` <= get(field='T1048.003 - 5') = TRUE OR get(field='T1048.003 - 5') =~ '^(Y|TRUE|YES|OK)$'c
+aLET `T1567 - 1` <= get(field='T1567 - 1') = TRUE OR get(field='T1567 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.003 - 1` <= get(field='T1021.003 - 1') = TRUE OR get(field='T1021.003 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1563.002 - 1` <= get(field='T1563.002 - 1') = TRUE OR get(field='T1563.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.001 - 1` <= get(field='T1021.001 - 1') = TRUE OR get(field='T1021.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.001 - 2` <= get(field='T1021.001 - 2') = TRUE OR get(field='T1021.001 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.001 - 3` <= get(field='T1021.001 - 3') = TRUE OR get(field='T1021.001 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.001 - 4` <= get(field='T1021.001 - 4') = TRUE OR get(field='T1021.001 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.002 - 1` <= get(field='T1021.002 - 1') = TRUE OR get(field='T1021.002 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.002 - 2` <= get(field='T1021.002 - 2') = TRUE OR get(field='T1021.002 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.002 - 3` <= get(field='T1021.002 - 3') = TRUE OR get(field='T1021.002 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.002 - 4` <= get(field='T1021.002 - 4') = TRUE OR get(field='T1021.002 - 4') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.006 - 1` <= get(field='T1021.006 - 1') = TRUE OR get(field='T1021.006 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.006 - 2` <= get(field='T1021.006 - 2') = TRUE OR get(field='T1021.006 - 2') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1021.006 - 3` <= get(field='T1021.006 - 3') = TRUE OR get(field='T1021.006 - 3') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1566.001 - 1` <= get(field='T1566.001 - 1') = TRUE OR get(field='T1566.001 - 1') =~ '^(Y|TRUE|YES|OK)$'o
+mLET `T1566.001 - 2` <= get(field='T1566.001 - 2') = TRUE OR get(field='T1566.001 - 2') =~ '^(Y|TRUE|YES|OK)$'h
+fLET precondition_Windows_AttackSimulation_AtomicRedTeam_0 = SELECT OS FROM info() WHERE OS = 'windows'›ò
+—òLET CommandTable = SELECT * FROM parse_csv(accessor="data", filename='''
+Flag,Command
+T1558.004 - 1,Invoke-AtomicTest T1558.004 -TestNumbers 1
+T1056.004 - 1,Invoke-AtomicTest T1056.004 -TestNumbers 1
+T1552.001 - 3,Invoke-AtomicTest T1552.001 -TestNumbers 3
+T1552.001 - 4,Invoke-AtomicTest T1552.001 -TestNumbers 4
+T1555 - 1,Invoke-AtomicTest T1555 -TestNumbers 1
+T1555 - 2,Invoke-AtomicTest T1555 -TestNumbers 2
+T1555 - 3,Invoke-AtomicTest T1555 -TestNumbers 3
+T1555 - 4,Invoke-AtomicTest T1555 -TestNumbers 4
+T1555 - 5,Invoke-AtomicTest T1555 -TestNumbers 5
+T1555.003 - 1,Invoke-AtomicTest T1555.003 -TestNumbers 1
+T1555.003 - 3,Invoke-AtomicTest T1555.003 -TestNumbers 3
+T1555.003 - 4,Invoke-AtomicTest T1555.003 -TestNumbers 4
+T1552.002 - 1,Invoke-AtomicTest T1552.002 -TestNumbers 1
+T1552.002 - 2,Invoke-AtomicTest T1552.002 -TestNumbers 2
+T1003.006 - 1,Invoke-AtomicTest T1003.006 -TestNumbers 1
+T1187 - 1,Invoke-AtomicTest T1187 -TestNumbers 1
+T1056.002 - 2,Invoke-AtomicTest T1056.002 -TestNumbers 2
+T1558.001 - 1,Invoke-AtomicTest T1558.001 -TestNumbers 1
+T1552.006 - 1,Invoke-AtomicTest T1552.006 -TestNumbers 1
+T1552.006 - 2,Invoke-AtomicTest T1552.006 -TestNumbers 2
+T1558.003 - 1,Invoke-AtomicTest T1558.003 -TestNumbers 1
+T1558.003 - 2,Invoke-AtomicTest T1558.003 -TestNumbers 2
+T1558.003 - 3,Invoke-AtomicTest T1558.003 -TestNumbers 3
+T1558.003 - 4,Invoke-AtomicTest T1558.003 -TestNumbers 4
+T1558.003 - 5,Invoke-AtomicTest T1558.003 -TestNumbers 5
+T1056.001 - 1,Invoke-AtomicTest T1056.001 -TestNumbers 1
+T1003.004 - 1,Invoke-AtomicTest T1003.004 -TestNumbers 1
+T1003.001 - 1,Invoke-AtomicTest T1003.001 -TestNumbers 1
+T1003.001 - 2,Invoke-AtomicTest T1003.001 -TestNumbers 2
+T1003.001 - 3,Invoke-AtomicTest T1003.001 -TestNumbers 3
+T1003.001 - 4,Invoke-AtomicTest T1003.001 -TestNumbers 4
+T1003.001 - 5,Invoke-AtomicTest T1003.001 -TestNumbers 5
+T1003.001 - 6,Invoke-AtomicTest T1003.001 -TestNumbers 6
+T1003.001 - 7,Invoke-AtomicTest T1003.001 -TestNumbers 7
+T1003.001 - 8,Invoke-AtomicTest T1003.001 -TestNumbers 8
+T1003.001 - 9,Invoke-AtomicTest T1003.001 -TestNumbers 9
+T1003.001 - 10,Invoke-AtomicTest T1003.001 -TestNumbers 10
+T1003.001 - 11,Invoke-AtomicTest T1003.001 -TestNumbers 11
+T1003.001 - 12,Invoke-AtomicTest T1003.001 -TestNumbers 12
+T1003.003 - 1,Invoke-AtomicTest T1003.003 -TestNumbers 1
+T1003.003 - 2,Invoke-AtomicTest T1003.003 -TestNumbers 2
+T1003.003 - 3,Invoke-AtomicTest T1003.003 -TestNumbers 3
+T1003.003 - 4,Invoke-AtomicTest T1003.003 -TestNumbers 4
+T1003.003 - 5,Invoke-AtomicTest T1003.003 -TestNumbers 5
+T1003.003 - 6,Invoke-AtomicTest T1003.003 -TestNumbers 6
+T1003.003 - 7,Invoke-AtomicTest T1003.003 -TestNumbers 7
+T1040 - 3,Invoke-AtomicTest T1040 -TestNumbers 3
+T1040 - 4,Invoke-AtomicTest T1040 -TestNumbers 4
+T1003 - 1,Invoke-AtomicTest T1003 -TestNumbers 1
+T1003 - 2,Invoke-AtomicTest T1003 -TestNumbers 2
+T1003 - 3,Invoke-AtomicTest T1003 -TestNumbers 3
+T1110.002 - 1,Invoke-AtomicTest T1110.002 -TestNumbers 1
+T1556.002 - 1,Invoke-AtomicTest T1556.002 -TestNumbers 1
+T1110.001 - 1,Invoke-AtomicTest T1110.001 -TestNumbers 1
+T1110.001 - 2,Invoke-AtomicTest T1110.001 -TestNumbers 2
+T1110.003 - 1,Invoke-AtomicTest T1110.003 -TestNumbers 1
+T1110.003 - 2,Invoke-AtomicTest T1110.003 -TestNumbers 2
+T1110.003 - 3,Invoke-AtomicTest T1110.003 -TestNumbers 3
+T1552.004 - 1,Invoke-AtomicTest T1552.004 -TestNumbers 1
+T1552.004 - 6,Invoke-AtomicTest T1552.004 -TestNumbers 6
+T1552.004 - 7,Invoke-AtomicTest T1552.004 -TestNumbers 7
+T1003.002 - 1,Invoke-AtomicTest T1003.002 -TestNumbers 1
+T1003.002 - 2,Invoke-AtomicTest T1003.002 -TestNumbers 2
+T1003.002 - 3,Invoke-AtomicTest T1003.002 -TestNumbers 3
+T1003.002 - 4,Invoke-AtomicTest T1003.002 -TestNumbers 4
+T1003.002 - 5,Invoke-AtomicTest T1003.002 -TestNumbers 5
+T1003.002 - 6,Invoke-AtomicTest T1003.002 -TestNumbers 6
+T1560 - 1,Invoke-AtomicTest T1560 -TestNumbers 1
+T1560.001 - 1,Invoke-AtomicTest T1560.001 -TestNumbers 1
+T1560.001 - 2,Invoke-AtomicTest T1560.001 -TestNumbers 2
+T1560.001 - 3,Invoke-AtomicTest T1560.001 -TestNumbers 3
+T1560.001 - 4,Invoke-AtomicTest T1560.001 -TestNumbers 4
+T1123 - 1,Invoke-AtomicTest T1123 -TestNumbers 1
+T1119 - 1,Invoke-AtomicTest T1119 -TestNumbers 1
+T1119 - 2,Invoke-AtomicTest T1119 -TestNumbers 2
+T1119 - 3,Invoke-AtomicTest T1119 -TestNumbers 3
+T1119 - 4,Invoke-AtomicTest T1119 -TestNumbers 4
+T1115 - 1,Invoke-AtomicTest T1115 -TestNumbers 1
+T1115 - 2,Invoke-AtomicTest T1115 -TestNumbers 2
+T1115 - 4,Invoke-AtomicTest T1115 -TestNumbers 4
+T1074.001 - 1,Invoke-AtomicTest T1074.001 -TestNumbers 1
+T1074.001 - 3,Invoke-AtomicTest T1074.001 -TestNumbers 3
+T1114.001 - 1,Invoke-AtomicTest T1114.001 -TestNumbers 1
+T1113 - 5,Invoke-AtomicTest T1113 -TestNumbers 5
+T1113 - 6,Invoke-AtomicTest T1113 -TestNumbers 6
+T1546.008 - 1,Invoke-AtomicTest T1546.008 -TestNumbers 1
+T1546.008 - 2,Invoke-AtomicTest T1546.008 -TestNumbers 2
+T1546.010 - 1,Invoke-AtomicTest T1546.010 -TestNumbers 1
+T1546.011 - 1,Invoke-AtomicTest T1546.011 -TestNumbers 1
+T1546.011 - 2,Invoke-AtomicTest T1546.011 -TestNumbers 2
+T1546.011 - 3,Invoke-AtomicTest T1546.011 -TestNumbers 3
+T1055.004 - 1,Invoke-AtomicTest T1055.004 -TestNumbers 1
+T1053.002 - 1,Invoke-AtomicTest T1053.002 -TestNumbers 1
+T1548.002 - 1,Invoke-AtomicTest T1548.002 -TestNumbers 1
+T1548.002 - 2,Invoke-AtomicTest T1548.002 -TestNumbers 2
+T1548.002 - 3,Invoke-AtomicTest T1548.002 -TestNumbers 3
+T1548.002 - 4,Invoke-AtomicTest T1548.002 -TestNumbers 4
+T1548.002 - 5,Invoke-AtomicTest T1548.002 -TestNumbers 5
+T1548.002 - 6,Invoke-AtomicTest T1548.002 -TestNumbers 6
+T1548.002 - 7,Invoke-AtomicTest T1548.002 -TestNumbers 7
+T1548.002 - 8,Invoke-AtomicTest T1548.002 -TestNumbers 8
+T1548.002 - 9,Invoke-AtomicTest T1548.002 -TestNumbers 9
+T1548.002 - 10,Invoke-AtomicTest T1548.002 -TestNumbers 10
+T1548.002 - 11,Invoke-AtomicTest T1548.002 -TestNumbers 11
+T1548.002 - 12,Invoke-AtomicTest T1548.002 -TestNumbers 12
+T1548.002 - 13,Invoke-AtomicTest T1548.002 -TestNumbers 13
+T1548.002 - 14,Invoke-AtomicTest T1548.002 -TestNumbers 14
+T1548.002 - 15,Invoke-AtomicTest T1548.002 -TestNumbers 15
+T1548.002 - 16,Invoke-AtomicTest T1548.002 -TestNumbers 16
+T1548.002 - 17,Invoke-AtomicTest T1548.002 -TestNumbers 17
+T1574.012 - 1,Invoke-AtomicTest T1574.012 -TestNumbers 1
+T1574.012 - 2,Invoke-AtomicTest T1574.012 -TestNumbers 2
+T1574.012 - 3,Invoke-AtomicTest T1574.012 -TestNumbers 3
+T1546.001 - 1,Invoke-AtomicTest T1546.001 -TestNumbers 1
+T1134.002 - 1,Invoke-AtomicTest T1134.002 -TestNumbers 1
+T1574.001 - 1,Invoke-AtomicTest T1574.001 -TestNumbers 1
+T1574.002 - 1,Invoke-AtomicTest T1574.002 -TestNumbers 1
+T1078.001 - 1,Invoke-AtomicTest T1078.001 -TestNumbers 1
+T1078.001 - 2,Invoke-AtomicTest T1078.001 -TestNumbers 2
+T1055.001 - 1,Invoke-AtomicTest T1055.001 -TestNumbers 1
+T1546.012 - 1,Invoke-AtomicTest T1546.012 -TestNumbers 1
+T1546.012 - 2,Invoke-AtomicTest T1546.012 -TestNumbers 2
+T1078.003 - 1,Invoke-AtomicTest T1078.003 -TestNumbers 1
+T1037.001 - 1,Invoke-AtomicTest T1037.001 -TestNumbers 1
+T1546.007 - 1,Invoke-AtomicTest T1546.007 -TestNumbers 1
+T1134.004 - 1,Invoke-AtomicTest T1134.004 -TestNumbers 1
+T1134.004 - 2,Invoke-AtomicTest T1134.004 -TestNumbers 2
+T1134.004 - 3,Invoke-AtomicTest T1134.004 -TestNumbers 3
+T1134.004 - 4,Invoke-AtomicTest T1134.004 -TestNumbers 4
+T1134.004 - 5,Invoke-AtomicTest T1134.004 -TestNumbers 5
+T1574.009 - 1,Invoke-AtomicTest T1574.009 -TestNumbers 1
+T1547.010 - 1,Invoke-AtomicTest T1547.010 -TestNumbers 1
+T1546.013 - 1,Invoke-AtomicTest T1546.013 -TestNumbers 1
+T1055.012 - 1,Invoke-AtomicTest T1055.012 -TestNumbers 1
+T1055.012 - 2,Invoke-AtomicTest T1055.012 -TestNumbers 2
+T1055 - 1,Invoke-AtomicTest T1055 -TestNumbers 1
+T1055 - 2,Invoke-AtomicTest T1055 -TestNumbers 2
+T1547.001 - 1,Invoke-AtomicTest T1547.001 -TestNumbers 1
+T1547.001 - 2,Invoke-AtomicTest T1547.001 -TestNumbers 2
+T1547.001 - 3,Invoke-AtomicTest T1547.001 -TestNumbers 3
+T1547.001 - 4,Invoke-AtomicTest T1547.001 -TestNumbers 4
+T1547.001 - 5,Invoke-AtomicTest T1547.001 -TestNumbers 5
+T1547.001 - 6,Invoke-AtomicTest T1547.001 -TestNumbers 6
+T1547.001 - 7,Invoke-AtomicTest T1547.001 -TestNumbers 7
+T1053.005 - 1,Invoke-AtomicTest T1053.005 -TestNumbers 1
+T1053.005 - 2,Invoke-AtomicTest T1053.005 -TestNumbers 2
+T1053.005 - 3,Invoke-AtomicTest T1053.005 -TestNumbers 3
+T1053.005 - 4,Invoke-AtomicTest T1053.005 -TestNumbers 4
+T1053.005 - 5,Invoke-AtomicTest T1053.005 -TestNumbers 5
+T1053.005 - 6,Invoke-AtomicTest T1053.005 -TestNumbers 6
+T1546.002 - 1,Invoke-AtomicTest T1546.002 -TestNumbers 1
+T1547.005 - 1,Invoke-AtomicTest T1547.005 -TestNumbers 1
+T1574.011 - 1,Invoke-AtomicTest T1574.011 -TestNumbers 1
+T1574.011 - 2,Invoke-AtomicTest T1574.011 -TestNumbers 2
+T1547.009 - 1,Invoke-AtomicTest T1547.009 -TestNumbers 1
+T1547.009 - 2,Invoke-AtomicTest T1547.009 -TestNumbers 2
+T1134.001 - 1,Invoke-AtomicTest T1134.001 -TestNumbers 1
+T1134.001 - 2,Invoke-AtomicTest T1134.001 -TestNumbers 2
+T1546.003 - 1,Invoke-AtomicTest T1546.003 -TestNumbers 1
+T1543.003 - 1,Invoke-AtomicTest T1543.003 -TestNumbers 1
+T1543.003 - 2,Invoke-AtomicTest T1543.003 -TestNumbers 2
+T1543.003 - 3,Invoke-AtomicTest T1543.003 -TestNumbers 3
+T1547.004 - 1,Invoke-AtomicTest T1547.004 -TestNumbers 1
+T1547.004 - 2,Invoke-AtomicTest T1547.004 -TestNumbers 2
+T1547.004 - 3,Invoke-AtomicTest T1547.004 -TestNumbers 3
+T1197 - 1,Invoke-AtomicTest T1197 -TestNumbers 1
+T1197 - 2,Invoke-AtomicTest T1197 -TestNumbers 2
+T1197 - 3,Invoke-AtomicTest T1197 -TestNumbers 3
+T1197 - 4,Invoke-AtomicTest T1197 -TestNumbers 4
+T1218.003 - 1,Invoke-AtomicTest T1218.003 -TestNumbers 1
+T1218.003 - 2,Invoke-AtomicTest T1218.003 -TestNumbers 2
+T1070.003 - 10,Invoke-AtomicTest T1070.003 -TestNumbers 10
+T1070.003 - 11,Invoke-AtomicTest T1070.003 -TestNumbers 11
+T1070.001 - 1,Invoke-AtomicTest T1070.001 -TestNumbers 1
+T1070.001 - 2,Invoke-AtomicTest T1070.001 -TestNumbers 2
+T1070.001 - 3,Invoke-AtomicTest T1070.001 -TestNumbers 3
+T1027.004 - 1,Invoke-AtomicTest T1027.004 -TestNumbers 1
+T1027.004 - 2,Invoke-AtomicTest T1027.004 -TestNumbers 2
+T1218.001 - 1,Invoke-AtomicTest T1218.001 -TestNumbers 1
+T1218.001 - 2,Invoke-AtomicTest T1218.001 -TestNumbers 2
+T1218.001 - 3,Invoke-AtomicTest T1218.001 -TestNumbers 3
+T1218.001 - 4,Invoke-AtomicTest T1218.001 -TestNumbers 4
+T1218.001 - 5,Invoke-AtomicTest T1218.001 -TestNumbers 5
+T1218.001 - 6,Invoke-AtomicTest T1218.001 -TestNumbers 6
+T1218.001 - 7,Invoke-AtomicTest T1218.001 -TestNumbers 7
+T1218.002 - 1,Invoke-AtomicTest T1218.002 -TestNumbers 1
+T1140 - 1,Invoke-AtomicTest T1140 -TestNumbers 1
+T1140 - 2,Invoke-AtomicTest T1140 -TestNumbers 2
+T1006 - 1,Invoke-AtomicTest T1006 -TestNumbers 1
+T1562.002 - 1,Invoke-AtomicTest T1562.002 -TestNumbers 1
+T1562.002 - 2,Invoke-AtomicTest T1562.002 -TestNumbers 2
+T1562.002 - 3,Invoke-AtomicTest T1562.002 -TestNumbers 3
+T1562.002 - 4,Invoke-AtomicTest T1562.002 -TestNumbers 4
+T1562.002 - 5,Invoke-AtomicTest T1562.002 -TestNumbers 5
+T1562.004 - 1,Invoke-AtomicTest T1562.004 -TestNumbers 1
+T1562.004 - 2,Invoke-AtomicTest T1562.004 -TestNumbers 2
+T1562.004 - 3,Invoke-AtomicTest T1562.004 -TestNumbers 3
+T1562.004 - 4,Invoke-AtomicTest T1562.004 -TestNumbers 4
+T1562.004 - 5,Invoke-AtomicTest T1562.004 -TestNumbers 5
+T1562.004 - 6,Invoke-AtomicTest T1562.004 -TestNumbers 6
+T1562.001 - 10,Invoke-AtomicTest T1562.001 -TestNumbers 10
+T1562.001 - 11,Invoke-AtomicTest T1562.001 -TestNumbers 11
+T1562.001 - 12,Invoke-AtomicTest T1562.001 -TestNumbers 12
+T1562.001 - 13,Invoke-AtomicTest T1562.001 -TestNumbers 13
+T1562.001 - 14,Invoke-AtomicTest T1562.001 -TestNumbers 14
+T1562.001 - 15,Invoke-AtomicTest T1562.001 -TestNumbers 15
+T1562.001 - 16,Invoke-AtomicTest T1562.001 -TestNumbers 16
+T1562.001 - 17,Invoke-AtomicTest T1562.001 -TestNumbers 17
+T1562.001 - 18,Invoke-AtomicTest T1562.001 -TestNumbers 18
+T1562.001 - 19,Invoke-AtomicTest T1562.001 -TestNumbers 19
+T1562.001 - 20,Invoke-AtomicTest T1562.001 -TestNumbers 20
+T1562.001 - 21,Invoke-AtomicTest T1562.001 -TestNumbers 21
+T1562.001 - 22,Invoke-AtomicTest T1562.001 -TestNumbers 22
+T1562.001 - 23,Invoke-AtomicTest T1562.001 -TestNumbers 23
+T1562.001 - 24,Invoke-AtomicTest T1562.001 -TestNumbers 24
+T1070.004 - 4,Invoke-AtomicTest T1070.004 -TestNumbers 4
+T1070.004 - 5,Invoke-AtomicTest T1070.004 -TestNumbers 5
+T1070.004 - 6,Invoke-AtomicTest T1070.004 -TestNumbers 6
+T1070.004 - 7,Invoke-AtomicTest T1070.004 -TestNumbers 7
+T1070.004 - 9,Invoke-AtomicTest T1070.004 -TestNumbers 9
+T1070.004 - 10,Invoke-AtomicTest T1070.004 -TestNumbers 10
+T1564.001 - 3,Invoke-AtomicTest T1564.001 -TestNumbers 3
+T1564.001 - 4,Invoke-AtomicTest T1564.001 -TestNumbers 4
+T1564.003 - 1,Invoke-AtomicTest T1564.003 -TestNumbers 1
+T1564 - 1,Invoke-AtomicTest T1564 -TestNumbers 1
+T1564 - 2,Invoke-AtomicTest T1564 -TestNumbers 2
+T1564 - 3,Invoke-AtomicTest T1564 -TestNumbers 3
+T1070 - 1,Invoke-AtomicTest T1070 -TestNumbers 1
+T1202 - 1,Invoke-AtomicTest T1202 -TestNumbers 1
+T1202 - 2,Invoke-AtomicTest T1202 -TestNumbers 2
+T1202 - 3,Invoke-AtomicTest T1202 -TestNumbers 3
+T1553.004 - 4,Invoke-AtomicTest T1553.004 -TestNumbers 4
+T1553.004 - 5,Invoke-AtomicTest T1553.004 -TestNumbers 5
+T1218.004 - 1,Invoke-AtomicTest T1218.004 -TestNumbers 1
+T1218.004 - 2,Invoke-AtomicTest T1218.004 -TestNumbers 2
+T1218.004 - 3,Invoke-AtomicTest T1218.004 -TestNumbers 3
+T1218.004 - 4,Invoke-AtomicTest T1218.004 -TestNumbers 4
+T1218.004 - 5,Invoke-AtomicTest T1218.004 -TestNumbers 5
+T1218.004 - 6,Invoke-AtomicTest T1218.004 -TestNumbers 6
+T1218.004 - 7,Invoke-AtomicTest T1218.004 -TestNumbers 7
+T1218.004 - 8,Invoke-AtomicTest T1218.004 -TestNumbers 8
+T1127.001 - 1,Invoke-AtomicTest T1127.001 -TestNumbers 1
+T1127.001 - 2,Invoke-AtomicTest T1127.001 -TestNumbers 2
+T1553.005 - 1,Invoke-AtomicTest T1553.005 -TestNumbers 1
+T1553.005 - 2,Invoke-AtomicTest T1553.005 -TestNumbers 2
+T1553.005 - 3,Invoke-AtomicTest T1553.005 -TestNumbers 3
+T1036.004 - 1,Invoke-AtomicTest T1036.004 -TestNumbers 1
+T1036.004 - 2,Invoke-AtomicTest T1036.004 -TestNumbers 2
+T1036 - 1,Invoke-AtomicTest T1036 -TestNumbers 1
+T1112 - 1,Invoke-AtomicTest T1112 -TestNumbers 1
+T1112 - 2,Invoke-AtomicTest T1112 -TestNumbers 2
+T1112 - 3,Invoke-AtomicTest T1112 -TestNumbers 3
+T1112 - 4,Invoke-AtomicTest T1112 -TestNumbers 4
+T1112 - 5,Invoke-AtomicTest T1112 -TestNumbers 5
+T1112 - 6,Invoke-AtomicTest T1112 -TestNumbers 6
+T1218.005 - 1,Invoke-AtomicTest T1218.005 -TestNumbers 1
+T1218.005 - 2,Invoke-AtomicTest T1218.005 -TestNumbers 2
+T1218.005 - 3,Invoke-AtomicTest T1218.005 -TestNumbers 3
+T1218.005 - 4,Invoke-AtomicTest T1218.005 -TestNumbers 4
+T1218.005 - 5,Invoke-AtomicTest T1218.005 -TestNumbers 5
+T1218.005 - 6,Invoke-AtomicTest T1218.005 -TestNumbers 6
+T1218.005 - 7,Invoke-AtomicTest T1218.005 -TestNumbers 7
+T1218.005 - 8,Invoke-AtomicTest T1218.005 -TestNumbers 8
+T1218.005 - 9,Invoke-AtomicTest T1218.005 -TestNumbers 9
+T1218.005 - 10,Invoke-AtomicTest T1218.005 -TestNumbers 10
+T1218.007 - 1,Invoke-AtomicTest T1218.007 -TestNumbers 1
+T1218.007 - 2,Invoke-AtomicTest T1218.007 -TestNumbers 2
+T1218.007 - 3,Invoke-AtomicTest T1218.007 -TestNumbers 3
+T1564.004 - 1,Invoke-AtomicTest T1564.004 -TestNumbers 1
+T1564.004 - 2,Invoke-AtomicTest T1564.004 -TestNumbers 2
+T1564.004 - 3,Invoke-AtomicTest T1564.004 -TestNumbers 3
+T1564.004 - 4,Invoke-AtomicTest T1564.004 -TestNumbers 4
+T1070.005 - 1,Invoke-AtomicTest T1070.005 -TestNumbers 1
+T1070.005 - 2,Invoke-AtomicTest T1070.005 -TestNumbers 2
+T1070.005 - 3,Invoke-AtomicTest T1070.005 -TestNumbers 3
+T1027 - 2,Invoke-AtomicTest T1027 -TestNumbers 2
+T1027 - 3,Invoke-AtomicTest T1027 -TestNumbers 3
+T1027 - 4,Invoke-AtomicTest T1027 -TestNumbers 4
+T1027 - 5,Invoke-AtomicTest T1027 -TestNumbers 5
+T1027 - 6,Invoke-AtomicTest T1027 -TestNumbers 6
+T1027 - 7,Invoke-AtomicTest T1027 -TestNumbers 7
+T1027 - 8,Invoke-AtomicTest T1027 -TestNumbers 8
+T1218.008 - 1,Invoke-AtomicTest T1218.008 -TestNumbers 1
+T1550.002 - 1,Invoke-AtomicTest T1550.002 -TestNumbers 1
+T1550.002 - 2,Invoke-AtomicTest T1550.002 -TestNumbers 2
+T1550.003 - 1,Invoke-AtomicTest T1550.003 -TestNumbers 1
+T1216.001 - 1,Invoke-AtomicTest T1216.001 -TestNumbers 1
+T1218.009 - 1,Invoke-AtomicTest T1218.009 -TestNumbers 1
+T1218.009 - 2,Invoke-AtomicTest T1218.009 -TestNumbers 2
+T1218.010 - 1,Invoke-AtomicTest T1218.010 -TestNumbers 1
+T1218.010 - 2,Invoke-AtomicTest T1218.010 -TestNumbers 2
+T1218.010 - 3,Invoke-AtomicTest T1218.010 -TestNumbers 3
+T1218.010 - 4,Invoke-AtomicTest T1218.010 -TestNumbers 4
+T1218.010 - 5,Invoke-AtomicTest T1218.010 -TestNumbers 5
+T1036.003 - 1,Invoke-AtomicTest T1036.003 -TestNumbers 1
+T1036.003 - 3,Invoke-AtomicTest T1036.003 -TestNumbers 3
+T1036.003 - 4,Invoke-AtomicTest T1036.003 -TestNumbers 4
+T1036.003 - 5,Invoke-AtomicTest T1036.003 -TestNumbers 5
+T1036.003 - 6,Invoke-AtomicTest T1036.003 -TestNumbers 6
+T1036.003 - 7,Invoke-AtomicTest T1036.003 -TestNumbers 7
+T1036.003 - 8,Invoke-AtomicTest T1036.003 -TestNumbers 8
+T1036.003 - 9,Invoke-AtomicTest T1036.003 -TestNumbers 9
+T1207 - 1,Invoke-AtomicTest T1207 -TestNumbers 1
+T1014 - 3,Invoke-AtomicTest T1014 -TestNumbers 3
+T1218.011 - 1,Invoke-AtomicTest T1218.011 -TestNumbers 1
+T1218.011 - 2,Invoke-AtomicTest T1218.011 -TestNumbers 2
+T1218.011 - 3,Invoke-AtomicTest T1218.011 -TestNumbers 3
+T1218.011 - 4,Invoke-AtomicTest T1218.011 -TestNumbers 4
+T1218.011 - 5,Invoke-AtomicTest T1218.011 -TestNumbers 5
+T1218.011 - 6,Invoke-AtomicTest T1218.011 -TestNumbers 6
+T1218.011 - 7,Invoke-AtomicTest T1218.011 -TestNumbers 7
+T1218.011 - 8,Invoke-AtomicTest T1218.011 -TestNumbers 8
+T1218 - 1,Invoke-AtomicTest T1218 -TestNumbers 1
+T1218 - 2,Invoke-AtomicTest T1218 -TestNumbers 2
+T1218 - 3,Invoke-AtomicTest T1218 -TestNumbers 3
+T1218 - 4,Invoke-AtomicTest T1218 -TestNumbers 4
+T1218 - 5,Invoke-AtomicTest T1218 -TestNumbers 5
+T1218 - 6,Invoke-AtomicTest T1218 -TestNumbers 6
+T1218 - 7,Invoke-AtomicTest T1218 -TestNumbers 7
+T1218 - 8,Invoke-AtomicTest T1218 -TestNumbers 8
+T1216 - 1,Invoke-AtomicTest T1216 -TestNumbers 1
+T1216 - 2,Invoke-AtomicTest T1216 -TestNumbers 2
+T1497.001 - 2,Invoke-AtomicTest T1497.001 -TestNumbers 2
+T1221 - 1,Invoke-AtomicTest T1221 -TestNumbers 1
+T1070.006 - 5,Invoke-AtomicTest T1070.006 -TestNumbers 5
+T1070.006 - 6,Invoke-AtomicTest T1070.006 -TestNumbers 6
+T1070.006 - 7,Invoke-AtomicTest T1070.006 -TestNumbers 7
+T1070.006 - 8,Invoke-AtomicTest T1070.006 -TestNumbers 8
+T1222.001 - 1,Invoke-AtomicTest T1222.001 -TestNumbers 1
+T1222.001 - 2,Invoke-AtomicTest T1222.001 -TestNumbers 2
+T1222.001 - 3,Invoke-AtomicTest T1222.001 -TestNumbers 3
+T1222.001 - 4,Invoke-AtomicTest T1222.001 -TestNumbers 4
+T1222.001 - 5,Invoke-AtomicTest T1222.001 -TestNumbers 5
+T1220 - 1,Invoke-AtomicTest T1220 -TestNumbers 1
+T1220 - 2,Invoke-AtomicTest T1220 -TestNumbers 2
+T1220 - 3,Invoke-AtomicTest T1220 -TestNumbers 3
+T1220 - 4,Invoke-AtomicTest T1220 -TestNumbers 4
+T1098 - 1,Invoke-AtomicTest T1098 -TestNumbers 1
+T1098 - 2,Invoke-AtomicTest T1098 -TestNumbers 2
+T1137.006 - 1,Invoke-AtomicTest T1137.006 -TestNumbers 1
+T1176 - 1,Invoke-AtomicTest T1176 -TestNumbers 1
+T1176 - 2,Invoke-AtomicTest T1176 -TestNumbers 2
+T1176 - 3,Invoke-AtomicTest T1176 -TestNumbers 3
+T1176 - 4,Invoke-AtomicTest T1176 -TestNumbers 4
+T1136.002 - 1,Invoke-AtomicTest T1136.002 -TestNumbers 1
+T1136.002 - 2,Invoke-AtomicTest T1136.002 -TestNumbers 2
+T1136.002 - 3,Invoke-AtomicTest T1136.002 -TestNumbers 3
+T1133 - 1,Invoke-AtomicTest T1133 -TestNumbers 1
+T1136.001 - 3,Invoke-AtomicTest T1136.001 -TestNumbers 3
+T1136.001 - 4,Invoke-AtomicTest T1136.001 -TestNumbers 4
+T1136.001 - 6,Invoke-AtomicTest T1136.001 -TestNumbers 6
+T1137 - 1,Invoke-AtomicTest T1137 -TestNumbers 1
+T1137.002 - 1,Invoke-AtomicTest T1137.002 -TestNumbers 1
+T1137.004 - 1,Invoke-AtomicTest T1137.004 -TestNumbers 1
+T1505.002 - 1,Invoke-AtomicTest T1505.002 -TestNumbers 1
+T1505.003 - 1,Invoke-AtomicTest T1505.003 -TestNumbers 1
+T1531 - 1,Invoke-AtomicTest T1531 -TestNumbers 1
+T1531 - 2,Invoke-AtomicTest T1531 -TestNumbers 2
+T1531 - 3,Invoke-AtomicTest T1531 -TestNumbers 3
+T1485 - 1,Invoke-AtomicTest T1485 -TestNumbers 1
+T1486 - 5,Invoke-AtomicTest T1486 -TestNumbers 5
+T1490 - 1,Invoke-AtomicTest T1490 -TestNumbers 1
+T1490 - 2,Invoke-AtomicTest T1490 -TestNumbers 2
+T1490 - 3,Invoke-AtomicTest T1490 -TestNumbers 3
+T1490 - 4,Invoke-AtomicTest T1490 -TestNumbers 4
+T1490 - 5,Invoke-AtomicTest T1490 -TestNumbers 5
+T1490 - 6,Invoke-AtomicTest T1490 -TestNumbers 6
+T1490 - 7,Invoke-AtomicTest T1490 -TestNumbers 7
+T1490 - 8,Invoke-AtomicTest T1490 -TestNumbers 8
+T1491.001 - 1,Invoke-AtomicTest T1491.001 -TestNumbers 1
+T1489 - 1,Invoke-AtomicTest T1489 -TestNumbers 1
+T1489 - 2,Invoke-AtomicTest T1489 -TestNumbers 2
+T1489 - 3,Invoke-AtomicTest T1489 -TestNumbers 3
+T1529 - 1,Invoke-AtomicTest T1529 -TestNumbers 1
+T1529 - 2,Invoke-AtomicTest T1529 -TestNumbers 2
+T1010 - 1,Invoke-AtomicTest T1010 -TestNumbers 1
+T1217 - 4,Invoke-AtomicTest T1217 -TestNumbers 4
+T1217 - 5,Invoke-AtomicTest T1217 -TestNumbers 5
+T1217 - 6,Invoke-AtomicTest T1217 -TestNumbers 6
+T1217 - 7,Invoke-AtomicTest T1217 -TestNumbers 7
+T1087.002 - 1,Invoke-AtomicTest T1087.002 -TestNumbers 1
+T1087.002 - 2,Invoke-AtomicTest T1087.002 -TestNumbers 2
+T1087.002 - 3,Invoke-AtomicTest T1087.002 -TestNumbers 3
+T1087.002 - 4,Invoke-AtomicTest T1087.002 -TestNumbers 4
+T1087.002 - 5,Invoke-AtomicTest T1087.002 -TestNumbers 5
+T1087.002 - 6,Invoke-AtomicTest T1087.002 -TestNumbers 6
+T1087.002 - 7,Invoke-AtomicTest T1087.002 -TestNumbers 7
+T1087.002 - 8,Invoke-AtomicTest T1087.002 -TestNumbers 8
+T1087.002 - 9,Invoke-AtomicTest T1087.002 -TestNumbers 9
+T1087.002 - 10,Invoke-AtomicTest T1087.002 -TestNumbers 10
+T1069.002 - 1,Invoke-AtomicTest T1069.002 -TestNumbers 1
+T1069.002 - 2,Invoke-AtomicTest T1069.002 -TestNumbers 2
+T1069.002 - 3,Invoke-AtomicTest T1069.002 -TestNumbers 3
+T1069.002 - 4,Invoke-AtomicTest T1069.002 -TestNumbers 4
+T1069.002 - 5,Invoke-AtomicTest T1069.002 -TestNumbers 5
+T1069.002 - 6,Invoke-AtomicTest T1069.002 -TestNumbers 6
+T1069.002 - 7,Invoke-AtomicTest T1069.002 -TestNumbers 7
+T1069.002 - 8,Invoke-AtomicTest T1069.002 -TestNumbers 8
+T1482 - 1,Invoke-AtomicTest T1482 -TestNumbers 1
+T1482 - 2,Invoke-AtomicTest T1482 -TestNumbers 2
+T1482 - 3,Invoke-AtomicTest T1482 -TestNumbers 3
+T1482 - 4,Invoke-AtomicTest T1482 -TestNumbers 4
+T1482 - 5,Invoke-AtomicTest T1482 -TestNumbers 5
+T1482 - 6,Invoke-AtomicTest T1482 -TestNumbers 6
+T1482 - 7,Invoke-AtomicTest T1482 -TestNumbers 7
+T1083 - 1,Invoke-AtomicTest T1083 -TestNumbers 1
+T1083 - 2,Invoke-AtomicTest T1083 -TestNumbers 2
+T1087.001 - 8,Invoke-AtomicTest T1087.001 -TestNumbers 8
+T1087.001 - 9,Invoke-AtomicTest T1087.001 -TestNumbers 9
+T1087.001 - 10,Invoke-AtomicTest T1087.001 -TestNumbers 10
+T1069.001 - 2,Invoke-AtomicTest T1069.001 -TestNumbers 2
+T1069.001 - 3,Invoke-AtomicTest T1069.001 -TestNumbers 3
+T1069.001 - 4,Invoke-AtomicTest T1069.001 -TestNumbers 4
+T1069.001 - 5,Invoke-AtomicTest T1069.001 -TestNumbers 5
+T1069.001 - 6,Invoke-AtomicTest T1069.001 -TestNumbers 6
+T1046 - 3,Invoke-AtomicTest T1046 -TestNumbers 3
+T1046 - 4,Invoke-AtomicTest T1046 -TestNumbers 4
+T1135 - 3,Invoke-AtomicTest T1135 -TestNumbers 3
+T1135 - 4,Invoke-AtomicTest T1135 -TestNumbers 4
+T1135 - 5,Invoke-AtomicTest T1135 -TestNumbers 5
+T1135 - 6,Invoke-AtomicTest T1135 -TestNumbers 6
+T1201 - 5,Invoke-AtomicTest T1201 -TestNumbers 5
+T1201 - 6,Invoke-AtomicTest T1201 -TestNumbers 6
+T1120 - 1,Invoke-AtomicTest T1120 -TestNumbers 1
+T1057 - 2,Invoke-AtomicTest T1057 -TestNumbers 2
+T1012 - 1,Invoke-AtomicTest T1012 -TestNumbers 1
+T1018 - 1,Invoke-AtomicTest T1018 -TestNumbers 1
+T1018 - 2,Invoke-AtomicTest T1018 -TestNumbers 2
+T1018 - 3,Invoke-AtomicTest T1018 -TestNumbers 3
+T1018 - 4,Invoke-AtomicTest T1018 -TestNumbers 4
+T1018 - 5,Invoke-AtomicTest T1018 -TestNumbers 5
+T1018 - 8,Invoke-AtomicTest T1018 -TestNumbers 8
+T1018 - 9,Invoke-AtomicTest T1018 -TestNumbers 9
+T1018 - 10,Invoke-AtomicTest T1018 -TestNumbers 10
+T1018 - 11,Invoke-AtomicTest T1018 -TestNumbers 11
+T1518.001 - 1,Invoke-AtomicTest T1518.001 -TestNumbers 1
+T1518.001 - 2,Invoke-AtomicTest T1518.001 -TestNumbers 2
+T1518.001 - 5,Invoke-AtomicTest T1518.001 -TestNumbers 5
+T1518.001 - 6,Invoke-AtomicTest T1518.001 -TestNumbers 6
+T1518 - 1,Invoke-AtomicTest T1518 -TestNumbers 1
+T1518 - 2,Invoke-AtomicTest T1518 -TestNumbers 2
+T1082 - 1,Invoke-AtomicTest T1082 -TestNumbers 1
+T1082 - 6,Invoke-AtomicTest T1082 -TestNumbers 6
+T1082 - 8,Invoke-AtomicTest T1082 -TestNumbers 8
+T1082 - 9,Invoke-AtomicTest T1082 -TestNumbers 9
+T1082 - 10,Invoke-AtomicTest T1082 -TestNumbers 10
+T1016 - 1,Invoke-AtomicTest T1016 -TestNumbers 1
+T1016 - 2,Invoke-AtomicTest T1016 -TestNumbers 2
+T1016 - 4,Invoke-AtomicTest T1016 -TestNumbers 4
+T1016 - 5,Invoke-AtomicTest T1016 -TestNumbers 5
+T1016 - 6,Invoke-AtomicTest T1016 -TestNumbers 6
+T1016 - 7,Invoke-AtomicTest T1016 -TestNumbers 7
+T1049 - 1,Invoke-AtomicTest T1049 -TestNumbers 1
+T1049 - 2,Invoke-AtomicTest T1049 -TestNumbers 2
+T1049 - 4,Invoke-AtomicTest T1049 -TestNumbers 4
+T1033 - 1,Invoke-AtomicTest T1033 -TestNumbers 1
+T1033 - 3,Invoke-AtomicTest T1033 -TestNumbers 3
+T1007 - 1,Invoke-AtomicTest T1007 -TestNumbers 1
+T1007 - 2,Invoke-AtomicTest T1007 -TestNumbers 2
+T1124 - 1,Invoke-AtomicTest T1124 -TestNumbers 1
+T1124 - 2,Invoke-AtomicTest T1124 -TestNumbers 2
+T1071.004 - 1,Invoke-AtomicTest T1071.004 -TestNumbers 1
+T1071.004 - 2,Invoke-AtomicTest T1071.004 -TestNumbers 2
+T1071.004 - 3,Invoke-AtomicTest T1071.004 -TestNumbers 3
+T1071.004 - 4,Invoke-AtomicTest T1071.004 -TestNumbers 4
+T1573 - 1,Invoke-AtomicTest T1573 -TestNumbers 1
+T1105 - 7,Invoke-AtomicTest T1105 -TestNumbers 7
+T1105 - 8,Invoke-AtomicTest T1105 -TestNumbers 8
+T1105 - 9,Invoke-AtomicTest T1105 -TestNumbers 9
+T1105 - 10,Invoke-AtomicTest T1105 -TestNumbers 10
+T1105 - 11,Invoke-AtomicTest T1105 -TestNumbers 11
+T1105 - 12,Invoke-AtomicTest T1105 -TestNumbers 12
+T1105 - 13,Invoke-AtomicTest T1105 -TestNumbers 13
+T1105 - 15,Invoke-AtomicTest T1105 -TestNumbers 15
+T1105 - 16,Invoke-AtomicTest T1105 -TestNumbers 16
+T1105 - 17,Invoke-AtomicTest T1105 -TestNumbers 17
+T1105 - 18,Invoke-AtomicTest T1105 -TestNumbers 18
+T1090.001 - 3,Invoke-AtomicTest T1090.001 -TestNumbers 3
+T1095 - 1,Invoke-AtomicTest T1095 -TestNumbers 1
+T1095 - 2,Invoke-AtomicTest T1095 -TestNumbers 2
+T1095 - 3,Invoke-AtomicTest T1095 -TestNumbers 3
+T1571 - 1,Invoke-AtomicTest T1571 -TestNumbers 1
+T1572 - 1,Invoke-AtomicTest T1572 -TestNumbers 1
+T1572 - 2,Invoke-AtomicTest T1572 -TestNumbers 2
+T1572 - 3,Invoke-AtomicTest T1572 -TestNumbers 3
+T1219 - 1,Invoke-AtomicTest T1219 -TestNumbers 1
+T1219 - 2,Invoke-AtomicTest T1219 -TestNumbers 2
+T1219 - 3,Invoke-AtomicTest T1219 -TestNumbers 3
+T1219 - 4,Invoke-AtomicTest T1219 -TestNumbers 4
+T1219 - 5,Invoke-AtomicTest T1219 -TestNumbers 5
+T1132.001 - 2,Invoke-AtomicTest T1132.001 -TestNumbers 2
+T1071.001 - 1,Invoke-AtomicTest T1071.001 -TestNumbers 1
+T1071.001 - 2,Invoke-AtomicTest T1071.001 -TestNumbers 2
+T1559.002 - 1,Invoke-AtomicTest T1559.002 -TestNumbers 1
+T1559.002 - 2,Invoke-AtomicTest T1559.002 -TestNumbers 2
+T1559.002 - 3,Invoke-AtomicTest T1559.002 -TestNumbers 3
+T1204.002 - 1,Invoke-AtomicTest T1204.002 -TestNumbers 1
+T1204.002 - 2,Invoke-AtomicTest T1204.002 -TestNumbers 2
+T1204.002 - 3,Invoke-AtomicTest T1204.002 -TestNumbers 3
+T1204.002 - 4,Invoke-AtomicTest T1204.002 -TestNumbers 4
+T1204.002 - 5,Invoke-AtomicTest T1204.002 -TestNumbers 5
+T1204.002 - 6,Invoke-AtomicTest T1204.002 -TestNumbers 6
+T1204.002 - 7,Invoke-AtomicTest T1204.002 -TestNumbers 7
+T1204.002 - 8,Invoke-AtomicTest T1204.002 -TestNumbers 8
+T1204.002 - 9,Invoke-AtomicTest T1204.002 -TestNumbers 9
+T1106 - 1,Invoke-AtomicTest T1106 -TestNumbers 1
+T1059.001 - 1,Invoke-AtomicTest T1059.001 -TestNumbers 1
+T1059.001 - 2,Invoke-AtomicTest T1059.001 -TestNumbers 2
+T1059.001 - 3,Invoke-AtomicTest T1059.001 -TestNumbers 3
+T1059.001 - 4,Invoke-AtomicTest T1059.001 -TestNumbers 4
+T1059.001 - 5,Invoke-AtomicTest T1059.001 -TestNumbers 5
+T1059.001 - 6,Invoke-AtomicTest T1059.001 -TestNumbers 6
+T1059.001 - 7,Invoke-AtomicTest T1059.001 -TestNumbers 7
+T1059.001 - 8,Invoke-AtomicTest T1059.001 -TestNumbers 8
+T1059.001 - 9,Invoke-AtomicTest T1059.001 -TestNumbers 9
+T1059.001 - 10,Invoke-AtomicTest T1059.001 -TestNumbers 10
+T1059.001 - 11,Invoke-AtomicTest T1059.001 -TestNumbers 11
+T1059.001 - 12,Invoke-AtomicTest T1059.001 -TestNumbers 12
+T1059.001 - 13,Invoke-AtomicTest T1059.001 -TestNumbers 13
+T1059.001 - 14,Invoke-AtomicTest T1059.001 -TestNumbers 14
+T1059.001 - 15,Invoke-AtomicTest T1059.001 -TestNumbers 15
+T1059.001 - 16,Invoke-AtomicTest T1059.001 -TestNumbers 16
+T1059.001 - 17,Invoke-AtomicTest T1059.001 -TestNumbers 17
+T1059.001 - 18,Invoke-AtomicTest T1059.001 -TestNumbers 18
+T1059.001 - 19,Invoke-AtomicTest T1059.001 -TestNumbers 19
+T1059.001 - 20,Invoke-AtomicTest T1059.001 -TestNumbers 20
+T1059.001 - 21,Invoke-AtomicTest T1059.001 -TestNumbers 21
+T1569.002 - 1,Invoke-AtomicTest T1569.002 -TestNumbers 1
+T1569.002 - 2,Invoke-AtomicTest T1569.002 -TestNumbers 2
+T1072 - 1,Invoke-AtomicTest T1072 -TestNumbers 1
+T1059.005 - 1,Invoke-AtomicTest T1059.005 -TestNumbers 1
+T1059.005 - 2,Invoke-AtomicTest T1059.005 -TestNumbers 2
+T1059.005 - 3,Invoke-AtomicTest T1059.005 -TestNumbers 3
+T1059.003 - 1,Invoke-AtomicTest T1059.003 -TestNumbers 1
+T1059.003 - 2,Invoke-AtomicTest T1059.003 -TestNumbers 2
+T1059.003 - 3,Invoke-AtomicTest T1059.003 -TestNumbers 3
+T1047 - 1,Invoke-AtomicTest T1047 -TestNumbers 1
+T1047 - 2,Invoke-AtomicTest T1047 -TestNumbers 2
+T1047 - 3,Invoke-AtomicTest T1047 -TestNumbers 3
+T1047 - 4,Invoke-AtomicTest T1047 -TestNumbers 4
+T1047 - 5,Invoke-AtomicTest T1047 -TestNumbers 5
+T1047 - 6,Invoke-AtomicTest T1047 -TestNumbers 6
+T1047 - 7,Invoke-AtomicTest T1047 -TestNumbers 7
+T1047 - 8,Invoke-AtomicTest T1047 -TestNumbers 8
+T1047 - 9,Invoke-AtomicTest T1047 -TestNumbers 9
+T1020 - 1,Invoke-AtomicTest T1020 -TestNumbers 1
+T1048 - 3,Invoke-AtomicTest T1048 -TestNumbers 3
+T1041 - 1,Invoke-AtomicTest T1041 -TestNumbers 1
+T1048.003 - 2,Invoke-AtomicTest T1048.003 -TestNumbers 2
+T1048.003 - 4,Invoke-AtomicTest T1048.003 -TestNumbers 4
+T1048.003 - 5,Invoke-AtomicTest T1048.003 -TestNumbers 5
+T1567 - 1,Invoke-AtomicTest T1567 -TestNumbers 1
+T1021.003 - 1,Invoke-AtomicTest T1021.003 -TestNumbers 1
+T1563.002 - 1,Invoke-AtomicTest T1563.002 -TestNumbers 1
+T1021.001 - 1,Invoke-AtomicTest T1021.001 -TestNumbers 1
+T1021.001 - 2,Invoke-AtomicTest T1021.001 -TestNumbers 2
+T1021.001 - 3,Invoke-AtomicTest T1021.001 -TestNumbers 3
+T1021.001 - 4,Invoke-AtomicTest T1021.001 -TestNumbers 4
+T1021.002 - 1,Invoke-AtomicTest T1021.002 -TestNumbers 1
+T1021.002 - 2,Invoke-AtomicTest T1021.002 -TestNumbers 2
+T1021.002 - 3,Invoke-AtomicTest T1021.002 -TestNumbers 3
+T1021.002 - 4,Invoke-AtomicTest T1021.002 -TestNumbers 4
+T1021.006 - 1,Invoke-AtomicTest T1021.006 -TestNumbers 1
+T1021.006 - 2,Invoke-AtomicTest T1021.006 -TestNumbers 2
+T1021.006 - 3,Invoke-AtomicTest T1021.006 -TestNumbers 3
+T1566.001 - 1,Invoke-AtomicTest T1566.001 -TestNumbers 1
+T1566.001 - 2,Invoke-AtomicTest T1566.001 -TestNumbers 2
+''')Ÿ
+œLET CommandsToRun <= if(condition=RunAll, then='''Invoke-AtomicTest All -Confirm:$false''', else={ SELECT Command FROM CommandTable WHERE get(field=Flag) })ˆ
+…LET RemoveLog <= if(condition=RemoveExecLog, then={ SELECT * FROM execve(argv=["powershell.exe", "Remove-Item", ExecutionLogFile]) })¤
+¡LET EnsureExecutionLog <= if(condition=EnsureExecLog, then={ SELECT * FROM execve(argv=['powershell.exe', '-exec', 'bypass', '-Command', '''if (-not (Test-Path -Path "''' + ExecutionLogFile + '''")) { New-Item -Path "''' + ExecutionLogFile + '''" -ItemType File -Force | Out-Null }''']) })…
+‚LET InstallART <= if(condition=InstallART, then={ SELECT * FROM execve(argv=['powershell.exe', '-exec', 'bypass', '-Command', "IEX (IWR https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1 -UseBasicParsing); Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force -Scope CurrentUser; Install-AtomicRedTeam -getAtomics -F"]) })œ
+™LET JustDoIt <= SELECT * FROM foreach(row=CommandsToRun, query={ SELECT * FROM execve(argv=['powershell.exe', '-exec', 'bypass', '-Command', '''Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force; ''' + Command + ''' -GetPreReqs; ''' + Command + ''' -ExecutionLogPath ''' + ExecutionLogFile + ''';''' + if(condition=Cleanup, then=Command + ''' -Cleanup''', else='''''')]) })ë
+èLET Windows_AttackSimulation_AtomicRedTeam_0_6 = SELECT `Execution Time (UTC)`, `Execution Time (Local)`, '[' + Technique + '](https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/' + Technique + '/' + Technique + '.md)' AS Technique, `Test Number`, `Test Name`, Hostname, Username, GUID FROM parse_csv(accessor="file", filename=ExecutionLogFile)Ê
+äSELECT * FROM if(then=Windows_AttackSimulation_AtomicRedTeam_0_6, condition=precondition_Windows_AttackSimulation_AtomicRedTeam_0, else={ SELECT * FROM scope() WHERE log(message='Query skipped due to precondition')  AND FALSE })a$c1b6abd2a9f00338879de4b2d17f5d9c0f2a1b2bb2d462bed958d799097f6da32461ae02467f0e4909ee4267372b0f07
+
+InstallARTY/
+ExecutionLogFileC:\Windows\Temp\ARTExec.csv
+EnsureExecLogY
+RemoveExecLogY
+CleanupY
+RunAllN
+T1558.004 - 1
+T1056.004 - 1
+T1552.001 - 3
+T1552.001 - 4
+	T1555 - 1
+	T1555 - 2
+	T1555 - 3
+	T1555 - 4
+	T1555 - 5
+T1555.003 - 1
+T1555.003 - 3
+T1555.003 - 4
+T1552.002 - 1
+T1552.002 - 2
+T1003.006 - 1
+	T1187 - 1
+T1056.002 - 2Y
+T1558.001 - 1
+T1552.006 - 1
+T1552.006 - 2
+T1558.003 - 1
+T1558.003 - 2
+T1558.003 - 3
+T1558.003 - 4
+T1558.003 - 5
+T1056.001 - 1
+T1003.004 - 1
+T1003.001 - 1
+T1003.001 - 2
+T1003.001 - 3
+T1003.001 - 4
+T1003.001 - 5
+T1003.001 - 6
+T1003.001 - 7
+T1003.001 - 8
+T1003.001 - 9
+T1003.001 - 10
+T1003.001 - 11
+T1003.001 - 12
+T1003.003 - 1
+T1003.003 - 2
+T1003.003 - 3
+T1003.003 - 4
+T1003.003 - 5
+T1003.003 - 6
+T1003.003 - 7
+	T1040 - 3
+	T1040 - 4
+	T1003 - 1
+	T1003 - 2
+	T1003 - 3
+T1110.002 - 1
+T1556.002 - 1
+T1110.001 - 1
+T1110.001 - 2
+T1110.003 - 1
+T1110.003 - 2
+T1110.003 - 3
+T1552.004 - 1
+T1552.004 - 6
+T1552.004 - 7
+T1003.002 - 1
+T1003.002 - 2
+T1003.002 - 3
+T1003.002 - 4
+T1003.002 - 5
+T1003.002 - 6
+	T1560 - 1
+T1560.001 - 1
+T1560.001 - 2
+T1560.001 - 3
+T1560.001 - 4
+	T1123 - 1
+	T1119 - 1
+	T1119 - 2
+	T1119 - 3
+	T1119 - 4
+	T1115 - 1
+	T1115 - 2
+	T1115 - 4
+T1074.001 - 1
+T1074.001 - 3
+T1114.001 - 1
+	T1113 - 5
+	T1113 - 6
+T1546.008 - 1
+T1546.008 - 2
+T1546.010 - 1
+T1546.011 - 1
+T1546.011 - 2
+T1546.011 - 3
+T1055.004 - 1
+T1053.002 - 1
+T1548.002 - 1
+T1548.002 - 2
+T1548.002 - 3
+T1548.002 - 4
+T1548.002 - 5
+T1548.002 - 6
+T1548.002 - 7
+T1548.002 - 8
+T1548.002 - 9
+T1548.002 - 10
+T1548.002 - 11
+T1548.002 - 12
+T1548.002 - 13
+T1548.002 - 14
+T1548.002 - 15
+T1548.002 - 16
+T1548.002 - 17
+T1574.012 - 1
+T1574.012 - 2
+T1574.012 - 3
+T1546.001 - 1
+T1134.002 - 1
+T1574.001 - 1
+T1574.002 - 1
+T1078.001 - 1
+T1078.001 - 2
+T1055.001 - 1
+T1546.012 - 1
+T1546.012 - 2
+T1078.003 - 1
+T1037.001 - 1
+T1546.007 - 1
+T1134.004 - 1
+T1134.004 - 2
+T1134.004 - 3
+T1134.004 - 4
+T1134.004 - 5
+T1574.009 - 1
+T1547.010 - 1
+T1546.013 - 1
+T1055.012 - 1
+T1055.012 - 2
+	T1055 - 1
+	T1055 - 2
+T1547.001 - 1
+T1547.001 - 2
+T1547.001 - 3
+T1547.001 - 4
+T1547.001 - 5
+T1547.001 - 6
+T1547.001 - 7
+T1053.005 - 1
+T1053.005 - 2
+T1053.005 - 3
+T1053.005 - 4
+T1053.005 - 5
+T1053.005 - 6
+T1546.002 - 1
+T1547.005 - 1
+T1574.011 - 1
+T1574.011 - 2
+T1547.009 - 1
+T1547.009 - 2
+T1134.001 - 1
+T1134.001 - 2
+T1546.003 - 1
+T1543.003 - 1
+T1543.003 - 2
+T1543.003 - 3
+T1547.004 - 1
+T1547.004 - 2
+T1547.004 - 3
+	T1197 - 1
+	T1197 - 2
+	T1197 - 3
+	T1197 - 4
+T1218.003 - 1
+T1218.003 - 2
+T1070.003 - 10
+T1070.003 - 11
+T1070.001 - 1
+T1070.001 - 2
+T1070.001 - 3
+T1027.004 - 1
+T1027.004 - 2
+T1218.001 - 1
+T1218.001 - 2
+T1218.001 - 3
+T1218.001 - 4
+T1218.001 - 5
+T1218.001 - 6
+T1218.001 - 7
+T1218.002 - 1
+	T1140 - 1
+	T1140 - 2
+	T1006 - 1
+T1562.002 - 1
+T1562.002 - 2
+T1562.002 - 3
+T1562.002 - 4
+T1562.002 - 5
+T1562.004 - 1
+T1562.004 - 2
+T1562.004 - 3
+T1562.004 - 4
+T1562.004 - 5
+T1562.004 - 6
+T1562.001 - 10
+T1562.001 - 11
+T1562.001 - 12
+T1562.001 - 13
+T1562.001 - 14
+T1562.001 - 15
+T1562.001 - 16
+T1562.001 - 17
+T1562.001 - 18
+T1562.001 - 19
+T1562.001 - 20
+T1562.001 - 21
+T1562.001 - 22
+T1562.001 - 23
+T1562.001 - 24
+T1070.004 - 4
+T1070.004 - 5
+T1070.004 - 6
+T1070.004 - 7
+T1070.004 - 9
+T1070.004 - 10
+T1564.001 - 3
+T1564.001 - 4
+T1564.003 - 1
+	T1564 - 1
+	T1564 - 2
+	T1564 - 3
+	T1070 - 1
+	T1202 - 1
+	T1202 - 2
+	T1202 - 3
+T1553.004 - 4
+T1553.004 - 5
+T1218.004 - 1
+T1218.004 - 2
+T1218.004 - 3
+T1218.004 - 4
+T1218.004 - 5
+T1218.004 - 6
+T1218.004 - 7
+T1218.004 - 8
+T1127.001 - 1
+T1127.001 - 2
+T1553.005 - 1
+T1553.005 - 2
+T1553.005 - 3
+T1036.004 - 1
+T1036.004 - 2
+	T1036 - 1
+	T1112 - 1
+	T1112 - 2
+	T1112 - 3
+	T1112 - 4
+	T1112 - 5
+	T1112 - 6
+T1218.005 - 1
+T1218.005 - 2
+T1218.005 - 3
+T1218.005 - 4
+T1218.005 - 5
+T1218.005 - 6
+T1218.005 - 7
+T1218.005 - 8
+T1218.005 - 9
+T1218.005 - 10
+T1218.007 - 1
+T1218.007 - 2
+T1218.007 - 3
+T1564.004 - 1
+T1564.004 - 2
+T1564.004 - 3
+T1564.004 - 4
+T1070.005 - 1
+T1070.005 - 2
+T1070.005 - 3
+	T1027 - 2
+	T1027 - 3
+	T1027 - 4
+	T1027 - 5
+	T1027 - 6
+	T1027 - 7
+	T1027 - 8
+T1218.008 - 1
+T1550.002 - 1
+T1550.002 - 2
+T1550.003 - 1
+T1216.001 - 1
+T1218.009 - 1
+T1218.009 - 2
+T1218.010 - 1
+T1218.010 - 2
+T1218.010 - 3
+T1218.010 - 4
+T1218.010 - 5
+T1036.003 - 1
+T1036.003 - 3
+T1036.003 - 4
+T1036.003 - 5
+T1036.003 - 6
+T1036.003 - 7
+T1036.003 - 8
+T1036.003 - 9
+	T1207 - 1
+	T1014 - 3
+T1218.011 - 1
+T1218.011 - 2
+T1218.011 - 3
+T1218.011 - 4
+T1218.011 - 5
+T1218.011 - 6
+T1218.011 - 7
+T1218.011 - 8
+	T1218 - 1
+	T1218 - 2
+	T1218 - 3
+	T1218 - 4
+	T1218 - 5
+	T1218 - 6
+	T1218 - 7
+	T1218 - 8
+	T1216 - 1
+	T1216 - 2
+T1497.001 - 2
+	T1221 - 1
+T1070.006 - 5
+T1070.006 - 6
+T1070.006 - 7
+T1070.006 - 8
+T1222.001 - 1
+T1222.001 - 2
+T1222.001 - 3
+T1222.001 - 4
+T1222.001 - 5
+	T1220 - 1
+	T1220 - 2
+	T1220 - 3
+	T1220 - 4
+	T1098 - 1
+	T1098 - 2
+T1137.006 - 1
+	T1176 - 1
+	T1176 - 2
+	T1176 - 3
+	T1176 - 4
+T1136.002 - 1
+T1136.002 - 2
+T1136.002 - 3
+	T1133 - 1
+T1136.001 - 3
+T1136.001 - 4
+T1136.001 - 6
+	T1137 - 1
+T1137.002 - 1
+T1137.004 - 1
+T1505.002 - 1
+T1505.003 - 1
+	T1531 - 1
+	T1531 - 2
+	T1531 - 3
+	T1485 - 1
+	T1486 - 5
+	T1490 - 1
+	T1490 - 2
+	T1490 - 3
+	T1490 - 4
+	T1490 - 5
+	T1490 - 6
+	T1490 - 7
+	T1490 - 8
+T1491.001 - 1
+	T1489 - 1
+	T1489 - 2
+	T1489 - 3
+	T1529 - 1
+	T1529 - 2
+	T1010 - 1
+	T1217 - 4
+	T1217 - 5
+	T1217 - 6
+	T1217 - 7
+T1087.002 - 1
+T1087.002 - 2
+T1087.002 - 3
+T1087.002 - 4
+T1087.002 - 5
+T1087.002 - 6
+T1087.002 - 7
+T1087.002 - 8
+T1087.002 - 9
+T1087.002 - 10
+T1069.002 - 1
+T1069.002 - 2
+T1069.002 - 3
+T1069.002 - 4
+T1069.002 - 5
+T1069.002 - 6
+T1069.002 - 7
+T1069.002 - 8
+	T1482 - 1
+	T1482 - 2
+	T1482 - 3
+	T1482 - 4
+	T1482 - 5
+	T1482 - 6
+	T1482 - 7
+	T1083 - 1
+	T1083 - 2
+T1087.001 - 8
+T1087.001 - 9
+T1087.001 - 10
+T1069.001 - 2
+T1069.001 - 3
+T1069.001 - 4
+T1069.001 - 5
+T1069.001 - 6
+	T1046 - 3
+	T1046 - 4
+	T1135 - 3
+	T1135 - 4
+	T1135 - 5
+	T1135 - 6
+	T1201 - 5
+	T1201 - 6
+	T1120 - 1
+	T1057 - 2
+	T1012 - 1
+	T1018 - 1
+	T1018 - 2
+	T1018 - 3
+	T1018 - 4
+	T1018 - 5
+	T1018 - 8
+	T1018 - 9
+
+T1018 - 10
+
+T1018 - 11
+T1518.001 - 1
+T1518.001 - 2
+T1518.001 - 5
+T1518.001 - 6
+	T1518 - 1
+	T1518 - 2
+	T1082 - 1
+	T1082 - 6
+	T1082 - 8
+	T1082 - 9
+
+T1082 - 10
+	T1016 - 1
+	T1016 - 2
+	T1016 - 4
+	T1016 - 5
+	T1016 - 6
+	T1016 - 7
+	T1049 - 1
+	T1049 - 2
+	T1049 - 4
+	T1033 - 1
+	T1033 - 3
+	T1007 - 1
+	T1007 - 2
+	T1124 - 1
+	T1124 - 2
+T1071.004 - 1
+T1071.004 - 2
+T1071.004 - 3
+T1071.004 - 4
+	T1573 - 1
+	T1105 - 7
+	T1105 - 8
+	T1105 - 9
+
+T1105 - 10
+
+T1105 - 11
+
+T1105 - 12
+
+T1105 - 13
+
+T1105 - 15
+
+T1105 - 16
+
+T1105 - 17
+
+T1105 - 18
+T1090.001 - 3
+	T1095 - 1
+	T1095 - 2
+	T1095 - 3
+	T1571 - 1
+	T1572 - 1
+	T1572 - 2
+	T1572 - 3
+	T1219 - 1
+	T1219 - 2
+	T1219 - 3
+	T1219 - 4
+	T1219 - 5
+T1132.001 - 2
+T1071.001 - 1
+T1071.001 - 2
+T1559.002 - 1
+T1559.002 - 2
+T1559.002 - 3
+T1204.002 - 1
+T1204.002 - 2
+T1204.002 - 3
+T1204.002 - 4
+T1204.002 - 5
+T1204.002 - 6
+T1204.002 - 7
+T1204.002 - 8
+T1204.002 - 9
+	T1106 - 1
+T1059.001 - 1
+T1059.001 - 2
+T1059.001 - 3
+T1059.001 - 4
+T1059.001 - 5
+T1059.001 - 6
+T1059.001 - 7
+T1059.001 - 8
+T1059.001 - 9
+T1059.001 - 10
+T1059.001 - 11
+T1059.001 - 12
+T1059.001 - 13
+T1059.001 - 14
+T1059.001 - 15
+T1059.001 - 16
+T1059.001 - 17
+T1059.001 - 18
+T1059.001 - 19
+T1059.001 - 20
+T1059.001 - 21
+T1569.002 - 1
+T1569.002 - 2
+	T1072 - 1
+T1059.005 - 1
+T1059.005 - 2
+T1059.005 - 3
+T1059.003 - 1
+T1059.003 - 2
+T1059.003 - 3
+	T1047 - 1
+	T1047 - 2
+	T1047 - 3
+	T1047 - 4
+	T1047 - 5
+	T1047 - 6
+	T1047 - 7
+	T1047 - 8
+	T1047 - 9
+	T1020 - 1
+	T1048 - 3
+	T1041 - 1
+T1048.003 - 2
+T1048.003 - 4
+T1048.003 - 5
+	T1567 - 1
+T1021.003 - 1
+T1563.002 - 1
+T1021.001 - 1
+T1021.001 - 2
+T1021.001 - 3
+T1021.001 - 4
+T1021.002 - 1
+T1021.002 - 2
+T1021.002 - 3
+T1021.002 - 4
+T1021.006 - 1
+T1021.006 - 2
+T1021.006 - 3
+T1566.001 - 1
+T1566.001 - 2 èÈØê*SELECT OS From info() where OS = 'windows'õ  HB€ˆÐ(€€ê×¼®þ

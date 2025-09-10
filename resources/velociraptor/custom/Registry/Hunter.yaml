@@ -1,0 +1,973 @@
+
+name: Windows.Registry.Hunter
+description: |
+   This artifact parses and categorizes information for the registry.
+
+   Build time: 2025-06-05T14:37:55Z
+
+   Read more about this artifact here https://github.com/Velocidex/registry_hunter
+
+   ## RemappingStrategy
+
+   In order to present a unified view of all registry hives we remap various
+   hives we remap various hives into the "registry" accessor. There are a
+   number of strategies implemented for this:
+
+   1. API - This strategy uses the API for the majority of hives including
+      user hives. Therefore users who are not currently logged in will not
+      have their NTUser.dat hives mounted.
+   2. API And NTUser.dat - This strategy uses the API for most of the hives,
+      except for all the raw user hives will be mapped in HKEY_USERS.
+      Therefore all users will be visible.
+   3. Raw Hives - This stragegy is most suitable for working off an image or
+       acquired hive files. All raw hives will be mapped (include SYSTEM, SOFTWARE etc).
+
+   Using the API will result in faster collection times, but may be some
+   differences:
+
+   * Some registry keys are blocked with API access, even for the system
+     user - so we get permission denied for these. Therefore, even with the API
+     stragegy above we remap the raw files into the "raw_registry" accessor.
+     The rule may work around this by using this accessor directly.
+   * Some hive files are not accessible and can only be accessible using the
+     API (e.g. the BCD hives).
+
+parameters:
+- name: Categories
+  type: multichoice
+  default: |
+   ["ASEP","ASEP Classes","Antivirus","Autoruns","Cloud Storage","Devices","Event Logs","Executables","Installed Software","Microsoft Exchange","Microsoft Office","Network Shares","Program Execution","Services","System Info","Third Party Applications","Threat Hunting","User Accounts","User Activity","Volume Shadow Copies","Web Browsers"]
+  choices:
+    - "ASEP"
+    - "ASEP Classes"
+    - "Antivirus"
+    - "Autoruns"
+    - "Cloud Storage"
+    - "Devices"
+    - "Event Logs"
+    - "Executables"
+    - "Installed Software"
+    - "Microsoft Exchange"
+    - "Microsoft Office"
+    - "Network Shares"
+    - "Program Execution"
+    - "Services"
+    - "System Info"
+    - "Third Party Applications"
+    - "Threat Hunting"
+    - "User Accounts"
+    - "User Activity"
+    - "Volume Shadow Copies"
+    - "Web Browsers"
+- name: CategoryFilter
+  description: If this is set we use the regular expression instead of the choices above.
+  type: regex
+- name: CategoryExcludedFilter
+  description: Exclude any categories based on this regular expression
+  type: regex
+  default: XXXXXX
+- name: DescriptionFilter
+  type: regex
+  default: .
+- name: RootFilter
+  type: regex
+  default: .
+- name: RemappingStrategy
+  description: |
+     In order to present a unified view of all registry hives we remap various hives
+     into the "registry" accessor. This setting controls the strategy we use to do so.
+     See more information in the artifact description.
+  type: choices
+  default: "API And NTUser.dat"
+  choices:
+   - API
+   - API And NTUser.dat
+   - Raw Hives
+
+- name: RootDrive
+  default: C:/
+  description: |
+     Path to the top level drive. If one of the PathTO* parameters are not
+     specified, then we use this to figure out the usual paths to the hives.
+
+- name: AlsoUploadHives
+  type: bool
+  description: If checked, we also upload all the hives.
+
+- name: PathTOSAM
+  description: "By default, hive is at C:/Windows/System32/Config/SAM"
+
+- name: PathTOAmcache
+  description: "By default, hive is at C:/Windows/appcompat/Programs/Amcache.hve"
+
+- name: PathTOSecurity
+  description: "By default, hive is at C:/Windows/System32/Config/SECURITY"
+
+- name: PathTOSystem
+  description: "By default, hive is at C:/Windows/System32/Config/SYSTEM"
+
+- name: PathTOSoftware
+  description: "By default, hive is at C:/Windows/System32/Config/SOFTWARE"
+
+- name: PathTOUsers
+  description: "By default, directory is at C:/Users"
+
+- name: NTFS_CACHE_TIME
+  type: int
+  description: How often to flush the NTFS cache. (Default is never).
+  default: "1000000"
+
+- name: DEBUG
+  type: bool
+  description: Add more logging.
+
+export: |
+    LET _info <= SELECT * FROM info()
+
+    -- On Non Windows systems we need to use case insensitive accessor or we might not find the right hives.
+    LET DefaultAccessor <= if(condition=_info[0].OS =~ "windows", then="ntfs", else="file_nocase")
+    LET HKLM <= pathspec(parse="HKEY_LOCAL_MACHINE", path_type="registry")
+    LET RootDrive <= pathspec(Path=RootDrive)
+    LET PathTOSAM <= PathTOSAM || RootDrive + "Windows/System32/config/SAM"
+    LET PathTOAmcache <= PathTOAmcache || RootDrive + "Windows/appcompat/Programs/Amcache.hve"
+    LET PathTOSystem <= PathTOSystem || RootDrive + "Windows/System32/Config/System"
+    LET PathTOSecurity <= PathTOSecurity || RootDrive + "Windows/System32/Config/Security"
+    LET PathTOSoftware <= PathTOSoftware || RootDrive + "Windows/System32/Config/Software"
+    LET PathTOUsers <= PathTOUsers || RootDrive + "Users/"
+
+    -- HivePath: The path to the hive on disk
+    -- RegistryPath: The path in the registry to mount the hive
+    -- RegMountPoint: The path inside the hive to mount (usually /)
+    LET _map_file_to_reg_path(HivePath, RegistryPath, RegMountPoint, Accessor, Description) = dict(
+       type="mount", description=Description,
+       `from`=dict(accessor='raw_reg',
+                   prefix=pathspec(
+                      Path=RegMountPoint,
+                      DelegateAccessor=Accessor,
+                      DelegatePath=HivePath),
+                   path_type='registry'),
+        `on`=dict(accessor='registry',
+                  prefix=RegistryPath,
+                  path_type='registry'))
+
+    LET _standard_mappings = (
+       _map_file_to_reg_path(
+          HivePath=PathTOSystem,
+          RegistryPath="HKEY_LOCAL_MACHINE\\System\\CurrentControlSet",
+          RegMountPoint="/ControlSet001",
+          Accessor=DefaultAccessor,
+          Description="Map SYSTEM Hive to CurrentControlSet"),
+       _map_file_to_reg_path(
+          HivePath=PathTOSoftware,
+          RegistryPath="HKEY_LOCAL_MACHINE\\Software",
+          RegMountPoint="/",
+          Accessor=DefaultAccessor,
+          Description="Map Software hive to HKEY_LOCAL_MACHINE"),
+       _map_file_to_reg_path(
+          HivePath=PathTOSystem,
+          RegistryPath="HKEY_LOCAL_MACHINE\\System",
+          RegMountPoint="/",
+          Accessor=DefaultAccessor,
+          Description="Map System hive to HKEY_LOCAL_MACHINE"),
+       _map_file_to_reg_path(
+          HivePath=PathTOSecurity,
+          RegistryPath="HKEY_LOCAL_MACHINE\\Security",
+          RegMountPoint="/",
+          Accessor=DefaultAccessor,
+          Description="Map SECURITY Hive to HKEY_LOCAL_MACHINE"),
+    )
+
+    // Map raw hives for hives that are not normally accessible via API
+    LET _unmounted_hive_mapping = (
+      _map_file_to_reg_path(
+          HivePath=PathTOSAM,
+          RegistryPath="SAM",
+          RegMountPoint="/",
+          Accessor=DefaultAccessor,
+          Description="Map SAM to /SAM/"),
+      _map_file_to_reg_path(
+          HivePath=PathTOAmcache,
+          RegistryPath="Amcache",
+          RegMountPoint="/",
+          Accessor=DefaultAccessor,
+          Description="Map Amcache to /Amcache/"),
+    )
+
+    LET _api_remapping <= (
+        -- By default remap the entire "registry" accessor for API access.
+        dict(type="mount",
+          `from`=dict(accessor="registry", prefix='/', path_type='registry'),
+          on=dict(accessor="registry", prefix='/', path_type="registry")),
+
+       -- Always remap raw Security because the API stops us from reading the keys.
+       _map_file_to_reg_path(
+          HivePath=PathTOSecurity,
+          RegistryPath="HKEY_LOCAL_MACHINE\\Security",
+          RegMountPoint="/",
+          Accessor=DefaultAccessor,
+          Description="Map SECURITY Hive to HKEY_LOCAL_MACHINE"),
+    )
+
+    -- In API mode we sometimes can not access the keys due to permissions.
+    -- These mapping ensure rules can specifically access the raw hives if they
+    -- need to.
+    LET _raw_hive_mapping_for_api <= (
+      dict(type="mount",
+        description="Map System Hive to raw_registry accessor",
+        `from`=dict(accessor="raw_reg",
+         prefix=pathspec(Path='/',
+           DelegatePath=PathTOSystem,
+           DelegateAccessor=DefaultAccessor),
+         path_type='registry'),
+       on=dict(accessor="raw_registry",
+               prefix='/HKEY_LOCAL_MACHINE/System',
+               path_type="registry")),
+      dict(type="mount",
+        description="Map Software Hive to raw_registry accessor",
+        `from`=dict(accessor="raw_reg",
+         prefix=pathspec(Path='/',
+           DelegatePath=PathTOSoftware,
+           DelegateAccessor=DefaultAccessor),
+         path_type='registry'),
+       on=dict(accessor="raw_registry",
+               prefix='/HKEY_LOCAL_MACHINE/Software',
+               path_type="registry")),
+    )
+
+    // The BCD hive is normally located on an unmounted drive so we
+    // always map it with the API.
+    LET _bcd_map <= (dict(
+       type="mount",
+       `from`=dict(accessor="registry", prefix='HKEY_LOCAL_MACHINE\\BCD00000000', path_type='registry'),
+       on=dict(accessor="registry", prefix='HKEY_LOCAL_MACHINE\\BCD00000000', path_type="registry")))
+
+    -- Map all the NTUser.dat files even in API mode because these are often not mounted.
+    LET _map_ntuser = SELECT
+    _map_file_to_reg_path(
+      HivePath=OSPath,
+      RegMountPoint="/",
+      Accessor=DefaultAccessor,
+      Description=format(format="Map NTUser.dat from User %v to HKEY_USERS",
+                         args=OSPath[-2]),
+
+      -- This is technically the SID but it is clearer to just use the username
+      RegistryPath="HKEY_USERS\\" + OSPath[-2]) AS Mapping
+    FROM glob(globs="*/NTUser.dat", root=PathTOUsers)
+
+    LET _log_array(Message) = if(condition=log(message=Message), then=[])
+
+    // Apply the mappings:
+    LET RemapRules = if(condition=RemappingStrategy = "API",
+       then=_api_remapping +
+            _unmounted_hive_mapping +
+            _raw_hive_mapping_for_api + _log_array(Message="Using API Mapping"),
+
+    else=if(condition=RemappingStrategy = "API And NTUser.dat",
+       then=_api_remapping +
+            _map_ntuser.Mapping +
+            _unmounted_hive_mapping +
+            _raw_hive_mapping_for_api  +
+            _log_array(Message="Using API And NTUser.dat Mapping"),
+
+    else=_map_ntuser.Mapping +
+         _unmounted_hive_mapping +
+         _standard_mappings +
+         _raw_hive_mapping_for_api +
+         _log_array(Message="Using Raw Hives Mapping")))
+
+    LET AppCompatFlagsPrograms(OSPath) = SELECT OSPath.Basename AS Program
+       FROM glob(globs='Compatibility Assistant/{Store,Persisted}/*',
+                 accessor="registry", root=OSPath)
+    
+    LET AppCompatCacheParser <= '''[
+    ["HeaderWin10", "x=>x.HeaderSize", [
+      ["HeaderSize", 0, "unsigned int"],
+      ["Entries", "x=>x.HeaderSize", Array, {
+          type: "Entry",
+          sentinel: "x=>x.Size = 0",
+          count: 10000,
+          max_count: 10000,
+      }]
+    ]],
+    ["HeaderWin8", 128, [
+      ["Entries", 128, Array, {
+          type: "EntryWin8",
+          sentinel: "x=>x.EntrySize = 0",
+          count: 10000,
+          max_count: 10000,
+      }]
+    ]],
+    
+    ["EntryWin8", "x=>x.EntrySize + 12", [
+      ["Signature", 0, "String", {
+         length: 4,
+      }],
+      ["EntrySize", 8, "unsigned int"],
+      ["PathSize", 12, "uint16"],
+      ["Path", 14, "String", {
+          length: "x=>x.PathSize",
+          encoding: "utf16",
+      }],
+      ["LastMod", "x=>x.PathSize + 14 + 10", "WinFileTime"]
+    ]],
+    
+    ["Entry", "x=>x.Size + 12", [
+      ["Signature", 0, "String", {
+         length: 4,
+      }],
+      ["Size", 8, "unsigned int"],
+      ["PathSize", 12, "uint16"],
+      ["Path", 14, "String", {
+          length: "x=>x.PathSize",
+          encoding: "utf16",
+      }],
+      ["LastMod", "x=>x.PathSize + 14", "WinFileTime"],
+      ["DataSize", "x=>x.PathSize + 14 + 8", "uint32"],
+      ["Data", "x=>x.PathSize + 14 + 8 + 4" , "String", {
+          length: "x=>x.DataSize",
+      }],
+    
+      # The last byte of the Data block is 1 for execution
+      ["Execution", "x=>x.PathSize + 14 + 8 + 4 + x.DataSize - 4", "uint32"]
+    ]],
+    
+    # This is the Win7 parser but we dont use it right now.
+    ["HeaderWin7x64", 128, [
+      ["Signature", 0, "uint32"],
+      ["Entries", 128, "Array", {
+          count: 10000,
+          sentinel: "x=>x.PathSize = 0",
+          type: EntryWin7x64,
+      }]
+    ]],
+    ["EntryWin7x64", 48, [
+      ["PathSize", 0, "uint16"],
+      ["PathOffset", 8, "uint32"],
+      ["Path", "x=>x.PathOffset - x.StartOf", "String", {
+          encoding: "utf16",
+          length: "x=>x.PathSize",
+      }],
+      ["LastMod", 16, "WinFileTime"]
+    ]]
+    
+    ]'''
+    
+    LET AppCompatCacheWin10(Blob) = parse_binary(
+        accessor="data",
+        filename=Blob,
+        profile=AppCompatCacheParser,
+        struct="HeaderWin10")
+    
+    LET AppCompatCacheWin8(Blob) = parse_binary(
+        accessor="data",
+        filename=Blob,
+        profile=AppCompatCacheParser,
+        struct="HeaderWin8")
+    
+    LET AppCompatCache(Blob) = SELECT *
+    FROM foreach(
+      row=if(
+        condition=AppCompatCacheWin10(Blob=Blob).HeaderSize IN (52, 48),
+        then=AppCompatCacheWin10(Blob=Blob).Entries,
+        else=AppCompatCacheWin8(Blob=Blob).Entries))
+    
+    LET FetchKeyValues(OSPath) = to_dict(item={
+      SELECT Name AS _key, Data.value AS _value
+      FROM glob(globs="*", accessor="registry", root=OSPath)
+    })
+    
+    LET GetDateFrom128Bit(x) = parse_binary(accessor="data",
+      filename=x, profile='''
+      [["X", 0, [
+         ["year", 0, "uint16"],
+         ["month", 2, "uint16"],
+         ["day", 6, "uint16"],
+         ["hour", 8, "uint16"],
+         ["minute", 10, "uint16"],
+         ["seconds", 12, "uint16"],
+         ["Date", 0, "Value", {
+            value: "x=>format(format='%04d-%02d-%02dT%02d:%02d:%02d', args=[x.year, x.month, x.day, x.hour, x.minute, x.seconds])"
+          }]
+      ]]]
+      ''', struct="X").Date
+    
+    LET ExtractValueFromComment(x) = parse_string_with_regex(
+      string=x.Metadata.Comment, regex=format(format="%v [=-] ([^,]+)", args=x.Data)).g1
+    
+    -- Map from binary integer to a winfiletime - handle both binary encoding and integers
+    LET FILETIME(t) = if(condition=format(format="%T", args=[t,]) =~ "\\[\\]uint8",
+       then=timestamp(winfiletime=parse_binary(accessor="data", filename=t, struct="uint64") || 0),
+       else=timestamp(winfiletime=t || 0))
+    
+    -- Map from binary integer to a winfiletime - handle both binary encoding and integers
+    LET IP(t) = if(condition=format(format="%T", args=[t,]) =~ "\\[\\]uint8",
+       then=ip(netaddr4_le=parse_binary(accessor="data", filename=t, struct="uint32be") || 0),
+       else=ip(netaddr4_le=t || 0))
+    
+    LET GetRawValue(OSPath) = stat(filename=OSPath, accessor="raw_registry").Data.value
+    
+    LET GetProviderDllForGUID(GUID) = GetValue(
+        OSPath="HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\" + GUID + "\\InProcServer32\\@")
+    
+    LET _CharToString(X) = SELECT
+      format(format="%c", args=_value) AS C FROM foreach(row=X)
+    
+    LET CharsToString(X) = join(array=_CharToString(X=X).C)
+    LET _ParseFirewallRule(X) = to_dict(item={
+       SELECT split(string=_value, sep_string="=")[0] AS _key,
+              split(string=_value, sep_string="=")[1] AS _value
+       FROM foreach(row=split(string=X, sep_string='|'))
+       WHERE NOT _key =~ "^v"
+    })
+    
+    LET ParseFirewallRule(X) = _ParseFirewallRule(X=X) +
+       dict(Protocol=ProtocolLookup(X=_ParseFirewallRule(X=X).Protocol))
+    
+    LET MRUProfile <= '''
+    [["Header", 0, [
+       ["Array", 0, "Array", {
+          "count": 500,
+          "sentinel": "x=>NOT x",
+          "type": "int32"
+        }]
+    ]]]
+    '''
+    
+    LET CalculateMRUEx(OSPath) = SELECT split(string=utf16(string=GetValue(OSPath=OSPath + str(str=_value))), sep='\x00')[0] AS value
+    FROM foreach(row=parse_binary(
+           profile=MRUProfile,
+           accessor="data",
+           filename=GetValue(OSPath=OSPath + "MRUListEx") || "",
+           struct="Header").Array)
+    WHERE _value > 0
+    
+    LET _BAMPrograms(Root) = SELECT OSPath.Basename AS Program,
+      timestamp(winfiletime=parse_binary(accessor="data",
+          filename=Data.value, struct="uint64")) AS Timestamp
+    FROM glob(accessor="registry", globs="*", root=Root)
+    WHERE NOT Program =~ "^(Version|Sequence)"
+    
+    LET userAssistProfile = '''
+      [
+        ["Header", 0, [
+          ["NumberOfExecutions", 4, "uint32"],
+          ["LastExecution", 60, "WinFileTime", {"type":"uint64"}]
+        ]]
+      ]
+    '''
+    
+    LET _ExtractUserAssist(Data) = parse_binary(accessor="data",
+                      filename=Data,
+                      profile=userAssistProfile, struct="Header")
+    
+    LET _RADAR(OSPath) = SELECT OSPath.Basename AS Program,
+       timestamp(winfiletime=GetValue(OSPath=OSPath + "LastDetectionTime")) AS LastDetectionTime
+    FROM glob(accessor="registry", globs='*', root=OSPath)
+    
+    LET _RecentFileList(OSPath) = SELECT Data.value AS F
+    FROM glob(accessor="registry", globs='*', root=OSPath)
+    WHERE OSPath.Basename =~ "File"
+    
+    LET _FeatureUsage(OSPath) = SELECT OSPath.Basename AS Application,
+        Data.value AS Number
+    FROM glob(accessor="registry", globs='*', root=OSPath)
+    
+    LET RDPMRU(OSPath) = SELECT Data.value AS Server
+    FROM glob(accessor="registry", globs='*', root=OSPath + "Default")
+    WHERE OSPath.Basename =~ "MRU"
+    
+    LET _ParseActions(Data)  = parse_binary(accessor="data",
+                filename=Data, struct="Header",
+                profile='''
+    [["Header", 0, [
+     ["__Ver", 0, "uint16"],
+     ["__UserLen", 2, "uint32"],
+     ["User", 6, "String", {length: "x=>x.__UserLen", encoding: "utf16"}],
+     ["__ActionType", "x=>6 + x.__UserLen", "uint16"],
+     ["ActionType", "x=>6 + x.__UserLen", "Enumeration", {
+        type: "uint32",
+        choices: {
+          "26214": "BinaryAction",
+          "30583": "ComHanlder",
+          "34952": "Email",
+          "39321": "MessageBox",
+        }
+     }],
+     ["Action", "x=>6 + x.__UserLen + 2", "Union", {
+       selector: "x=>x.__ActionType",
+       choices: {
+         "26214": BinaryAction,
+         "30583": ComHandler,
+       }
+     }],
+    ]],
+    ["ComHandler", 0, [
+     ["ClassID", 4, "GUID"],
+     ["__DataLen", 20, uint32],
+     ["Data", 24, "String", {
+       "length": "x=>x.__DataLen",
+       "encoding": "utf16",
+     }]
+    ]],
+    ["GUID", 16, [
+     ["__D1", 0, "uint32"],
+     ["__D2", 4, "uint16"],
+     ["__D3", 6, "uint16"],
+     ["__D4", 8, "String", {"term": "", "length": 2}],
+     ["__D5", 10, "String", {"term": "", "length": 6}],
+     ["Value", 0, "Value", {
+        "value": "x=>format(format='{%08x-%04x-%04x-%02x-%02x}', args=[x.__D1, x.__D2, x.__D3, x.__D4, x.__D5])"
+    }]
+    ]],
+    ["BinaryAction", 0, [
+     ["__BinLen", 4, "uint32"],
+     ["Binary", 8, "String", {length: "x=>x.__BinLen", encoding: "utf16"}],
+    ]]]
+    ''')
+    
+    LET _ParseDynamicInfo(Data) = parse_binary(accessor="data",
+                filename=Data, struct="Header",
+                profile='''
+    [["Header", 0, [
+     ["__Ver", 0, "uint16"],
+     ["Created", 4, "WinFileTime", {"type": "uint64"}],
+     ["LastStart", 12, "WinFileTime", {"type": "uint64"}],
+     ["LastStop", 20, "WinFileTime", {"type": "uint64"}],
+     ["TaskState", 28, "uint32"],
+     ["LastErrorCode", 32, "uint32"],
+     ["LastSuccessfulRun", 36, "WinFileTime", {"type": "uint64"}],
+    ]]]
+    ''')
+    
+    LET _TaskCache(OSPath) = SELECT to_dict(item={
+      SELECT OSPath.Basename AS _key,
+        if(condition= OSPath.Basename =~ "DynamicInfo",
+           then=_ParseDynamicInfo(Data=Data.value),
+        else= if(condition= OSPath.Basename =~ "Actions",
+           then=_ParseActions(Data=Data.value),
+        else=Data.value)) AS _value
+      FROM glob(accessor="registry", globs='*', root=OSPath)
+    }) + dict(OSPath=OSPath) AS Details
+    FROM glob(accessor="registry", globs='*', root=OSPath)
+    
+    LET _ServiceTypeLookup <= dict(`1`="KernelDriver", `2`="FileSystemDriver", `4`="Adapter", `8`="RecognizerDriver", `16`="Win32OwnProcess", `32`="Win32ShareProcess", `256`="InteractiveProcess", `96`="Win32ShareProcess")
+    LET _ServiceStartModeLookup <= dict(`0`="Boot", `1`="System", `2`="Automatic", `3`="Manual", `4`="Disabled")
+    
+    LET _ServicesInfo(OSPath) =
+        FetchKeyValuesWithRegex(OSPath=OSPath, Regex="Description|DisplayName|ServiceDll|Group|ImagePath|RequiredPrivileges|Type|Parameters|SERVICEDLL") +
+        dict(Mtime=Mtime, Service=OSPath.Basename,
+             TypeName=get(item=_ServiceTypeLookup, field=str(str=GetValue(OSPath=OSPath + "Type"))),
+             StartName=get(item=_ServiceStartModeLookup, field=str(str=GetValue(OSPath=OSPath + "Start")))
+        )
+    
+    LET FetchKeyValuesWithRegex(OSPath, Regex) = to_dict(item={
+      SELECT Name AS _key, Data.value AS _value
+      FROM glob(globs="*", accessor="registry", root=OSPath)
+      WHERE Name =~ Regex
+    })
+    
+    LET _ProtocolLookup <= dict(`6`="TCP", `17`="UDP")
+    LET ProtocolLookup(X) = get(item=_ProtocolLookup, field=X) || X
+    
+    LET GetValue(OSPath) = stat(filename=OSPath, accessor="registry").Data.value
+    
+    LET CalculateMRU(OSPath) = SELECT GetValue(OSPath=OSPath + g1) AS value
+        FROM parse_records_with_regex(accessor="data",
+        file=GetValue(OSPath=OSPath + "MRUList") || "", regex="(.)")
+    
+    LET ResolveSID(SID) = pathspec(parse=stat(accessor="registry",
+        filename="HKEY_LOCAL_MACHINE/Software/Microsoft/Windows NT/CurrentVersion/ProfileList/" + SID + "/ProfileImagePath").Data.value).Basename
+    
+    LET FormatMAC(x) = parse_binary(accessor="data",
+      filename=x, profile='''
+      [["X", 0, [
+        ["x0", 0, "uint8"],
+        ["x1", 1, "uint8"],
+        ["x2", 2, "uint8"],
+        ["x3", 3, "uint8"],
+        ["x4", 4, "uint8"],
+        ["x5", 5, "uint8"],
+        ["mac", 0, Value, {"value": "x=>format(format='%02x:%02x:%02x:%02x:%02x:%02x', args=[x.x0, x.x1, x.x2, x.x3, x.x4, x.x5])"}]
+      ]]]
+      ''', struct="X").mac
+    
+    
+
+    -- This contains the queries for Full Query Rules - they skip the glob and just run arbitrary VQL.
+    LET FullQueries <= parse_json_array(data=gunzip(string=base64decode(string="H4sIAAAAAAAA/6RV227jNhD9lQFffIFqBC36YkAPiizX2/iSWsoGxXJhUNLYIipxXHKcxNjk3wvKuTiGtxtg/UDPiLc5Z84Mv3wTI3SF1VvWZMRQRNttTM1WcayKCocQXUWQVrpp3QBKxQq0AzL1Hu6tZkYDTMCVdnCn6h2CYrCYEzHke7jXpqYNmQE+oAhErBg3ZPdiKK4tbaxqIHnAYtdeHog/asrFUIhALIn4YP21w3b9NMnAzzuQu4uL34oQOp3O5Cr5ezVdxNF0NYviyad5ImW6d4yNlDEZtlSnyBcX/VdXyhSd02RgpozaoJXyPeRTv9PpSJMm0yTOoA/j5WIGa7Koiqpr6T78Jg3A8/QivVZcBTBj3WAA85vpFKIUVkt1P1Ksjr7MkJWn0m9uj9zUlHdVUaBzZEMpLG60Y7uXImjnXNhi70nzFMC/npJ3Nx/lMIAXkoOTgPz651+pC+76ufCwYKocz6gMn/97PsgRstK1ew3xGPV7irqXNeWhRVWu1rrGrh+MajB8uf8ssF7Po+lJI56CUxUui5rMiWCyyqJimOwMa7MRgYh2XJEVQ3G5c4z2Uj0w2t/9JmoaNF4/twglMhYMOXEFXCEUZNZ6Az5GUKaEl4BAWdZrVbCDtaUGXiGOa7VxPxDne30UldKmq34iQ21+brY1qRLLcNcap7T2Asj2WwyliA+QxrpGKc7mrpXXQUdSxEMppbxxaJ03+n6ItlsvUW8uSTXabLxp2zS8WQNPnhQHFeY/i6/V32HB4FK5FlsAPozQD4O2nXwfzvlqORI5ALxAbvvETZos01fE6WKc3UbLxNszXVhytGbv3GpT0r2Deea9eGctGv6M1jeNZ6qOhNGuaV2d61rzHiLntGNl2sNSJtsS2D8w2D+wd171I+I5csrK8m47IfrHfbQC4spqB3+SQQe/QHz9aZnBI4xVPlaYwyNEhslogssaXaEVdLMKs2qmTEk9eIS8KUq0F7++q52sQhjMkwxG06mDWjvGErRpi2i0yOZJtkqzaJndXK8mi8VVCmjutCXjt0tzp6xWua8xi3DQMWjDdDhya8knD137Wng8DQ7kj56Akzb7JhKvkc/ekOZU7l+k+fA78b+vRHKETp7D3+l0grfLnsXW/9jGr9/rkdLcTpJl8oJOPH39LwAA//8bto8RsgcAAA==")))
+
+    LET AllFullQueries <=
+        SELECT * FROM FullQueries
+        WHERE Category =~ CategoryFilter
+          AND Description =~ DescriptionFilter
+
+    -- This contains the metadata for Glob rules.
+    LET _MD <= parse_json_array(data=gunzip(string=base64decode(string="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")))
+    LET MD(DescriptionFilter, RootFilter, CategoryFilter, CategoryExcludedFilter) =
+     SELECT Glob, Category, Description,
+            get(field="Details") AS Details,
+            get(field="Comment") AS Comment,
+            get(field="Filter") AS Filter, Root
+     FROM _MD
+     WHERE Description =~ DescriptionFilter
+       AND Root =~ RootFilter
+       AND Category =~ CategoryFilter
+       AND NOT Category =~ CategoryExcludedFilter
+
+    LET AllRules <=
+      SELECT * FROM MD(DescriptionFilter=DescriptionFilter, RootFilter=RootFilter,
+        CategoryFilter=CategoryFilter, CategoryExcludedFilter=CategoryExcludedFilter)
+
+    LET AllGlobs <=
+      SELECT Root, enumerate(items=Glob) AS Globs
+      FROM AllRules
+      GROUP BY Root
+
+sources:
+- name: Remapping
+  query: |
+    SELECT * FROM RemapRules
+
+  notebook:
+  - type: none
+
+- name: Rules
+  query: |
+    SELECT * FROM chain(a=AllRules, b=AllFullQueries)
+  notebook:
+  - type: none
+
+- name: Globs
+  notebook:
+  - type: none
+
+  query: |
+    SELECT * FROM AllGlobs
+
+- name: Uploads
+  notebook:
+  - type: none
+
+  query: |
+   LET UploadFiles = SELECT OSPath AS SourceFile, Size,
+       Btime AS Created,
+       Ctime AS Changed,
+       Mtime AS Modified,
+       Atime AS LastAccessed,
+       upload(file=OSPath, accessor=DefaultAccessor, mtime=Mtime) AS Upload
+    FROM glob(accessor=DefaultAccessor, globs=[
+       PathTOSAM, PathTOAmcache, PathTOSystem,
+       PathTOSecurity, PathTOSoftware, PathTOUsers + "*/ntuser.dat*"
+    ])
+
+   SELECT * FROM if(condition=AlsoUploadHives, then=UploadFiles)
+
+- name: Results
+  notebook:
+    - type: vql
+      output: "<h1>All Results</h1>Press recalculate to View"
+      template: |
+         SELECT * FROM source(source="Results")
+    - type: vql
+      output: "<h1>Category ASEP</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category ASEP
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''ASEP''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category ASEP Classes</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category ASEP Classes
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''ASEP Classes''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Antivirus</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Antivirus
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Antivirus''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Autoruns</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Autoruns
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Autoruns''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Cloud Storage</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Cloud Storage
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Cloud Storage''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Devices</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Devices
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Devices''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Event Logs</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Event Logs
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Event Logs''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Executables</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Executables
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Executables''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Installed Software</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Installed Software
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Installed Software''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Microsoft Exchange</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Microsoft Exchange
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Microsoft Exchange''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Microsoft Office</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Microsoft Office
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Microsoft Office''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Network Shares</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Network Shares
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Network Shares''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Program Execution</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Program Execution
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Program Execution''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Services</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Services
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Services''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category System Info</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category System Info
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''System Info''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Third Party Applications</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Third Party Applications
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Third Party Applications''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Threat Hunting</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Threat Hunting
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Threat Hunting''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category User Accounts</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category User Accounts
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''User Accounts''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category User Activity</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category User Activity
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''User Activity''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Volume Shadow Copies</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Volume Shadow Copies
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Volume Shadow Copies''' AND Description =~ "."
+         GROUP BY Description
+    - type: vql
+      output: "<h1>Category Web Browsers</h1>Press recalculate to View"
+      template: |
+         /*
+         # Category Web Browsers
+         */
+
+         -- Adjust the Description Regex to focus on specific rules.
+         SELECT Description, count() AS Count,
+                OSPath AS Key, Mtime, Details FROM source()
+         WHERE Category = '''Web Browsers''' AND Description =~ "."
+         GROUP BY Description
+  query: |
+    LET GlobsMD <= to_dict(item={
+      SELECT Root AS _key, Globs AS _value FROM AllGlobs
+    })
+
+    LET ShouldLog <= NOT DEBUG
+
+    LET Cache <= memoize(query={
+       SELECT Glob, Category, Description,
+              Details, Filter, Comment
+       FROM AllRules
+       WHERE ShouldLog || log(
+           message="Add to cache %v %v", args=[Glob, Description], dedup=-1)
+    }, key="Glob", period=100000)
+
+    LET _ <= remap(config=dict(remappings=RemapRules))
+
+    LET Result = SELECT OSPath, Mtime,
+       Data.value AS Data,
+       get(item=Cache, field=Globs[0]) AS Metadata,
+       Globs[0] AS _Glob,
+       IsDir
+    FROM foreach(row={
+       SELECT _key AS Root, _value AS GlobsToSearch
+       FROM items(item=GlobsMD)
+       WHERE Root =~ RootFilter
+         AND log(message="Will search with globs %v at Root point %v",
+             dedup=-1, args=[GlobsToSearch, Root])
+
+    }, query={
+       SELECT * FROM glob(globs=GlobsToSearch, root=Root, accessor="registry")
+    })
+    WHERE ShouldLog || log(
+          message="Glob %v OSPath %v Metadata %v",
+          args=[Globs[0], OSPath, Metadata], dedup=-1)
+
+    LET GlobRules = SELECT Metadata.Description AS Description,
+           Metadata.Category AS Category,
+           OSPath, Mtime, Data AS _RawData,
+           eval(func=Metadata.Details || "x=>x.Data") || Data AS Details,
+           Metadata AS _Metadata
+    FROM Result
+    WHERE eval(func=Metadata.Filter || "x=>NOT IsDir")
+
+    SELECT * FROM chain(
+    a=GlobRules,
+    b={
+      SELECT * FROM foreach(row=AllFullQueries, query={
+        SELECT * FROM query(query=Query, inherit=TRUE)
+      })
+    })

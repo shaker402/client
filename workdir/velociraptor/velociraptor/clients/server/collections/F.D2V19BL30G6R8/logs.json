@@ -1,0 +1,7 @@
+{"Timestamp":1757287598429012,"Level":"DEFAULT","message":"Running query Server.Import.RegistryHunter on behalf of user api\n"}
+{"Timestamp":1757287598429034,"Level":"DEFAULT","message":"\u003cgreen\u003eStarting\u003c/\u003e query Server.Import.RegistryHunter execution.\n"}
+{"Timestamp":1757287598434227,"Level":"DEFAULT","message":"Fetching https://registry-hunter.velocidex.com/Windows.Registry.Hunter.zip\n"}
+{"Timestamp":1757287598473636,"Level":"DEFAULT","message":"Adding global destructor for /tmp/tmp1621163995.zip\n"}
+{"Timestamp":1757287598473677,"Level":"DEFAULT","message":"http_client: Downloading https://registry-hunter.velocidex.com/Windows.Registry.Hunter.zip into /tmp/tmp1621163995.zip\n"}
+{"Timestamp":1757287599819785,"Level":"DEFAULT","message":"tempfile: removed tempfile /tmp/tmp1621163995.zip\n"}
+{"Timestamp":1757287599819874,"Level":"DEBUG","message":"Query Stats: {\"RowsScanned\":2,\"PluginsCalled\":1,\"FunctionsCalled\":0,\"ProtocolSearch\":0,\"ScopeCopy\":7}\n"}

@@ -1,0 +1,26 @@
+2025-09-09 00:18:48,228 - INFO - Entered alerts function!
+2025-09-09 00:18:48,229 - INFO - Start alerts loop!
+2025-09-09 00:18:48,230 - INFO - Trying to connect DB!
+2025-09-09 00:18:48,294 - INFO - Successfully connected to the database
+2025-09-09 00:18:51,260 - INFO - Loading config file!
+2025-09-09 00:18:51,262 - INFO - Executing SQL query:SELECT config FROM configjson LIMIT 1
+2025-09-09 00:18:51,265 - INFO - Loading clients dictionary!
+2025-09-09 00:18:51,265 - INFO - Setup connection!
+2025-09-09 00:18:51,265 - INFO - Reading config yaml!
+2025-09-09 00:18:51,398 - INFO - Secure channel established
+2025-09-09 00:18:51,402 - INFO - Sending get client request!
+2025-09-09 00:18:51,403 - INFO - Getting responses!
+2025-09-09 00:18:51,512 - INFO - Clients dictionary:{'PC11': 'C.3a758d34e4df6d92'}
+2025-09-09 00:18:51,530 - INFO - Getting alerts from: PC11
+2025-09-09 00:18:51,538 - INFO - Run generic vql!
+2025-09-09 00:18:51,538 - INFO - Setup connection!
+2025-09-09 00:18:51,539 - INFO - Reading config yaml!
+2025-09-09 00:18:51,582 - INFO - Secure channel established
+2025-09-09 00:18:51,584 - INFO - api_pb2_grpc.APIStub(channel)
+2025-09-09 00:18:51,685 - INFO - response:timestamp: 1757377131670719
+log: "Starting query execution.\n"
+
+2025-09-09 00:19:31,537 - INFO - Entered alerts function!
+2025-09-09 00:19:31,538 - INFO - Start alerts loop!
+2025-09-09 00:19:31,538 - INFO - Trying to connect DB!
+2025-09-09 00:19:31,858 - INFO - Successfully connected to the database

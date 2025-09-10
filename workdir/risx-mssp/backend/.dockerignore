@@ -1,0 +1,116 @@
+# Ignore sensitive files
+*.passwd
+*.secret
+
+# Ignore Docker-related files
+*.Dockerfile
+*.yaml
+.dockerignore
+
+# Ignore documentation files
+README.md
+readme.md
+
+# Ignore Git-related files
+.git
+.gitignore
+
+# Ignore license files
+LICENSE
+
+# Ignore node_modules directory
+node_modules
+
+# Ignore build output
+build
+build/
+
+# Ignore log files
+*.log
+mssp-back.log
+msspBack.log
+
+# Ignore environment variable files
+#.env
+#.env.local
+#.env.development.local
+#.env.test.local
+#.env.production.local
+
+# Ignore miscellaneous files
+.DS_Store
+.pnp
+.pnp.js
+ClientDict.json
+celerybeat-schedule
+celerybeat.pid
+db.sqlite3
+db.sqlite3-journal
+ipython_config.py
+
+# Ignore Python-related files
+*.py[cod]
+*$py.class
+*.cover
+*.egg
+*.egg-info/
+*.mo
+*.pot
+*.py,cover
+*.sage.py
+.cache
+.coverage
+.coverage.*
+.dmypy.json
+.hypothesis/
+.installed.cfg
+.ipynb_checkpoints
+.mypy_cache/
+.nox/
+.pybuilder/
+.pyre/
+.pytest_cache/
+.pytype/
+.ropeproject
+.scrapy
+.spyderproject
+.spyproject
+.tox/
+.venv
+.venv.bak
+cython_debug/
+develop-eggs/
+dist/
+downloads/
+env.bak/
+env/
+htmlcov/
+instance/
+lib/
+lib64/
+local_settings.py
+modules/dependencies/
+pip-delete-this-directory.txt
+pip-log.txt
+profile_default/
+sdist/
+share/python-wheels/
+site
+target/
+var/
+wheels/
+
+# Ignore test coverage
+cover/
+coverage
+coverage.xml
+
+# Ignore npm and yarn debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python scripts
+python-scripts/.git
+python-scripts/.gitignore
+python-scripts/LICENSE

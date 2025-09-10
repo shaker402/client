@@ -1,0 +1,181 @@
+name: Linux.Sigma.EBPFBase
+description: |
+  This artifact builds the basic set of log sources and field
+  mappings used for Event driven Sigma rules on Linux.
+
+  This model uses Velociraptor's EBPF engine which is based on
+  tracee https://github.com/aquasecurity/tracee.
+
+  This model is compatible with the Sigma HQ rules and it is used by
+  the artifact `Linux.EBPF.Monitoring`.
+
+  This artifact was built on 2025-08-19T21:35:41Z
+
+type: CLIENT_EVENT
+
+parameters:
+  - name: Debug
+    type: bool
+    description: Enable full debug trace
+
+  - name: RuleLevel
+    type: choices
+    default: All
+    choices:
+      - "Critical"
+      - "Critical and High"
+      - "Critical, High, and Medium"
+      - "All"
+
+  - name: RuleStatus
+    type: choices
+    default: All Rules
+    choices:
+      - Stable
+      - Stable and Experimental
+      - Stable and Test
+      - All Rules
+
+  - name: RuleTitleFilter
+    type: regex
+    default: .
+    description: Use this to filter only some rules to match
+
+  - name: RuleExclusions
+    type: csv
+    description: |
+      Some rules in the Hayabusa set are extremely noisy, so they
+      are disabled by default.
+    default: |
+      RuleTitleRegex,Reason
+      noisy,All rules marked noisy should be disabled by default.
+
+  - name: SigmaRules
+    description: If provided we use these rules instead of the built in set.
+export: |
+  -- Add some defaults
+  LET X = scope()
+  LET RuleLevel <= X.RuleLevel || "All"
+  LET RuleStatus <= X.RuleStatus || "All Rules"
+  LET RuleTitleFilter <= X.RuleTitleFilter || "."
+  LET RuleExclusions <= X.RuleExclusions || NULL
+
+  LET ExcludeRegex <= if(condition=RuleExclusions,
+       then=join(array=RuleExclusions.RuleTitleRegex, sep="|"),
+       else="XXXXXXX")
+
+  LET RuleStatusRegex <= get(item=dict(
+       `Stable`="stable",
+       `Stable and Experimental`="stable|experimental",
+       `Stable and Test`="stable|test",
+       `All Rules`="."), member=RuleStatus)
+
+  LET RuleLevelRegex <= get(item=dict(
+       `Critical`="critical",
+       `Critical and High`="critical|high",
+       `Critical, High, and Medium`="critical|high|medium|default",
+       `All`="."), member=RuleLevel)
+
+  LET Hostname <= dict(H={ SELECT Hostname FROM info()}).H[0].Hostname
+
+  
+  LET LogSources <= sigma_log_sources(
+  
+    `network_connection/linux/*`={
+     SELECT * FROM EBFFEvent
+     WHERE System.EventName = "security_socket_connect"
+    },
+    `file_event/linux/*`={
+     SELECT * FROM EBFFEvent
+     WHERE System.EventName = "security_file_open"
+    },
+    `process_creation/linux/*`={
+     SELECT * FROM EBFFEvent
+     WHERE System.EventName = "sched_process_exec"
+    },
+    `ebpf/linux/*`={
+     SELECT * FROM EBFFEvent
+    },`velociraptor/info/*`={ SELECT * FROM info() WHERE FALSE })
+  
+
+  LET FieldMapping <= parse_json(data=gunzip(string=base64decode(string="H4sIAAAAAAAA/5xSUcvaQBD8K3JQksARP+hbIU9fvtKAFKH2rRCOyxoPe7thb9VI6X8vl2iNosV+T0kuM3O7M/NLvZL3BpuFQ1CfVF/82L28fIQ+f9sDSmnE5IbbvdLqdcccjxyDFeLjBB3ESLp2PwGNh2JN7OP38CiSecdk5x/2c3toEj0z3Iaiz78dg4DPl0wWQqjKLMuHyxYOt0qrEoI4NOIIv1CQqPtgOgZPArVpGs4bDHWEhmuFqnuCGxwOL9fUJbE8Se4iVKu/gPu0M+Lr7UYnQy4/taq8aR+tHY2rcE35Wz9A0YkzAs0/NWfFLAlgd+zkWAeyW5DaEiJYSZRWC2oJq6nESeB7AK5KpdXSxArcr0w3RlkLG7sFrluQ1DWTqAfuJfAx76nWWf927/cpj8asDLcgn0/dfGBmZ2SDo+cr52Od/bQycj5LoSO7KZAOaZYpraIv/zPnzYSRPlz7+08AAAD//zwetBuHAwAA")) || "{}")
+
+  LET DefaultDetails <= parse_json(data=gunzip(string=base64decode(string="H4sIAAAAAAAA/6pWilCyUopQqgUEAAD//1vc8X8JAAAA")) || "{}")
+
+  LET DefaultDetailsLambda = '''x=>get(item=DefaultDetails,
+       member=format(format="%v/%v",
+          args=[x.System.Provider.Name, x.System.EventID.Value])
+      ) || x.Message || x.UserData || x.EventData'''
+  LET RuleFilterLambda = '''x=>x.Level =~ RuleLevelRegex AND x.Status =~ RuleStatusRegex AND x.Title =~ RuleTitleFilter AND NOT x.Title =~ ExcludeRegex'''
+
+  LET GetProcInfo(PID) = to_dict(item={
+    SELECT * FROM items(item=process_tracker_get(id=PID).Data)
+       WHERE _key =~ "Name|CommandLine|CreateTime|Exe|Cwd|Username"
+    })
+
+  // Get proc info from the process tracker but if that fails fill
+  // it from the event. The process tracker may fail to find the process
+  // if the EBPF process tracker is not enabled
+  LET GetProcInfoFallback(ProcInfo, EventData, System) = if(
+     condition=ProcInfo.Name,
+       then=ProcInfo,
+       else=dict(Name=System.ProcessName,
+                 CommandLine=join(array=EventData.argv, sep=" "),
+                 CreateTime=timestamp(epoch=EventData.ctime) || System.ThreadStartTime,
+                 Exe=EventData.pathname,
+                 Username=System.UserID))
+
+  LET EBFFEvent = generate(name="EBPF Event Generator", query={
+    SELECT *, EventData + dict(
+         Test=process_tracker_get(id=System.ProcessID),
+         ProcInfo=GetProcInfoFallback(
+            ProcInfo=GetProcInfo(PID=System.ProcessID),
+            EventData=EventData,
+            System=System)
+      ) AS EventData
+    FROM delay(
+      query={
+        SELECT timestamp(epoch=now()) AS Timestamp,
+               System.EventName AS EventType,
+               System + dict(MainHostname=Hostname) AS System, EventData
+        FROM watch_ebpf(events=[
+            "security_file_open",
+            "bpf_attach", "fchownat", "chown", "kill",
+            "module_free", "module_load",
+            "mount", "sched_process_exec", "net_packet_dns_response",
+            "security_socket_accept", "security_socket_bind", "security_socket_connect",
+            "unlink", "security_inode_unlink"
+        ])
+    }, delay=5)
+  })
+sources:
+- query: |
+   LET Result = SELECT System.Timestamp AS Timestamp,
+         Hostname AS Computer,
+         "EBPF" AS Channel,
+         System.EventName AS EID,
+         _Rule.Level AS Level,
+         _Rule.Title AS Title,
+         Details,
+         dict(System=System,
+              EventData=X.EventData || X.UserData,
+              Message=X.Message) AS _Event,
+         *
+   FROM sigma(
+     rules=split(string= SigmaRules, sep="\n---+\r?\n"),
+     log_sources= LogSources, debug=Debug,
+     default_details='''x=>get(item=DefaultDetails,
+       member=format(format="%v/%v",
+          args=[x.System.Provider.Name, x.System.EventID.Value])
+      ) || x.Message || x.UserData || x.EventData''',
+     rule_filter="x=>x.Level =~ RuleLevelRegex AND x.Status =~ RuleStatusRegex AND x.Title =~ RuleTitleFilter AND NOT x.Title =~ ExcludeRegex",
+     field_mapping= FieldMapping)
+
+   SELECT * FROM if(condition=Debug, then={
+     SELECT * FROM Result
+   }, else={
+     SELECT Timestamp, Computer, Channel , EID,
+            Level, Title, Details, _Event,
+            X.Enrichment AS Enrichment
+     FROM Result
+   })

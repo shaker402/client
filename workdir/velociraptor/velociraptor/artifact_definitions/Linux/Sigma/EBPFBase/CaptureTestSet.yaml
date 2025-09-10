@@ -1,0 +1,52 @@
+name: Linux.Sigma.EBPFBase.CaptureTestSet
+description: |
+  This artifact captures a test set of the log sources defined by
+  Linux.EBPF.BaseEvent. It is used to acquire a dataset for the
+  `SigmaStudio` notebook.
+
+type: CLIENT_EVENT
+parameters:
+  - name: LogSourceFilter
+    description: Only capture log sources that match this regex.
+    type: regex
+    default: .
+
+  - name: SelectedLogSources
+    description: Set to capture only those log sources.
+    type: multichoice
+    choices:
+    - "network_connection/linux/*"
+    - "file_event/linux/*"
+    - "process_creation/linux/*"
+    - "ebpf/linux/*"
+
+  - name: EventRegex
+    description: Only capture events that match this regex (the event is converted to JSON first).
+    type: regex
+    default: .
+
+imports:
+  - Linux.Sigma.EBPFBase
+sources:
+- query: |
+    LET X = SELECT * FROM foreach(row={
+      SELECT _key AS SourceName, _value AS Query
+      FROM items(item=LogSources)
+      WHERE SourceName =~ LogSourceFilter
+        AND if(condition=SelectedLogSources,
+               then=SourceName in SelectedLogSources, else=TRUE)
+    }, query={
+      SELECT * FROM foreach(row={
+        SELECT * FROM items(item={
+          SELECT * FROM query(query=Query, inherit=TRUE)
+        })
+        WHERE _value =~ EventRegex
+      }, column="_value")
+    }, async=TRUE)
+
+    SELECT *
+    FROM if(condition= version(function="sigma_log_sources") > 1, then=X,
+      else={
+        SELECT log(message="Artifact requires at least Velociraptor 0.74")
+        FROM scope()
+    })

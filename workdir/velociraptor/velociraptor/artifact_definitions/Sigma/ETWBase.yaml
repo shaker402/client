@@ -1,0 +1,281 @@
+name: Windows.Sigma.ETWBase
+description: |
+  This artifact builds the basic set of log sources and field
+  mappings used for Event driven Sigma rules on Windows.
+
+  This artifact was built on 2025-05-17T02:07:23Z
+
+type: CLIENT_EVENT
+
+parameters:
+  - name: Debug
+    type: bool
+    description: Enable full debug trace
+
+  - name: RuleLevel
+    type: choices
+    default: All
+    choices:
+      - "Critical"
+      - "Critical and High"
+      - "Critical, High, and Medium"
+      - "All"
+
+  - name: RuleStatus
+    type: choices
+    default: All Rules
+    choices:
+      - Stable
+      - Stable and Experimental
+      - Stable and Test
+      - All Rules
+
+  - name: RuleTitleFilter
+    type: regex
+    default: .
+    description: Use this to filter only some rules to match
+
+  - name: RuleExclusions
+    type: csv
+    description: |
+      Some rules in the Hayabusa set are extremely noisy, so they
+      are disabled by default.
+    default: |
+      RuleTitleRegex,Reason
+      noisy,All rules marked noisy should be disabled by default.
+
+  - name: SigmaRules
+    description: If provided we use these rules instead of the built in set.
+export: |
+  -- Add some defaults
+  LET X = scope()
+  LET RuleLevel <= X.RuleLevel || "All"
+  LET RuleStatus <= X.RuleStatus || "All Rules"
+  LET RuleTitleFilter <= X.RuleTitleFilter || "."
+  LET RuleExclusions <= X.RuleExclusions || NULL
+
+  LET ExcludeRegex <= if(condition=RuleExclusions,
+       then=join(array=RuleExclusions.RuleTitleRegex, sep="|"),
+       else="XXXXXXX")
+
+  LET RuleStatusRegex <= get(item=dict(
+       `Stable`="stable",
+       `Stable and Experimental`="stable|experimental",
+       `Stable and Test`="stable|test",
+       `All Rules`="."), member=RuleStatus)
+
+  LET RuleLevelRegex <= get(item=dict(
+       `Critical`="critical",
+       `Critical and High`="critical|high",
+       `Critical, High, and Medium`="critical|high|medium|default",
+       `All`="."), member=RuleLevel)
+
+  LET GetValue(OSPath) = stat(filename=OSPath, accessor="registry").Data.value
+  LET Hostname <= dict(H={ SELECT Hostname FROM info()}).H[0].Hostname
+
+  LET WindowsKernelFile_EIDLookup <= dict(
+       `10`="NameCreate", `11`="NameDelete", `12`="FileOpen",
+       `19`="Rename", `27`="RenamePath",`30`="CreateNewFile")
+
+  LET WindowsKernelFile_Keyword <= 0x1490
+
+  LET WindowsKernelProcess_EIDLookup <= dict(
+    `1`="ProcessStart", `2`="ProcessStop",
+    `5`="ImageLoad", `6`="ImageUnload")
+
+  LET WindowsKernelProcess_Keyword <= 0x50
+
+  LET WindowsKernelRegistry_EIDLookup <= dict(
+    `2`="OpenKey", `1`="CreateKey", `5`="SetValueKey",
+    `6`="DeleteValueKey", `3`="DeleteKey")
+
+  -- SetValueKey | DeleteValueKey | CreateKey | OpenKey | DeleteKey = 0x100 | 0x200 | 0x1000 | 0x2000 | 0x4000
+  LET WindowsKernelRegistry_Keyword <= 0x7300
+
+  LET PublisherGlob <= pathspec(
+    Path='''HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers''',
+    path_type="registry")
+
+  LET GUIDLookup(GUID) = SELECT Data.value AS Provider
+    FROM stat(accessor="registry", filename=PublisherGlob + ("/" + GUID + "/@"))
+
+  LET GetProcInfo(PID) = to_dict(item={
+    SELECT * FROM items(item=process_tracker_get(id=PID).Data)
+       WHERE _key =~ "Name|CommandLine|CreateTime|Exe|Cwd|Username"
+    })
+
+  
+  LET LogSources <= sigma_log_sources(
+  
+    `etw/windows/kernel`={
+     SELECT * FROM delay(
+       query={
+         SELECT timestamp(epoch=now()) AS Timestamp,
+                System + dict(Channel="NT-Kernel-Logger",
+                     Computer=Hostname,
+                     EventType=System.KernelEventType,
+                     EventID=dict(Value=System.ID)) AS System,
+                System.KernelEventType AS EventType,
+                EventData + dict(
+                   ProcInfo=GetProcInfo(PID=System.ProcessID)
+                ) AS EventData
+         FROM watch_etw(guid='{9E814AAD-3204-11D2-9A82-006008A86939}',
+                        capture_state=TRUE,
+                        level=5,
+                        description="NT-Kernel-Logger",
+                        kernel_tracer_type=["registry", "process", "network", "driver", "file"])
+         WHERE EventType
+     }, delay=1)
+    },
+    `etw/windows/file`={
+     SELECT timestamp(epoch=now()) AS Timestamp,
+            System + dict(Channel="Microsoft-Windows-Kernel-File",
+                 Computer=Hostname,
+                 EventType=get(item=WindowsKernelFile_EIDLookup,
+                               field=str(str=System.ID)),
+                 EventID=dict(Value=System.ID)) AS System,
+            EventData + dict(
+                ProcInfo=GetProcInfo(PID=System.ProcessID)
+            ) AS EventData
+     FROM delay(query={
+        SELECT * FROM watch_etw(
+           guid='{edd08927-9cc4-4e65-b970-c2560fb5c289}',
+           description="Microsoft-Windows-Kernel-File",
+           any=WindowsKernelFile_Keyword)
+     }, delay=1)
+    },
+    `etw/windows/registry`={
+     SELECT timestamp(epoch=now()) AS Timestamp,
+            System + dict(Channel="Microsoft-Windows-Kernel-Registry",
+                 Computer=Hostname,
+                 EventType=get(item=WindowsKernelRegistry_EIDLookup,
+                               field=str(str=System.ID)),
+                 EventID=dict(Value=System.ID)) AS System,
+            EventData + dict(
+                ProcInfo=GetProcInfo(PID=System.ProcessID)
+            ) AS EventData
+     FROM delay(query={
+        SELECT * FROM watch_etw(
+           guid='{70eb4f03-c1de-4f73-a051-33d13d5413bd}',
+           capture_state=TRUE,
+           description="Microsoft-Windows-Kernel-Registry",
+           any=WindowsKernelRegistry_Keyword)
+     }, delay=1)
+    },
+    `etw/windows/process`={
+     SELECT timestamp(epoch=now()) AS Timestamp,
+            System + dict(Channel="Microsoft-Windows-Kernel-Process",
+                 Computer=Hostname,
+                 EventType=get(item=WindowsKernelProcess_EIDLookup,
+                               field=str(str=System.ID)),
+                 EventID=dict(Value=System.ID)) AS System,
+            EventData + dict(
+               ProcInfo=GetProcInfo(PID=System.ProcessID)
+            ) AS EventData
+     FROM delay(query={
+        SELECT * FROM watch_etw(
+           guid='{22fb2cd6-0e7b-422b-a0c7-2fad1fd0e716}',
+           description="Microsoft-Windows-Kernel-Process",
+           any=WindowsKernelProcess_Keyword)
+     }, delay=1)
+    },
+    `etw/windows/sysmon`={
+     SELECT *
+     FROM delay(query={
+        SELECT System.TimeStamp AS Timestamp,
+         System + dict(
+            EventId=System.ID,
+            Computer=Hostname,
+            Channel="Microsoft-Windows-Sysmon/Operational") AS System,
+         EventData + dict(ProcInfo=process_tracker_get(
+            id=System.ProcessID).Data) AS EventData
+       FROM watch_etw(
+           guid='{5770385f-c22a-43e0-bf4c-06f5698ffbd9}',
+           description="Microsoft-Windows-Sysmon/Operational")
+     }, delay=1)
+    },
+    `etw/windows/etw`={
+     SELECT *
+     FROM delay(query={
+        SELECT System.TimeStamp AS Timestamp,
+         System + dict(
+            EventId=System.ID,
+            Computer=Hostname,
+            Channel="Microsoft-Windows-Kernel-EventTracing") AS System,
+         EventData + dict(ProcInfo=process_tracker_get(
+            id=System.ProcessID).Data) AS EventData
+       FROM watch_etw(
+           guid='{B675EC37-BDB6-4648-BC92-F3FDC74D3CA2}', any=0x30,
+           description="Microsoft-Windows-Kernel-EventTracing")
+     }, delay=1)
+    },
+    `etw/windows/wmi`={
+     SELECT *
+     FROM delay(query={
+        SELECT System.TimeStamp AS Timestamp,
+         System + dict(
+            EventId=System.ID,
+            Computer=Hostname,
+            Channel="Microsoft-Windows-WMI-Activity") AS System,
+         EventData + dict(ProcInfo=process_tracker_get(
+            id=System.ProcessID).Data) AS EventData
+       FROM watch_etw(
+           guid='{1418EF04-B0B4-4623-BF7E-D74AB47BBDAA}', any=0x30,
+           description="Microsoft-Windows-WMI-Activity")
+     }, delay=1)
+    },
+    `etw/windows/dns`={
+     SELECT *
+     FROM delay(query={
+        SELECT System.TimeStamp AS Timestamp,
+         System + dict(
+            EventId=System.ID,
+            Computer=Hostname,
+            Channel="Microsoft-Windows-DNS-Client") AS System,
+         EventData + dict(ProcInfo=process_tracker_get(
+            id=System.ProcessID).Data) AS EventData
+       FROM watch_etw(
+           guid='{1C95126E-7EEA-49A9-A3FE-A378B03DDB4D}', any=0x30,
+           description="Microsoft-Windows-DNS-Client")
+     }, delay=1)
+    },`velociraptor/info/*`={ SELECT * FROM info() })
+  
+
+  LET FieldMapping <= parse_json(data=gunzip(string=base64decode(string="H4sIAAAAAAAA/4yQX0uHMBSGv4qcq4IxhO4Cr8wgipT+3HUz6pgDd5TtGI7su4ejmYLZ79bneV/fs0/IG0WELVzCmL0MaXqBo3z0jtHIiATknTGK3u404UYsPpD4SrGSle1eb6ju5FoNwX5gtLv1kQkIPU++xz3vFwq41i3eK/PXioiTaUrW38seqVLcgIBb9AcFkQoo69ohrzRNfKaJs01vkM5BwHw/OleM/z7QrCz+wZQl8DPoAd+1Y+vDHfuRjSLg2aGlE36weF/fAQAA//+5wRAHDwIAAA==")))
+
+  LET DefaultDetails <= parse_json(data=gunzip(string=base64decode(string="H4sIAAAAAAAA/6quBQQAAP//Q7+mowIAAAA=")))
+
+  LET DefaultDetailsLambda = '''x=>get(item=DefaultDetails,
+       member=format(format="%v/%v",
+          args=[x.System.Provider.Name, x.System.ID])
+      ) || x.Message || x.UserData || x.EventData'''
+  LET RuleFilterLambda = '''x=>x.Level =~ RuleLevelRegex AND x.Status =~ RuleStatusRegex AND x.Title =~ RuleTitleFilter AND NOT x.Title =~ ExcludeRegex'''
+sources:
+- query: |
+   LET Result = SELECT Timestamp,
+         System.Computer AS Computer,
+         System.Channel AS Channel,
+         System.EventID.Value AS EID,
+         System.EventType AS EventType,
+         _Rule.Level AS Level,
+         _Rule.Title AS Title,
+         Details,
+         dict(System=System,
+              EventData=X.EventData || X.UserData,
+              Message=X.Message) AS _Event,
+         *
+   FROM sigma(
+     rules=split(string= SigmaRules, sep="\n---+\r?\n"),
+     log_sources= LogSources, debug=Debug,
+     default_details=DefaultDetailsLambda,
+     rule_filter="x=>x.Level =~ RuleLevelRegex AND x.Status =~ RuleStatusRegex AND x.Title =~ RuleTitleFilter AND NOT x.Title =~ ExcludeRegex",
+     field_mapping= FieldMapping)
+
+   SELECT * FROM if(condition=Debug, then={
+     SELECT * FROM Result
+   }, else={
+     SELECT Timestamp, Computer, Channel , EID, EventType,
+            Level, Title, Details, X._Correlations || _Event AS _Event,
+            X.Enrichment AS Enrichment
+     FROM Result
+   })

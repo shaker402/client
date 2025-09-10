@@ -1,0 +1,134 @@
+name: risx-mssp
+
+services:
+  mysql:
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: "mssp"
+      MYSQL_ROOT_PASSWORD: "/run/secrets/MYSQL_ROOT_PASSWORD"
+    expose:
+      - 3306
+      - 33060
+    build:
+      dockerfile: mysql.Dockerfile
+      no_cache: true
+      secrets:
+        - SHORESH_PASSWD
+    healthcheck:
+      test:
+        - CMD
+        - /bin/sh
+        - -c
+        - |
+          mysql -u shoresh -p$(cat /run/secrets/SHORESH_PASSWD) --batch --execute 'SHOW TABLES;' mssp
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    secrets:
+      - SHORESH_PASSWD
+      - MYSQL_ROOT_PASSWORD
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - net
+
+  backend:
+    container_name: risx-mssp-backend
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+        restart: true
+    build:
+      dockerfile: Dockerfile
+      context: backend
+    secrets:
+      - source: SHORESH_PASSWD
+        target: DATABASE_PASSWORD
+      - DEHASHED_U
+    env_file:
+      - backend/.env
+      - .env
+    expose:
+      - 5555
+#    ports:
+#      - 5555:5555
+    volumes:
+      - type: bind
+        source: ./backend/init_check/
+        target: /init_check
+        read_only: false
+      - type: bind
+        source: ./backend/logs/node/msspBack.log
+        target: /risx-mssp-back/msspBack.log
+        read_only: false
+      - type: bind
+        source: ./backend/logs/python-scripts/
+        target: /python-scripts/logs/
+        read_only: false
+      - type: bind
+        source: ./frontend/mssp_config.json
+        target: /frontend/mssp_config.json
+        read_only: false
+      - type: bind
+        source: ../tmp/
+        target: /tmp/
+        read_only: false
+      - type: bind
+        source: ../velociraptor/velociraptor/clients
+        target: /velociraptor/clients
+        read_only: true
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+      - type: bind
+        source: ./backend/plaso
+        target: /plaso
+        read_only: false
+    networks:
+      - net
+      - main_network
+
+  frontend:
+    container_name: risx-mssp-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    build:
+      dockerfile: Dockerfile
+      context: frontend
+    env_file:
+      - frontend/.env
+      - .env
+    expose:
+      - 3003
+#    ports:
+#      - 3003:3003
+    configs:
+      - source: mssp_config.json
+        target: /usr/share/nginx/html/mssp_config.json
+    networks:
+      - net
+      - main_network
+
+networks:
+  net: {}
+  main_network:
+    external: true
+
+configs:
+  mssp_config.json:
+    file: frontend/mssp_config.json
+
+volumes:
+  mysql-data:
+    name: risx-mssp-mysql-data
+
+secrets:
+  MYSQL_ROOT_PASSWORD:
+    file: env.mysql_root_password.secret
+  SHORESH_PASSWD:
+    file: shoresh.passwd
+  DEHASHED_U:
+    file: env.DEHASHED_U.secret

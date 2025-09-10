@@ -1,0 +1,129 @@
+#!/bin/bash
+set -e
+BIND_ADDRESS=${BIND_ADDRESS:-"0.0.0.0"}
+PUBLIC_PATH=${PUBLIC_PATH:-"public"}
+LOG_DIR=${LOG_DIR:-"."}
+DATASTORE_LOCATION=${DATASTORE_LOCATION:-"./"}
+FILESTORE_DIRECTORY=${FILESTORE_DIRECTORY:-"./"}
+CLIENT_DIR=${CLIENT_DIR:-"/velociraptor/clients"}
+
+KIBANA_ROUTE=${KIBANA_ROUTE:-"/velociraptor/kibana/"}
+KIBANA_URL=${KIBANA_URL:-"http://kibana:5601/"}
+
+# Move binaries into place
+cp /opt/velociraptor/linux/velociraptor . && chmod +x velociraptor
+mkdir -p $CLIENT_DIR/linux && rsync -a /opt/velociraptor/linux/velociraptor /velociraptor/clients/linux/velociraptor_client
+mkdir -p $CLIENT_DIR/mac && rsync -a /opt/velociraptor/mac/velociraptor_client /velociraptor/clients/mac/velociraptor_client
+mkdir -p $CLIENT_DIR/windows && rsync -a /opt/velociraptor/windows/velociraptor_client* /velociraptor/clients/windows/
+
+# If no existing server config, set it up
+if [ ! -f server.config.yaml ]; then
+    ./velociraptor config generate > server.config.yaml --merge '{
+        "Frontend": {
+            "public_path": "'$PUBLIC_PATH'",
+            "hostname": "'$VELOX_FRONTEND_HOSTNAME'",
+            "default_server_monitoring_artifacts": [
+                "Custom.Elastic.Flows.Upload",
+                "Elastic.Events.Clients_testing_final_test"
+            ],
+            "default_client_monitoring_artifacts": [
+                "Windows.Hayabusa.Monitoring"
+            ]
+        },
+        "API": {
+            "bind_address": "'$BIND_ADDRESS'"
+        },
+        "GUI": {
+            "bind_address": "'$BIND_ADDRESS'",
+            "base_path": "'/velociraptor'",
+            "public_url": "'https://$VELOX_PUBLIC_IP/velociraptor/app/index.html'",
+            "use_plain_http": true,
+            "reverse_proxy": [{
+                "route": "'$KIBANA_ROUTE'",
+                "url": "'$KIBANA_URL'",
+                "require_auth": true
+            }]
+        },
+        "Monitoring": {
+            "bind_address": "'$BIND_ADDRESS'"
+        },
+        "Logging": {
+            "output_directory": "'$LOG_DIR'",
+            "separate_logs_per_component": true
+        },
+        "Client": {
+            "server_urls": ["'$VELOX_SERVER_URL'"],
+            "use_self_signed_ssl": true
+        },
+        "Datastore": {
+            "location": "'$DATASTORE_LOCATION'",
+            "filestore_directory": "'$FILESTORE_DIRECTORY'"
+        }
+    }'
+    sed -i 's#/tmp/velociraptor#.#'g server.config.yaml
+    ./velociraptor --config server.config.yaml user add $VELOX_USER $VELOX_PASSWORD --role $VELOX_ROLE
+fi
+
+# TASK-8905: Create e new user
+if [[ -v VELOX_USER_2 && -v VELOX_PASSWORD_2 && -v VELOX_ROLE_2 ]]; then
+  VELOX_USER_2_INFO=$(./velociraptor --config server.config.yaml user show "$VELOX_USER_2" 2>/dev/null || true)
+  if [[ -z $VELOX_USER_2_INFO ]]; then
+    printf "Creating a 2nd user: %s\n" "$VELOX_USER_2"
+    ./velociraptor --config server.config.yaml user add "$VELOX_USER_2" "$VELOX_PASSWORD_2" --role "$VELOX_ROLE_2"
+  else
+    printf "User %s already exists\n" "$VELOX_USER_2"
+  fi
+fi
+
+# Check Server Certificate Status, Re-generate if it's expiring in 24-hours or less
+if true | ./velociraptor --config server.config.yaml config show --json | jq -r .Frontend.certificate | openssl x509 -text -enddate -noout -checkend 86400 >/dev/null; then
+  echo "Skipping renewal, certificate is not expired"
+else
+  echo "Certificate is expired, rotating certificate."
+  ./velociraptor --config ./server.config.yaml config rotate_key > /tmp/server.config.yaml
+  cp ./server.config.yaml ./server.config.yaml.bak
+  mv /tmp/server.config.yaml /velociraptor/.
+fi
+
+# Re-generate client config in case server config changed
+CURRENT_CONFIG=$(./velociraptor --config server.config.yaml config client)
+if [ -f client.config.yaml ]; then
+  PREVIOUS_CONFIG=$(cat client.config.yaml)
+  if [ "$CURRENT_CONFIG" != "$PREVIOUS_CONFIG" ]; then
+    echo "Server config changed, re-generating client config"
+    ./velociraptor --config server.config.yaml config client > client.config.yaml
+  fi
+else
+  echo "Generating client config"
+  ./velociraptor --config server.config.yaml config client > client.config.yaml
+  chmod 755 server.config.yaml
+fi
+
+# Upload all YAML artifacts in custom/Elastic/Flows
+for artifact in custom/Elastic/Flows/*.yaml; do
+  if [ -f "$artifact" ]; then
+    echo "Uploading artifact $artifact"
+    ./velociraptor --config server.config.yaml artifact upload "$artifact"
+  fi
+done
+
+# Upload all ZIP artifacts in custom/Elastic/Flows
+for artifact in custom/Elastic/Flows/*.zip; do
+  if [ -f "$artifact" ]; then
+    echo "Uploading ZIP artifact $artifact"
+    ./velociraptor --config server.config.yaml artifact upload "$artifact"
+  fi
+done
+
+# Repack clients
+./velociraptor config repack --exe clients/linux/velociraptor_client client.config.yaml clients/linux/velociraptor_client_repacked
+./velociraptor --config client.config.yaml debian client --output clients/linux/velociraptor_client_repacked.deb
+./velociraptor --config client.config.yaml rpm client --output clients/linux/velociraptor_client_repacked.rpm
+./velociraptor config repack --exe clients/mac/velociraptor_client client.config.yaml clients/mac/velociraptor_client_repacked
+./velociraptor config repack --exe clients/windows/velociraptor_client.exe client.config.yaml clients/windows/velociraptor_client_repacked.exe
+./velociraptor config repack --msi clients/windows/velociraptor_client.msi client.config.yaml clients/windows/velociraptor_client_repacked.msi
+
+find "./clients" -type f -exec chmod 777 {} \;
+
+# Start Velociraptor
+./velociraptor --config server.config.yaml frontend -v

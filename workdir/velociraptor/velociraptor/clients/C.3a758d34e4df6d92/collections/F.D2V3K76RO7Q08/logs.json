@@ -1,0 +1,9 @@
+{"client_time":1757297181,"level":"INFO","message":"Starting query execution for Windows.AttackSimulation.AtomicRedTeam.\n"}
+{"client_time":1757297181,"level":"DEFAULT","message":"Will throttle query to 50 percent of 4 available CPU resources (2.00 cores long term average).\n"}
+{"client_time":1757297183,"level":"DEFAULT","message":"execve: Running external command [powershell.exe Remove-Item C:\\Windows\\Temp\\ARTExec.csv]\n"}
+{"client_time":1757297189,"level":"DEFAULT","message":"execve: Running external command [powershell.exe -exec bypass -Command if (-not (Test-Path -Path \"C:\\Windows\\Temp\\ARTExec.csv\")) { New-Item -Path \"C:\\Windows\\Temp\\ARTExec.csv\" -ItemType File -Force | Out-Null }]\n"}
+{"client_time":1757297193,"level":"DEFAULT","message":"execve: Running external command [powershell.exe -exec bypass -Command IEX (IWR https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1 -UseBasicParsing); Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force -Scope CurrentUser; Install-AtomicRedTeam -getAtomics -F]\n"}
+{"client_time":1757297223,"level":"DEFAULT","message":"Windows.AttackSimulation.AtomicRedTeam: Time 30: : Waiting for rows."}
+{"client_time":1757297253,"level":"DEFAULT","message":"Windows.AttackSimulation.AtomicRedTeam: Time 60: : Waiting for rows."}
+{"client_time":1757297283,"level":"DEFAULT","message":"Windows.AttackSimulation.AtomicRedTeam: Time 90: : Waiting for rows."}
+{"client_time":1757297313,"level":"DEFAULT","message":"Windows.AttackSimulation.AtomicRedTeam: Time 120: : Waiting for rows."}

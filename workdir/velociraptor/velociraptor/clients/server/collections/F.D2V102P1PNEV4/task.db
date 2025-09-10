@@ -1,0 +1,12 @@
+
+≠
+F.D2V102P1PNEV4“ñ
+êK
+ILET URL <= "https://sigma.velocidex.com/Velociraptor.Sigma.Artifacts.zip"|
+zLET Server_Import_CuratedSigma_0_1 = SELECT * FROM Artifact.Server.Import.ArtifactExchange(Prefix=Prefix, ExchangeURL=URL)q
+,SELECT * FROM Server_Import_CuratedSigma_0_1A$ccc22b3ab127de818857e2f023ffaac571333060b997a8bba20e9585019c4dc6
+Prefix Ë*∂
+Server.Import.ArtifactExchangel
+ExchangeURL]https://github.com/Velocidex/velociraptor-docs/raw/gh-pages/exchange/artifact_exchange_v2.zip
+Prefix	Exchange.
+ArchiveGlob/**/*.{yaml,yml}"Á˘LET X = SELECT artifact_set(prefix=Prefix, definition=Definition) AS Definition FROM foreach(row={ SELECT Content FROM http_client(remove_last=TRUE, tempfile_extension=".zip", url=ExchangeURL) }, query={ SELECT read_file(accessor="zip", filename=OSPath) AS Definition FROM glob(globs=ArchiveGlob, root=pathspec(DelegateAccessor="auto", DelegatePath=Content), accessor="zip") })iSELECT Definition.name AS Name, Definition.description AS Description, Definition.author AS Author FROM XRserver‚apiÄà–

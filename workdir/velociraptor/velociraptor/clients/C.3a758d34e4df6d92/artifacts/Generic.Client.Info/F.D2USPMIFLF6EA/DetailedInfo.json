@@ -1,0 +1,20 @@
+{"Param":"Hostname","Value":"PC11"}
+{"Param":"Uptime","Value":189735}
+{"Param":"BootTime","Value":1757079476}
+{"Param":"OS","Value":"windows"}
+{"Param":"Platform","Value":"Microsoft Windows 11 Home"}
+{"Param":"PlatformFamily","Value":"Standalone Workstation"}
+{"Param":"PlatformVersion","Value":"24H2"}
+{"Param":"KernelVersion","Value":"10.0.26100.4946 Build 26100.4946"}
+{"Param":"VirtualizationSystem","Value":""}
+{"Param":"VirtualizationRole","Value":""}
+{"Param":"CompilerVersion","Value":"go1.23.2"}
+{"Param":"HostID","Value":"6c52c293-eae0-482c-abad-5fe4cfde679a"}
+{"Param":"Exe","Value":"C:\\Program Files\\Velociraptor\\Velociraptor.exe"}
+{"Param":"CWD","Value":"C:\\WINDOWS\\system32"}
+{"Param":"IsAdmin","Value":true}
+{"Param":"ClientStart","Value":"2025-09-07T17:01:18.6842331Z"}
+{"Param":"LocalTZ","Value":"+03"}
+{"Param":"LocalTZOffset","Value":10800}
+{"Param":"Fqdn","Value":"PC11"}
+{"Param":"Architecture","Value":"amd64"}

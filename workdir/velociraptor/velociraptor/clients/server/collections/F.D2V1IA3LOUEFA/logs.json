@@ -1,0 +1,7 @@
+{"Timestamp":1757288744111322,"Level":"DEFAULT","message":"Running query Server.Import.CuratedSigma on behalf of user api\n"}
+{"Timestamp":1757288744111363,"Level":"DEFAULT","message":"\u003cgreen\u003eStarting\u003c/\u003e query Server.Import.CuratedSigma execution.\n"}
+{"Timestamp":1757288744136400,"Level":"DEFAULT","message":"Fetching https://sigma.velocidex.com/Velociraptor.Sigma.Artifacts.zip\n"}
+{"Timestamp":1757288744390876,"Level":"DEFAULT","message":"Adding global destructor for /tmp/tmp1671526956.zip\n"}
+{"Timestamp":1757288744390907,"Level":"DEFAULT","message":"http_client: Downloading https://sigma.velocidex.com/Velociraptor.Sigma.Artifacts.zip into /tmp/tmp1671526956.zip\n"}
+{"Timestamp":1757288751040334,"Level":"DEFAULT","message":"tempfile: removed tempfile /tmp/tmp1671526956.zip\n"}
+{"Timestamp":1757288751040423,"Level":"DEBUG","message":"Query Stats: {\"RowsScanned\":44,\"PluginsCalled\":1,\"FunctionsCalled\":0,\"ProtocolSearch\":0,\"ScopeCopy\":91}\n"}

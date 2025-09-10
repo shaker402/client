@@ -1,0 +1,10 @@
+
+Þ
+F.D2V199P1OP706ÒÇ
+Áü
+ùLET X = SELECT artifact_set(prefix=Prefix, definition=Definition) AS Definition FROM foreach(row={ SELECT Content FROM http_client(remove_last=TRUE, tempfile_extension=".zip", url=ExchangeURL) }, query={ SELECT read_file(accessor="zip", filename=OSPath) AS Definition FROM glob(globs=ArchiveGlob, root=pathspec(DelegateAccessor="auto", DelegatePath=Content), accessor="zip") })•
+’LET Server_Import_ArtifactExchange_0_1 = SELECT Definition.name AS Name, Definition.description AS Description, Definition.author AS Author FROM Xu
+0SELECT * FROM Server_Import_ArtifactExchange_0_1A$e0d81e2e1539e31fea8710255d3cf179dc1c9b1cb35de6d04c8639f8fac17f8al
+ExchangeURL]https://github.com/Velocidex/velociraptor-docs/raw/gh-pages/exchange/artifact_exchange_v2.zip
+Prefix	Exchange.
+ArchiveGlob/**/*.{yaml,yml} èâapi€ˆÐ

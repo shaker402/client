@@ -1,0 +1,9 @@
+{"Timestamp":1757264178697606,"Level":"DEFAULT","message":"Running query Exchange.Server.Import.DetectRaptor on behalf of user api\n"}
+{"Timestamp":1757264178697634,"Level":"DEFAULT","message":"\u003cgreen\u003eStarting\u003c/\u003e query Exchange.Server.Import.DetectRaptor execution.\n"}
+{"Timestamp":1757264178698566,"Level":"DEFAULT","message":"Fetching https://api.github.com/repos/mgreen27/DetectRaptor/releases\n"}
+{"Timestamp":1757264179042411,"Level":"DEFAULT","message":"Fetching https://github.com/mgreen27/DetectRaptor/releases/download/DetectRaptor/DetectRaptorVQL.zip\n"}
+{"Timestamp":1757264179992465,"Level":"DEFAULT","message":"Adding global destructor for /tmp/tmp2483212230.zip\n"}
+{"Timestamp":1757264179992504,"Level":"DEFAULT","message":"http_client: Downloading https://github.com/mgreen27/DetectRaptor/releases/download/DetectRaptor/DetectRaptorVQL.zip into /tmp/tmp2483212230.zip\n"}
+{"Timestamp":1757264184190918,"Level":"INFO","message":"DetectRaptor Server MetaData added: Timestamp=2025-09-07 15:01:09 +0000 UTC,SHA1=e0a70e42bbfc7550cc7ff2c4cc05dea74acf86e7\n"}
+{"Timestamp":1757264184473468,"Level":"DEFAULT","message":"tempfile: removed tempfile /tmp/tmp2483212230.zip\n"}
+{"Timestamp":1757264184473561,"Level":"DEBUG","message":"Query Stats: {\"RowsScanned\":129,\"PluginsCalled\":5,\"FunctionsCalled\":188,\"ProtocolSearch\":4254,\"ScopeCopy\":266}\n"}

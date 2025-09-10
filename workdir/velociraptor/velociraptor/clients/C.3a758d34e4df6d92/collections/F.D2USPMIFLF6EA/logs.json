@@ -1,0 +1,21 @@
+{"client_time":1757269212,"level":"INFO","message":"Starting query execution for Generic.Client.Info/DetailedInfo.\n"}
+{"client_time":1757269212,"level":"INFO","message":"Starting query execution for Generic.Client.Info/BasicInformation.\n"}
+{"client_time":1757269212,"level":"INFO","message":"Starting query execution for Generic.Client.Info/LinuxInfo.\n"}
+{"client_time":1757269212,"level":"INFO","message":"Starting query execution for Generic.Client.Info/WindowsInfo.\n"}
+{"client_time":1757269212,"level":"INFO","message":"Starting query execution for Generic.Client.Info/Users.\n"}
+{"client_time":1757269212,"level":"INFO","message":"Generic.Client.Info/LinuxInfo: Skipping query due to preconditions\n"}
+{"client_time":1757269212,"level":"INFO","message":"Collection Generic.Client.Info/LinuxInfo is done after 79.942ms\n"}
+{"client_time":1757269212,"level":"DEBUG","message":"Query Stats: {\"RowsScanned\":1,\"PluginsCalled\":1,\"FunctionsCalled\":0,\"ProtocolSearch\":0,\"ScopeCopy\":4}\n"}
+{"client_time":1757269212,"level":"DEFAULT","message":"Generic.Client.Info/DetailedInfo: Time 0: Generic.Client.Info/DetailedInfo: Sending response part 0 938 B (20 rows)."}
+{"client_time":1757269212,"level":"INFO","message":"Collection Generic.Client.Info/DetailedInfo is done after 100.0032ms\n"}
+{"client_time":1757269212,"level":"DEBUG","message":"Query Stats: {\"RowsScanned\":41,\"PluginsCalled\":2,\"FunctionsCalled\":0,\"ProtocolSearch\":21,\"ScopeCopy\":86}\n"}
+{"client_time":1757269212,"level":"DEFAULT","message":"cache SID: Filled cache with 0 rows\n"}
+{"client_time":1757269213,"level":"DEFAULT","message":"Generic.Client.Info/BasicInformation: Time 1: Generic.Client.Info/BasicInformation: Sending response part 0 466 B (1 rows)."}
+{"client_time":1757269213,"level":"INFO","message":"Collection Generic.Client.Info/BasicInformation is done after 1.3141111s\n"}
+{"client_time":1757269213,"level":"DEBUG","message":"Query Stats: {\"RowsScanned\":11,\"PluginsCalled\":2,\"FunctionsCalled\":0,\"ProtocolSearch\":33,\"ScopeCopy\":34}\n"}
+{"client_time":1757269214,"level":"DEFAULT","message":"Generic.Client.Info/WindowsInfo: Time 2: Generic.Client.Info/WindowsInfo: Sending response part 0 1.2 kB (1 rows)."}
+{"client_time":1757269214,"level":"INFO","message":"Collection Generic.Client.Info/WindowsInfo is done after 2.1803798s\n"}
+{"client_time":1757269214,"level":"DEBUG","message":"Query Stats: {\"RowsScanned\":24,\"PluginsCalled\":6,\"FunctionsCalled\":19,\"ProtocolSearch\":4,\"ScopeCopy\":74}\n"}
+{"client_time":1757269214,"level":"DEFAULT","message":"Generic.Client.Info/Users: Time 2: Generic.Client.Info/Users: Sending response part 0 932 B (5 rows)."}
+{"client_time":1757269214,"level":"INFO","message":"Collection Generic.Client.Info/Users is done after 2.2298053s\n"}
+{"client_time":1757269214,"level":"DEBUG","message":"Query Stats: {\"RowsScanned\":12,\"PluginsCalled\":4,\"FunctionsCalled\":0,\"ProtocolSearch\":4,\"ScopeCopy\":32}\n"}

@@ -1,0 +1,134 @@
+services:
+  setup:
+    profiles:
+      - setup
+    build:
+      context: setup/
+      args:
+        ELASTIC_VERSION: ${ELASTIC_VERSION}
+    init: true
+    volumes:
+      - ./setup/entrypoint.sh:/entrypoint.sh:ro,Z
+      - ./setup/lib.sh:/lib.sh:ro,Z
+      - ./setup/roles:/roles:ro,Z
+    environment:
+      BEATS_SYSTEM_PASSWORD: ${BEATS_SYSTEM_PASSWORD:-}
+      ELASTIC_PASSWORD: ${ELASTIC_PASSWORD:-}
+      FILEBEAT_INTERNAL_PASSWORD: ${FILEBEAT_INTERNAL_PASSWORD:-}
+      HEARTBEAT_INTERNAL_PASSWORD: ${HEARTBEAT_INTERNAL_PASSWORD:-}
+      KIBANA_SYSTEM_PASSWORD: ${KIBANA_SYSTEM_PASSWORD:-}
+      LOGSTASH_INTERNAL_PASSWORD: ${LOGSTASH_INTERNAL_PASSWORD:-}
+      METRICBEAT_INTERNAL_PASSWORD: ${METRICBEAT_INTERNAL_PASSWORD:-}
+      MONITORING_INTERNAL_PASSWORD: ${MONITORING_INTERNAL_PASSWORD:-}
+    networks:
+      - main_network
+    depends_on:
+      - elasticsearch
+
+  elasticsearch:
+    container_name: elasticsearch
+    build:
+      context: elasticsearch/
+      args:
+        ELASTIC_VERSION: ${ELASTIC_VERSION}
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro,Z
+      - elasticsearch:/usr/share/elasticsearch/data:Z
+    ports:
+      - 9300:9300
+      - 9200:9200
+    environment:
+      node.name: elasticsearch
+      xpack.security.enabled: "true"
+      xpack.security.http.ssl.enabled: "false"
+      xpack.license.self_generated.type: basic
+      discovery.type: single-node
+      ES_JAVA_OPTS: -Xms8G -Xmx8G
+      ELASTIC_PASSWORD: ${ELASTIC_PASSWORD:-}
+    networks:
+      - main_network
+    restart: unless-stopped
+
+  logstash:
+    container_name: logstash
+    build:
+      context: logstash/
+      args:
+        ELASTIC_VERSION: ${ELASTIC_VERSION}
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,Z
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro,Z
+    ports:
+      - 5044:5044
+      - 50000:50000/tcp
+      - 50000:50000/udp
+      - 9600:9600
+    environment:
+      LS_JAVA_OPTS: -Xms8G -Xmx8G
+      LOGSTASH_INTERNAL_PASSWORD: ${LOGSTASH_INTERNAL_PASSWORD:-}
+    networks:
+      - main_network
+    depends_on:
+      - elasticsearch
+    restart: unless-stopped
+
+  kibana:
+    container_name: kibana
+    build:
+      context: kibana/
+      args:
+        ELASTIC_VERSION: ${ELASTIC_VERSION}
+    volumes:
+      - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro,Z
+      - ./kibana/dashboards:/usr/share/kibana/dashboards:ro,Z
+    ports:
+      - 5601:5601
+    environment:
+      xpack.security.enabled: "true"
+      xpack.spaces.enabled: "true"
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+      SERVER_NAME: http://host.docker.internal/kibana
+      SERVER_BASEPATH: /kibana
+      SERVER_DEFAULTINDEX: artifact*
+      SERVER_SHOWINSECURECLUSTERWARNING: "false"
+      TELEMETRY_ENABLED: "false"
+      KIBANA_SYSTEM_PASSWORD: ${KIBANA_SYSTEM_PASSWORD:-}
+    networks:
+      - main_network
+    depends_on:
+      - elasticsearch
+    restart: unless-stopped
+
+  fleet-server:
+    container_name: fleet-server
+    image: docker.elastic.co/beats/elastic-agent:${ELASTIC_VERSION}
+    ports:
+      - "8220:8220"  # Add this line
+    environment:
+      - FLEET_ENROLL=1
+      - FLEET_SERVER_ENABLE=1
+      - FLEET_SERVER_HOST=0.0.0.0
+      #- FLEET_SERVER_INSECURE_HTTP=true  # Force HTTP mode
+      - FLEET_SERVER_ELASTICSEARCH_HOST=http://elasticsearch:9200
+      - FLEET_SERVER_POLICY_ID=fleet-server-policy
+      - FLEET_URL=https://75.119.148.152:8220
+      #- FLEET_SERVER_ES_INSECURE=true  #  ES uses HTTP
+      - KIBANA_HOST=http://kibana:5601
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=${ELASTIC_PASSWORD:-changeme}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # Add Docker socket access
+    privileged: true  # Grant elevated privileges
+    networks:
+      - main_network
+    depends_on:
+      - elasticsearch
+      - kibana
+    restart: unless-stopped
+
+networks:
+  main_network:
+    external: true
+
+volumes:
+  elasticsearch:

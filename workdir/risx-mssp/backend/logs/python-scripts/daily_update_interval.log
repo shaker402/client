@@ -1,0 +1,54 @@
+2025-09-09 00:18:48,237 - INFO - Trying to connect DB!
+2025-09-09 00:18:48,315 - INFO - Successfully connected to the database
+2025-09-09 00:18:51,278 - INFO - Executing SQL query:SELECT config FROM configjson LIMIT 1
+2025-09-09 00:18:51,531 - INFO - Creating client_id/hostname json dict!
+2025-09-09 00:18:51,531 - INFO - Setup connection!
+2025-09-09 00:18:51,531 - INFO - Reading config yaml!
+2025-09-09 00:18:51,587 - INFO - Secure channel established
+2025-09-09 00:18:51,593 - INFO - Sending get client request!
+2025-09-09 00:18:51,593 - INFO - Getting responses!
+2025-09-09 00:18:51,725 - INFO - Update modules:['Server.Import.ArtifactExchange', 'Server.Import.CuratedSigma', 'Exchange.Server.Import.DetectRaptor', 'Server.Import.RegistryHunter']
+2025-09-09 00:18:51,725 - INFO - Running daily task!
+2025-09-09 00:18:51,737 - INFO - Running server artifact query.
+2025-09-09 00:18:51,737 - INFO - Setup connection!
+2025-09-09 00:18:51,737 - INFO - Reading config yaml!
+2025-09-09 00:18:51,799 - INFO - Secure channel established
+2025-09-09 00:18:51,800 - INFO - Query:LET collection <= collect_client(client_id='server', artifacts='Server.Import.ArtifactExchange') SELECT * FROM collection
+2025-09-09 00:18:51,927 - INFO - Tue Sep  9 00:18:51 2025: Starting query execution.
+
+2025-09-09 00:18:51,928 - INFO - Tue Sep  9 00:18:51 2025: Time 0: Server.Import.ArtifactExchange: Sending response part 0 407 B (1 rows).
+
+2025-09-09 00:18:51,930 - INFO - Response:[{"flow_id":"F.D2VN4QVU4O20G","request":{"creator":"api","user_data":"","client_id":"server","flow_id":"","urgent":false,"artifacts":["Server.Import.ArtifactExchange"],"specs":[],"cpu_limit":0,"iops_limit":0,"progress_timeout":0,"timeout":0,"max_rows":0,"max_logs":0,"max_upload_bytes":0,"trace_freq_sec":0,"allow_custom_overrides":false,"log_batch_time":0,"compiled_collector_args":[],"ops_per_second":0}}]
+2025-09-09 00:18:53,949 - INFO - Running server artifact query.
+2025-09-09 00:18:53,950 - INFO - Setup connection!
+2025-09-09 00:18:53,950 - INFO - Reading config yaml!
+2025-09-09 00:18:53,956 - INFO - Secure channel established
+2025-09-09 00:18:53,957 - INFO - Query:LET collection <= collect_client(client_id='server', artifacts='Server.Import.CuratedSigma') SELECT * FROM collection
+2025-09-09 00:18:53,978 - INFO - Tue Sep  9 00:18:53 2025: Starting query execution.
+
+2025-09-09 00:18:53,984 - INFO - Tue Sep  9 00:18:53 2025: Time 0: Server.Import.CuratedSigma: Sending response part 0 403 B (1 rows).
+
+2025-09-09 00:18:53,985 - INFO - Response:[{"flow_id":"F.D2VN4RDNURAV2","request":{"creator":"api","user_data":"","client_id":"server","flow_id":"","urgent":false,"artifacts":["Server.Import.CuratedSigma"],"specs":[],"cpu_limit":0,"iops_limit":0,"progress_timeout":0,"timeout":0,"max_rows":0,"max_logs":0,"max_upload_bytes":0,"trace_freq_sec":0,"allow_custom_overrides":false,"log_batch_time":0,"compiled_collector_args":[],"ops_per_second":0}}]
+2025-09-09 00:18:55,988 - INFO - Running server artifact query.
+2025-09-09 00:18:55,988 - INFO - Setup connection!
+2025-09-09 00:18:55,988 - INFO - Reading config yaml!
+2025-09-09 00:18:55,993 - INFO - Secure channel established
+2025-09-09 00:18:55,994 - INFO - Query:LET collection <= collect_client(client_id='server', artifacts='Exchange.Server.Import.DetectRaptor') SELECT * FROM collection
+2025-09-09 00:18:56,006 - INFO - Tue Sep  9 00:18:56 2025: Starting query execution.
+
+2025-09-09 00:18:56,027 - INFO - Tue Sep  9 00:18:56 2025: Time 0: Exchange.Server.Import.DetectRaptor: Sending response part 0 412 B (1 rows).
+
+2025-09-09 00:18:56,031 - INFO - Response:[{"flow_id":"F.D2VN4S0IOMO96","request":{"creator":"api","user_data":"","client_id":"server","flow_id":"","urgent":false,"artifacts":["Exchange.Server.Import.DetectRaptor"],"specs":[],"cpu_limit":0,"iops_limit":0,"progress_timeout":0,"timeout":0,"max_rows":0,"max_logs":0,"max_upload_bytes":0,"trace_freq_sec":0,"allow_custom_overrides":false,"log_batch_time":0,"compiled_collector_args":[],"ops_per_second":0}}]
+2025-09-09 00:18:58,037 - INFO - Running server artifact query.
+2025-09-09 00:18:58,041 - INFO - Setup connection!
+2025-09-09 00:18:58,041 - INFO - Reading config yaml!
+2025-09-09 00:18:58,048 - INFO - Secure channel established
+2025-09-09 00:18:58,048 - INFO - Query:LET collection <= collect_client(client_id='server', artifacts='Server.Import.RegistryHunter') SELECT * FROM collection
+2025-09-09 00:18:58,124 - INFO - Tue Sep  9 00:18:58 2025: Starting query execution.
+
+2025-09-09 00:18:58,132 - INFO - Tue Sep  9 00:18:58 2025: Time 0: Server.Import.RegistryHunter: Sending response part 0 405 B (1 rows).
+
+2025-09-09 00:18:58,133 - INFO - Response:[{"flow_id":"F.D2VN4SJGOJ492","request":{"creator":"api","user_data":"","client_id":"server","flow_id":"","urgent":false,"artifacts":["Server.Import.RegistryHunter"],"specs":[],"cpu_limit":0,"iops_limit":0,"progress_timeout":0,"timeout":0,"max_rows":0,"max_logs":0,"max_upload_bytes":0,"trace_freq_sec":0,"allow_custom_overrides":false,"log_batch_time":0,"compiled_collector_args":[],"ops_per_second":0}}]
+2025-09-09 00:19:00,144 - INFO - Modules Update Time To Sleep:24 hours
+2025-09-09 00:19:31,555 - INFO - Trying to connect DB!
+2025-09-09 00:19:31,729 - INFO - Successfully connected to the database

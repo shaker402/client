@@ -1,0 +1,38 @@
+name: DetectRaptor.Windows.Detection.HijackLibsEnv
+author: Matt Green - @mgreen27
+description: |
+   This artifact searches for Environment Variables (default systemroot|windir)
+   associated to each process and reports if set to non default.
+   
+   If a hit is found, next steps is to check loaded module paths using
+   Windows.System.DLLs.
+
+reference:
+  - https://github.com/mgreen27/DetectRaptor
+  - https://www.wietzebeukema.nl/blog/save-the-environment-variables
+
+type: CLIENT
+resources:
+  timeout: 1200
+
+parameters:
+   - name: TargetEnv
+     type: regex
+     description: A regex to select environment variables to target
+     default:  ^(systemroot|windir)$
+   - name: ExpectedEnv
+     type: regex
+     description: Expected environment variables to filter out.
+     default:  ^C:\\Windows$
+
+sources:
+  - precondition:
+      SELECT OS From info() where OS = 'windows'
+    query: |
+      SELECT * FROM Artifact.Windows.Detection.EnvironmentVariables(
+                EnvironmentVariableRegex=TargetEnv,
+                FilterValueRegex='.',
+                WhitelistValueRegex=if(condition=ExpectedEnv,
+                                        then=ExpectedEnv,
+                                        else='$^^$')
+            )

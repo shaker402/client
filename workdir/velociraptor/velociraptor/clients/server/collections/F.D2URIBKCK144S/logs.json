@@ -1,0 +1,7 @@
+{"Timestamp":1757264174310996,"Level":"DEFAULT","message":"Running query Server.Import.ArtifactExchange on behalf of user api\n"}
+{"Timestamp":1757264174311054,"Level":"DEFAULT","message":"\u003cgreen\u003eStarting\u003c/\u003e query Server.Import.ArtifactExchange execution.\n"}
+{"Timestamp":1757264174330345,"Level":"DEFAULT","message":"Fetching https://github.com/Velocidex/velociraptor-docs/raw/gh-pages/exchange/artifact_exchange_v2.zip\n"}
+{"Timestamp":1757264175072088,"Level":"DEFAULT","message":"Adding global destructor for /tmp/tmp3718521083.zip\n"}
+{"Timestamp":1757264175072122,"Level":"DEFAULT","message":"http_client: Downloading https://github.com/Velocidex/velociraptor-docs/raw/gh-pages/exchange/artifact_exchange_v2.zip into /tmp/tmp3718521083.zip\n"}
+{"Timestamp":1757264188421432,"Level":"DEFAULT","message":"tempfile: removed tempfile /tmp/tmp3718521083.zip\n"}
+{"Timestamp":1757264188421520,"Level":"DEBUG","message":"Query Stats: {\"RowsScanned\":1153,\"PluginsCalled\":3,\"FunctionsCalled\":577,\"ProtocolSearch\":19584,\"ScopeCopy\":2310}\n"}

@@ -1,0 +1,46 @@
+[
+{
+   "artifact_id": "1000103",
+    "comments":"",
+    "action": "runartifact",
+    "artifactname": "Exchange.Windows.HardeningKitty",
+    "arguments": "TakeBackUp= 'N', Baseline= 'finding_list_0x6d69636b_machine'",
+    "expiretime": "70",
+    "organizationid": "OCHL0",
+    "label": "iris"
+},
+{
+   "artifact_id": "1000102",
+ "comments":"",
+  "action": "runartifact",
+  "artifactname": "Exchange.Windows.EventLogs.Zircolite",
+  "arguments": "EVTXPath= 'C:\\Windows\\System32\\winevt\\Logs', Rules= 'https://raw.githubusercontent.com/wagga40/Zircolite/master/rules/rules_windows_generic.json', Mappings=   'https://raw.githubusercontent.com/wagga40/Zircolite/master/config/fieldMappings.json'",
+  "expiretime": "180",
+  "organizationid": "OCHL0",
+  "label": "iris"
+},
+{
+"artifact_id": "1000104",
+ "comments":"",
+  "action": "runartifact",
+  "artifactname": "Exchange.Windows.PersistenceSniper",
+  "arguments": "",
+  "expiretime": "180",
+  "organizationid": "OCHL0",
+  "label": "iris"
+},
+{
+"artifact_id": "1000105",
+ "comments":"",
+  "action": "runartifact",
+  "artifactname": "Exchange.Windows.EventLogs.Hayabusa",
+  "arguments": "UTC= 'Y', UpdateRules= 'Y', NoisyRules= 'N', OutputProfile= 'standard', EIDFilter= 'N', MinimalLevel='informational', Threads= '2'",
+  "expiretime": "1200",
+  "organizationid": "OCHL0",
+  "label": "iris"
+}
+
+
+
+
+]

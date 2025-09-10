@@ -1,0 +1,26 @@
+2025-09-09 00:18:48,144 - INFO - Closing previous script if running!
+2025-09-09 00:18:48,150 - INFO - Trying to connect DB!
+2025-09-09 00:18:48,218 - INFO - Successfully connected to the database
+2025-09-09 00:18:48,221 - INFO - Executing SQL query:SELECT config FROM configjson LIMIT 1
+2025-09-09 00:18:48,227 - INFO - No duplicate scripts with name 'Interval.py' were found.
+2025-09-09 00:18:48,229 - INFO - Start interval!
+2025-09-09 00:18:48,230 - INFO - Start interval loop!
+2025-09-09 00:18:48,231 - INFO - Creating connection!
+2025-09-09 00:18:48,231 - INFO - Connecting MySQL!
+2025-09-09 00:18:48,232 - INFO - Trying to connect DB!
+2025-09-09 00:18:48,312 - INFO - Successfully connected to the database
+2025-09-09 00:18:51,263 - INFO - Executing SQL query:SELECT config FROM configjson LIMIT 1
+2025-09-09 00:18:51,541 - INFO - Executing SQL query:SELECT lastupdated FROM configjson LIMIT 1
+2025-09-09 00:18:51,736 - INFO - Connecting TimeSketchAPI
+2025-09-09 00:18:51,759 - INFO - Connecting timesketch api
+2025-09-09 00:19:31,367 - INFO - Closing previous script if running!
+2025-09-09 00:19:31,372 - INFO - Trying to connect DB!
+2025-09-09 00:19:31,506 - INFO - Successfully connected to the database
+2025-09-09 00:19:31,523 - INFO - Executing SQL query:SELECT config FROM configjson LIMIT 1
+2025-09-09 00:19:31,536 - INFO - No duplicate scripts with name 'Interval.py' were found.
+2025-09-09 00:19:31,538 - INFO - Start interval!
+2025-09-09 00:19:31,549 - INFO - Start interval loop!
+2025-09-09 00:19:31,550 - INFO - Creating connection!
+2025-09-09 00:19:31,550 - INFO - Connecting MySQL!
+2025-09-09 00:19:31,550 - INFO - Trying to connect DB!
+2025-09-09 00:19:31,784 - INFO - Successfully connected to the database

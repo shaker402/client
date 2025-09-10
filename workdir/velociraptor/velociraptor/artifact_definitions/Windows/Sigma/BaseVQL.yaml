@@ -1,0 +1,283 @@
+name: Windows.Sigma.BaseVQL
+description: |
+  This artifact builds the basic set of log sources and field
+  mappings used for Sigma Forensic Triage on Windows.
+
+  NOTE: This artifact does not include any rules. You can launch it
+  with rules provided to the SigmaRules parameter or call it from
+  another artifact with a set of rules passed to the SigmaRules
+  parameter.
+
+  This artifact was built on 2025-08-19T21:35:41Z
+
+type: CLIENT
+
+parameters:
+  - name: Debug
+    type: bool
+    description: Enable full debug trace
+
+  - name: RuleLevel
+    type: choices
+    default: All
+    choices:
+      - "Critical"
+      - "Critical and High"
+      - "Critical, High, and Medium"
+      - "All"
+
+  - name: RuleStatus
+    type: choices
+    default: All Rules
+    choices:
+      - Stable
+      - Stable and Experimental
+      - Stable and Test
+      - All Rules
+
+  - name: RuleTitleFilter
+    type: regex
+    default: .
+    description: Use this to filter only some rules to match
+
+  - name: RuleExclusions
+    type: csv
+    description: |
+      This table are rules that will be excluded by Title Regex
+    default: |
+      RuleTitleRegex,Reason
+      noisy,All rules marked noisy should be disabled by default.
+
+  - name: DateAfter
+    description: "search for events after this date. YYYY-MM-DDTmm:hh:ss Z"
+    type: timestamp
+
+  - name: DateBefore
+    description: "search for events before this date. YYYY-MM-DDTmm:hh:ss Z"
+    type: timestamp
+
+  - name: SigmaRules
+    description: If provided we use these rules instead of the built in set.
+
+  - name: NTFS_CACHE_TIME
+    type: int
+    description: How often to flush the NTFS cache. (Default is never).
+    default: "1000000"
+export: |
+  LET X = scope()
+
+  LET DateAfterTime <= X.DateAfter || timestamp(epoch="1600-01-01")
+  LET DateBeforeTime <= X.DateBefore || timestamp(epoch="2200-01-01")
+
+  LET ExcludeRegex <= if(condition=X.RuleExclusions,
+       then=join(array=RuleExclusions.RuleTitleRegex, sep="|"),
+       else="XXXXXXX")
+
+  LET RuleStatusRegex <= get(item=dict(
+       `Stable`="stable",
+       `Stable and Experimental`="stable|experimental",
+       `Stable and Test`="stable|test",
+       `All Rules`="."), member=X.RuleStatus || "All Rules")
+
+  LET RuleLevelRegex <= get(item=dict(
+       `Critical`="critical",
+       `Critical and High`="critical|high",
+       `Critical, High, and Medium`="critical|high|medium|default",
+       `All`="."), member=X.RuleLevel || "All")
+
+  // Helpers for VQL rules
+  LET FetchKeyValues(OSPath) = to_dict(item={
+      SELECT Name AS _key, Data.value AS _value
+      FROM glob(globs="*", accessor="registry", root=OSPath)
+  })
+
+  LET SearchFiles(Glob) =  SELECT OSPath, Size,
+      read_file(filename=OSPath, length=100) AS Data
+    FROM glob(globs=Glob, accessor="auto")
+
+  LET SearchRegistryKeys(Glob) = to_dict(item={
+      SELECT OSPath.String AS _key, Data.value AS _value
+      FROM glob(globs=Glob, accessor="registry")
+    })
+
+  LET GetValue(OSPath) = stat(filename=OSPath, accessor="registry").Data.value
+  LET Hostname <= dict(H={ SELECT Hostname FROM info()}).H[0].Hostname
+
+  LET GetCallChain(Pid) = join(array=process_tracker_callchain(id=Pid).Data.Name, sep=" -> ")
+
+  
+  LET LogSources <= sigma_log_sources(
+  
+    `vql/windows/*`={
+     SELECT timestamp(epoch=now()) AS Timestamp,
+       dict(
+         Computer=Hostname,
+         Channel="VQL Evaluation",
+         TimeCreated=dict(SystemTime=now())
+       ) AS System,
+       dict() AS EventData
+     FROM scope()
+    },
+    `filesystem/windows/glob`={
+     SELECT Mtime AS Timestamp,
+            dict(Computer=Hostname, Channel='Velociraptor') AS System,
+            dict(Name=Name,
+                 OSPath=OSPath,
+                 Size=Size,
+                 Mtime=Mtime) AS EventData
+     FROM glob(globs='C:/**')
+    },
+    `*/windows/schtasks`={
+     SELECT dict(Computer=Hostname, Channel='Velociraptor') AS System, *
+     FROM Artifact.Windows.System.TaskScheduler()
+    },
+    `*/windows/services`={
+     SELECT dict(Computer=Hostname, Channel='Velociraptor') AS System, *,
+         PathName AS CommandLine, ServiceDll AS Image,
+         UserAccount AS User
+     FROM Artifact.Windows.System.Services()
+    },
+    `persistence/windows/services`={
+     SELECT dict(Computer=Hostname, Channel='Velociraptor') AS System, *,
+         PathName AS CommandLine, ServiceDll AS Image,
+         UserAccount AS User
+     FROM Artifact.Windows.System.Services()
+    },
+    `process_creation/vql/execution`={
+     SELECT dict(Computer=Hostname, Channel='Velociraptor') AS System, *
+     FROM Artifact.Windows.Analysis.EvidenceOfExecution()
+    },
+    `webserver/windows/*`={
+     SELECT dict(Computer=Hostname, Channel='Velociraptor') AS System, *
+     FROM Artifact.Windows.Applications.IISLogs()
+    },
+    `process_creation/windows/pslist`={
+     SELECT CreateTime AS Timestamp,
+            dict(Computer=Hostname, Channel='Velociraptor') AS System,
+            dict(CreateTime=CreateTime, CommandLine= CommandLine,
+                 Image=Exe, MD5=H.MD5, SHA256=H.SHA256, SHA1=H.SHA1,
+                 ParentCommandLine=P.CommandLine,
+                 ParentImage=P.Exe,
+                 ParentMD5=PH.MD5,
+                 ParentSHA1=PH.SHA1,
+                 ParentSHA256=PH.SHA256,
+                 GrandParentCommandLine=GP.CommandLine,
+                 GrandParentImage=GP.Exe,
+                 User=Username
+            ) AS EventData
+     FROM foreach(row={
+           SELECT StartTime AS CreateTime,
+               Pid, CommandLine, Exe,
+               process_tracker_get(id=Ppid).Data AS P,
+               if(condition=process_tracker_get(id=Ppid).Data.Exe,
+                  then=hash(path=process_tracker_get(id=Ppid).Data.Exe)) AS PH,
+               process_tracker_get(id=process_tracker_get(id=Ppid).ParentId).Data AS GP,
+               if(condition=Exe, then=hash(path=Exe)) AS H,
+               Username
+           FROM process_tracker_pslist()
+     })
+    },
+    `image_load/vql/pslist`={
+     SELECT CreateTime AS Timestamp,
+            dict(Computer=Hostname, Channel='Velociraptor') AS System,
+            dict(CommandLine=CommandLine,
+                 Image=Exe,
+                 User=Username,
+                 MD5=H.MD5,
+                 SHA1=H.SHA1,
+                 SHA256=H.SHA256,
+                 ModuleName=ModuleName,
+                 ModulePath=ModulePath,
+                 ModuleMD5=MH.MD5,
+                 ModuleSHA1=MH.SHA1,
+                 ModuleSHA256=MH.SHA256,
+                 GrandParentImage=GP.Exe,
+                 GrandParentCommandLine=GP.CommandLine,
+                 ParentCommandLine=P.CommandLine,
+                 ParentImage=P.Exe,
+                 ParentMD5=PH.MD5,
+                 ParentSHA1=PH.SHA1,
+                 ParentSHA256=PH.SHA256) AS EventData
+     FROM foreach(
+       row={
+           SELECT StartTime AS CreateTime,
+               Pid, CommandLine, Exe,
+               process_tracker_get(id=Ppid).Data AS P,
+               if(condition=Exe, then=hash(path=Exe)) AS H,
+               Username
+           FROM process_tracker_pslist()},
+       query={
+           SELECT CreateTime, Exe, CommandLine, P, H, Username,
+               if(condition=P.Exe, then=hash(path=P.Exe), else=P.Exe) AS PH,
+               ModuleName, ExePath AS ModulePath,
+               if(condition=ExePath, then=hash(path=ExePath), else=ExePath) AS MH,
+               process_tracker_get(id=P.Ppid).Data AS GP
+           FROM modules(pid=int(int=Pid))}
+     )
+    },
+    `network_connection/windows/netstat`={
+     SELECT pt.CreateTime AS Timestamp,
+            dict(Computer=Hostname, Channel='Velociraptor') AS System,
+            dict(CommandLine=CommandLine,
+                 Status= Status,
+                 Image=Image,
+                 LocalIP= LocalIP,
+                 LocalPort= LocalPort,
+                 RemoteIP= RemoteIP,
+                 RemotePort = RemotePort,
+                 ParentImage= ParentImage,
+                 Protocol= Protocol) AS EventData
+     
+     FROM foreach(
+         row={SELECT * , process_tracker_get(id=Pid) AS pt FROM netstat()},
+         query={
+             SELECT Timestamp,
+               Laddr.IP as LocalIP, Laddr.Port AS LocalPort,
+               Raddr.IP AS RemoteIP, Raddr.Port AS RemotePort,
+               Pid, TypeString AS Protocol, Status, pt.Data.Exe AS Image,
+               pt.Data.CommandLine as CommandLine,
+               process_tracker_get(id=pt.Data.Ppid).Data.Exe AS ParentImage,
+               pt
+             FROM scope()})
+    },`velociraptor/info/*`={ SELECT * FROM info() })
+  
+
+  LET FieldMapping <= parse_json(data=gunzip(string=base64decode(string="H4sIAAAAAAAA/3TMvaoCMRDF8Xc51QaGZeF2F9IpaOEHrKXNIMFJkd1ARl0U313IKqYw3TD/H+eB5dUNumBl/GOyx0vX/bmp/X4JK05SROEkTWQVW7B2HfjsDAj5+L01IxA26kPNzI2w5SrJibDr96xSMe9I6P29tpMT4eCDS8ohFkw/v8bF8SR2GG+NMXi+AgAA///BFdSlMAEAAA==")))
+
+  LET DefaultDetails <= parse_json(data=gunzip(string=base64decode(string="H4sIAAAAAAAA/6pWilCyUopQqgUEAAD//1vc8X8JAAAA")))
+
+  LET DefaultDetailsLambda = '''x=>get(item=DefaultDetails,
+       member=format(format="%v/%v",
+          args=[x.System.Provider.Name, x.System.EventID.Value])
+      ) || x.Message || x.UserData || x.EventData'''
+  LET RuleFilterLambda = '''x=>x.Level =~ RuleLevelRegex AND x.Status =~ RuleStatusRegex AND x.Title =~ RuleTitleFilter AND NOT x.Title =~ ExcludeRegex'''
+sources:
+- query: |
+   LET Result = SELECT Timestamp,
+         System.Computer AS Computer,
+         System.Channel AS Channel,
+         System.EventID.Value AS EID,
+         _Rule.Level AS Level,
+         _Rule.Title AS Title,
+         System.EventRecordID AS RecordID,
+         Details,
+         dict(System=System,
+              EventData=X.EventData || X.UserData,
+              Message=X.Message) AS _Event,
+         _Match, *
+   FROM sigma(
+     rules=split(string=SigmaRules, sep="\n---+\r?\n"),
+     log_sources= LogSources, debug=Debug,
+     default_details=DefaultDetailsLambda,
+     rule_filter=RuleFilterLambda,
+     field_mapping= FieldMapping)
+
+   SELECT * FROM if(condition=Debug, then={
+     SELECT * FROM Result
+   }, else={
+     SELECT Timestamp, Computer, Channel , EID,
+            Level, Title, RecordID, Details,
+            _Event,
+            X.Enrichment AS Enrichment
+     FROM Result
+   })

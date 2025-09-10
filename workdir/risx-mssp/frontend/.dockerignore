@@ -1,0 +1,56 @@
+# Ignore sensitive files
+*.passwd
+*.secret
+
+# Ignore Docker-related files
+*.Dockerfile
+*.yaml
+
+# Ignore documentation files
+README.md
+readme.md
+
+# Ignore Docker ignore file itself
+.dockerignore
+
+# Ignore Git-related files
+.git
+.gitignore
+
+# Ignore license files
+LICENSE
+
+# Ignore node_modules directory
+node_modules
+
+# Ignore build output
+build
+
+# Ignore log files
+*.log
+mssp-back.log
+msspBack.log
+
+# Ignore environment variable files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore miscellaneous files
+.DS_Store
+.pnp
+.pnp.js
+ClientDict.json
+
+# Ignore test coverage
+coverage
+
+# Ignore npm and yarn debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Other
+mssp_config.json.envsubst

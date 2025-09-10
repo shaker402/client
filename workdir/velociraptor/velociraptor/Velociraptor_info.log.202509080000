@@ -1,0 +1,55 @@
+{"level": "info", "msg": "Starting...", "time": "2025-09-08T23:45:21.993306887Z"}
+{"level": "info", "msg": "Starting...", "time": "2025-09-08T23:45:21.996093456Z"}
+{"level":"info","msg":"<green> _    __     __           _                  __","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"<green>| |  / /__  / /___  _____(_)________ _____  / /_____  _____","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"<green>| | / / _ \\/ / __ \\/ ___/ / ___/ __ `/ __ \\/ __/ __ \\/ ___/","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"<green>| |/ /  __/ / /_/ / /__/ / /  / /_/ / /_/ / /_/ /_/ / /","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"<green>|___/\\___/_/\\____/\\___/_/_/   \\__,_/ .___/\\__/\\____/_/","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"<green>                                  /_/","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"<red>Digging deeper!                  <cyan>https://www.velocidex.com","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"<yellow>This is Velociraptor 0.74.5 built on 2025-07-03T16:12:10Z (049040963)","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"Loading config from file server.config.yaml","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"Initializing logging for Velociraptor\n","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorFrontend\n","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorClient\n","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorGUI\n","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"Initializing logging for Velociraptor\n","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorAPI\n","time":"2025-09-08T23:45:21Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorAudit\n","time":"2025-09-08T23:45:21Z"}
+{"level": "info", "msg": "Starting...", "time": "2025-09-08T23:45:22.114379857Z"}
+{"level": "info", "msg": "Starting...", "time": "2025-09-08T23:45:22.115781254Z"}
+{"level":"info","msg":"<green> _    __     __           _                  __","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>| |  / /__  / /___  _____(_)________ _____  / /_____  _____","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>| | / / _ \\/ / __ \\/ ___/ / ___/ __ `/ __ \\/ __/ __ \\/ ___/","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>| |/ /  __/ / /_/ / /__/ / /  / /_/ / /_/ / /_/ /_/ / /","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>|___/\\___/_/\\____/\\___/_/_/   \\__,_/ .___/\\__/\\____/_/","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>                                  /_/","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<red>Digging deeper!                  <cyan>https://www.velocidex.com","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<yellow>This is Velociraptor 0.74.5 built on 2025-07-03T16:12:10Z (049040963)","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loading config from file server.config.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for Velociraptor\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorFrontend\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorClient\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorGUI\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for Velociraptor\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorAPI\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorAudit\n","time":"2025-09-08T23:45:22Z"}
+{"level": "info", "msg": "Starting...", "time": "2025-09-08T23:45:22.11972831Z"}
+{"level": "info", "msg": "Starting...", "time": "2025-09-08T23:45:22.121086131Z"}
+{"level":"info","msg":"Config contains deprecated field Frontend.public_path","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green> _    __     __           _                  __","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>| |  / /__  / /___  _____(_)________ _____  / /_____  _____","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>| | / / _ \\/ / __ \\/ ___/ / ___/ __ `/ __ \\/ __/ __ \\/ ___/","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>| |/ /  __/ / /_/ / /__/ / /  / /_/ / /_/ / /_/ /_/ / /","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>|___/\\___/_/\\____/\\___/_/_/   \\__,_/ .___/\\__/\\____/_/","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<green>                                  /_/","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<red>Digging deeper!                  <cyan>https://www.velocidex.com","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"<yellow>This is Velociraptor 0.74.5 built on 2025-07-03T16:12:10Z (049040963)","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Loading config from file server.config.yaml","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for Velociraptor\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorFrontend\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorClient\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorGUI\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for Velociraptor\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorAPI\n","time":"2025-09-08T23:45:22Z"}
+{"level":"info","msg":"Initializing logging for VelociraptorAudit\n","time":"2025-09-08T23:45:22Z"}

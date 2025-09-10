@@ -1,0 +1,66 @@
+name: Linux.Sigma.Triage
+description: |
+  This artifact compiles the Linux rules from various sources into a
+  Velociraptor artifact using the Linux Sigma Base model.
+
+  The artifact is useful for triaging a Linux machine by parsing the
+  logs and flagging suspicious behaviors.
+
+  - SigmaHQ Linux Rules
+  - Built in Velociraptor rules.
+
+  This artifact was built on 2025-08-19T21:35:41Z
+
+type: CLIENT
+
+parameters:
+  - name: ROOT
+    description: The Event Log Directory we use to read all logs
+    default: /var/log/
+
+  - name: RuleLevel
+    type: choices
+    default: All
+    choices:
+      - "Critical"
+      - "Critical and High"
+      - "Critical, High, and Medium"
+      - "All"
+
+  - name: RuleStatus
+    type: choices
+    default: All Rules
+    choices:
+      - Stable
+      - Stable and Experimental
+      - Stable and Test
+      - All Rules
+
+  - name: RuleTitleFilter
+    type: regex
+    default: .
+    description: Use this to filter only some rules to match
+
+  - name: DefaultYear
+    description: The Default year for parsing Syslog timestamps (default current year)
+
+  - name: RuleExclusions
+    type: csv
+    description: |
+      Some rules in the Hayabusa set are extremely noisy, so they
+      are disabled by default.
+    default: |
+      RuleTitleRegex,Reason
+      noisy,All rules marked noisy should be disabled by default.
+
+
+imports:
+  - Linux.Sigma.Base
+sources:
+- query: |
+    LET Rules <= gunzip(string=base64decode(string="H4sIAAAAAAAA/9xbX1Mbu5J/51Oozj7cJBt7bAOBuOpWLQGyYS8kLiD3nHteXLLU9ijWSHMkjY2p8zn20+zb/WJbkuaPPDM2hDhwd19A062/P7Va3a22YYbDEJ1klEl0ilOTKdjjcqZlpggM9xBKlaQZMUPEmcju9hDSoBaMwBDhjDJD9ygYIIZJYWsTKShzH0gD93TXhld1EDKrFIbo/Lfz07+fOwLuDRFWQKSi/rs/RJ3FwpcHQ9SZUmz2tMEm00NkQJs9nJlYqiEa4SVwdIXvM7XHYQF8iLhc7u11Op29YHWGiRk6lWLKZpnCdiroNMZiBhpJgS7t2tAnqc1zLX50cvvJfQqcgGcg1EERGBK5vqM360TOJo7eJVJMm/V1Gr1pB+iKzWPMOLrEiom3SGpCu0QmSSaYWRWQxWwWr2H2gQmsVmiEKbXIdTxEO0LnVQnJGO6ALABhQdGrOayWUlE9NioTBBtAUgVUSl01IQ0qaVPGDajXr1/vIRRU9ID+5U/M+V8qcCkti2z617CF78bX7CC5zixm095pwS0JHR3ueb7AFrlv3ayLmVToIzP68Rs1+ngmpUInEyFVgjkaKUlAa3RxZuG7lGSOPjIO6IRYMtCXlvAFVpHKRBRjTlUmaDdltMm9YwIM7XJJ5k3mnMKibNqK4zWeWigY1kDmbDN46ZRa8G5PR2gkldHoGihTQHalB16RxEttIU1WUElCN+rBP0FQvWQmHiKWGjzhoCuNaEqFKLAJRLQQ3E7HyE7q1nEwaKHtfw9YCVCWJWtweTV5ilM8YZwZBhqdMU3kAtTqhW6NGRiC0woiVUIUPfm+cMflliWAToxRbJIZyC+LXevBQPsZmZHYlcplD6ywbNQfAT6DUgBMUcAkUUWZFgVLceMU9d3HEzVRi3xcQyIXgC6SJHOimyueEsSOv4qfTQWtnywihcFM6CEiMTYml5R+QO+wdiz+C8/lBP0KTNyDMfw7EDnlLJ1IrCg6lTyfIbLHG/1GOEvRrZT8ZWEZojs7k+IEBddY0E1FKo5XSSTFCtcovtr+EHXkk49hK3Zyii4SPAN0hg2uI/n/EsBc6R/8qQ1WprgbLAaR5xz+EMojqTWzZ/VUMoGumACFTkdf0UgxqZixJqDCyY6Q7dv9Iwl942/BHC3cX1tbp0PSrJPm4/uaOV548GDN/bzm/oM1D4ZtyLbVPMxrHj5Y811e892DNY/ymkfbarZu6kcuFcMCXUsTo1ef4c4oKdDNShtI9Otin4lihhHM14+UAu/7fJmiE4G+alDWLpSZ2JXB43a4sn7frNnCmNJxpkGNvas3dqcpOFcnZ2fjrzfn12uN9EoTzPmmNjf/uDk9ubx0FLiDwH6K7FCYbrAQr7BigM4zDupt2zlpUeZO5ZzKJFW7NKTXEVsDrB8u1BsCpdK5dzqibgK0Vp3ds8BCmofN9rc0M7jtiiTtcN6yJFPodyYEwybjfLOrWVdADtXzO+uC5Y650+q/zuDZnPGaPl/aoVsVUyq16UwZh78+Wt+2yNGXBail8iEJE+dWklv0GSzQ76Ck9dw+Z/xlLrRgtyltSEDoQkcUFpGw86wT70FVV5J2xuD3WlMNOWHa2ZRe0aGPTMESPx9EN+fXf784PR/f3H4ZObKdbIXGNJ9OEGII3TdLyKbLR0tNw1N1MmItcskpKDQClTCtmRQ6d01eWFQq4yVOZGDKxHIpfsiobliFCigIwzDX6EI4XPRPC081XPd1j7seC5opSMuPFGu99AHNbUDuKAz0VYO91D8xSkGgETaxRl+Uh+fnwCKkQXn4bQ+hMIImcAItkhF1CSZxbrXmBBeQDSnpCsQiJKhMmyyNjJScxLbDR8WbAh0WddsxPsMLRtGHTM3BmLfoPzSbCcwnfLOpnIPrRc5CcOZCRVKx3WFsdxoL6vvHapYlIIwTvfKjcN7X7uWoW1HDO6skD1orDxqViwlsvh/LzUnmlKkqEOpiCcXXgiVlWWAhA8aTXZUbAzMs5EzhNF7Z3QD0O0vRhZhKlXjTgQk0YsRkyt+qP2dX+v6fC8/gyocpLc9yrd1v6az6SIX9wJUrU5mqXW+hPYw9Ij/wDuLDd3+DFZezmTU+nM0xwkn359iyNes/xSYew6IS4YdfQlI7t0i7G79jV9rGLhRtUaEa0ZhVc8Cyi9vbf5Rl63WMLeHJF/SVpGzKCC6iFJx2teymCrjELxRzzx+O1ibSur7z7lUXnYgYZxq9korNmMCcr9BUyQSdGJkwgj7wDNBZMTH9Ft1KsUKXOJmAMq8ffU9dSuwelOQU/Q2UsLBKmnFAC4bRhdDWeHguiy7wHO3Eh4j58XNX0nmQKpowEc0t+cmicZkft/8jz496pbmctbwzqo0cz+iIWVXytXb4InmF9R+ZdegtlFgXjxFKClq8eT0XejVHmVTetZMWHTc1fETsRH/Ud25xJp3eWf0kr+ixsYnaJVV7uQosj7Nr5z21hy1qvRQuVYckTTcUKffWsDGWUevL+l6NLihwMLDBAj+5ePAh7DOYpVRzdOPRRDcEC+Ffy58U0EeIwpSJHPtCWwAyMWhAKrNmZ2xMqodRNGMmziZWQqLPIAf7dz2fNkCjCZeTCPrH/cHBPj4iR71jeE8Pj94fHh7Rd9PjHvSA7tP9g+P9yfF736jr+v63y/7xoHPZP97fjU5di8ZV+sIAF3l8xX2LBKfBFxiCQy4Jy+ucrkxBTLQXjjmshkj4HRkTKQQQMz5o39wTDt+woEqiL8pkQj7W9yw3XLDpdPdpEVutp22xQENSmiVBjI8UMfC1t62wu23xQqNjrObN3jY/kD09+jfKjTc0kpyRVfWe/JzYkhjP2p9YcwVv+c0Hng5nuhLIDl/rc2q9xMdeuVzOmOhSmOo2A3eT4WvBlaKD8wD+lhrbOwgiFY+3vTWQTDGzitLlHxnmzKwKuyC0+LVebs51GPoYCW0iexOA7AVuUzDxn/+dgEL/+c//EbgRQmqN6zecSqIARJH75l2iiySVyuzySfEV8126PCdfHi+ZoHI5VlIaJBXKqUKGDJfY5Dnb7ltXoaxZ62Obg+p9UtTirX5LYVb12NLdEHU8NTd2hshyC8Xz/WM9OSrQsoG/LXflRdSCXk6N3C3p+M3rxz4OO/m2TYR0+OVYBjDKzLSEBKqG7a0qtAdhH/v1Pp6Ma8qZQSc+8nwhjEQjBmTnwdYnuGnazuyJgdNHxJR8fM/JkeXGjL5USqwuhi82HZIJ0GLTKx1JKnesA76MDzbzdxN/O78zChPzLw2Xn2J1SvR0i35qBOuejFOmU0aYzDQ6HaATYtjCJcv9fFicEawznY6xH3VDCkHw+L3FywnXUQRAd26TNbJBNlhgRWDG7uvR0dFaWsgjmmT/rtfyQ9qb1Bz5ufPkq1SRRzXSGxLqHpe20bINI2WPXILO74BkLviGmAg3x78JPlv0o+7jBS8IgZeXpMErzgKraLlcBpRYJhC9idJswhkZxybhATPTKuKSYB7hFJMYBq086wrT2iC+fkDUatE2sm9bG9bWtYzaaNYbgkjMmLirt7BDcjaJ0pn+g0cUG9w602TVwi7aeuY6faGn62uzFveEifpyrStBNyS6PlneAsn6xLSRauVtgC8p+NDlzt9bgzTY2I/4QOZrXqt4CetOsI7HObGg3beQat+1z0aDKQtITw9ltmGch4yuXVTemv839hQ9t2310GO+9/6IqRI88qEbwbSyQv7OUNa3y3pSAsBbdBqDwrOYXTGO6cbL1gc+w0fAMIaw08zaxwdotjr7etJRwAFrWGcooDE27TymdQabIzgbXmgzO3z1lRoWfHIdZmrEUpu12iAWa+NtuzjLxIdWkVhM5F31Ub0L30GVGrtgyrDqlTheH3vb/TsPr3kXkXmy3eZFyaqhT1jRJVbQLlcv/UqjVzoiHGsd0YRFjEYTJvV4AUqH2cbNavlMx2v73KxGYqw1sx0KKqsHftucRJpo5v7U6IxCFNNelEgKvMZrzMxK9Jt26hbpf0IIqNhqVm1jLSU23/SbODNULkV0DRMpd62Iwxvulc6HIolT/K+YYD4wZAulHPjftG25A1mZf9Zx5bxogOdfa90VNX/p/VKU3tlSMJmiSkHaKxT6pIg0dFCMeVFM5RKUnG5wJx90xB/aEVrekUXS8q72IsUmroI59iz4aI4r9YMUplbD1ll1bJIHRosAac1UazJd54O2/KgqDapolWlQto2d6EZ14Emn1+cntxuSyB6XjPpVsDt0EwPntffpMKHhpRWew9TOsR4fV3LKOLQSu7T+E1prJTpTUZEmo06713F039q/42xo4AL57fQiQlcyiI67pNmPJde6UVKaqDHzijpuzNPzNpDv2/pprjV30RrjFvT7dnL7hMpGGzlbxx/XEKnz1sAtx9rQqNiN9lMDBhS6wmYuF3rO3j7wErweE/sq7lla5AmGpsNHJZPnyEx7UkraI9LOMruwHzWsviwFKHvlud+d/KyXvu+MGm42gIOfJXMcPPRZ9VzpoWVVimVYxsnOH0t/hYnTgu6HlgaKqFwVGXqJEFD++5y1V2QXh/S95z+AHy+XG7LfL/gKa/SFxHO5eIs+wCpDZyDYRsOh9YdNPiHjGqxNCfl1diGovb6kWkeFYAMzqZrZAn69NdB+OBn6DLRhwmmBi7SStv7gqNvr9rr9ktJz370m5O73jmEq0YQJd2Xt/OdhRUrVKjUSXTGXyzKS0lkGOUL6Z4C5Rd4C+D7lB7QCMZWSdxMm4C5RVlBKxlS1kim0kvWslUxwKznTnSVo08pzE9JZmkpl6jxbv0v2XZWQfpeoDmT9rsBCOqZUsxpzsJmZ6Q5gbbY0z+e7pQbWDG9hf0u3td0y8+7Arlnp+nK7MdYxYWbVaDAdtMHjaJCto2z7WOCMG2s4VCBLAUpKAlh0tVGAkxor5GzwJx93gBr5iadeUeUZwLcSXUqCuZGfwaDbTAjrl81Kp+ZCMMOwAdp++73EuWqzFrhfQzfM2CqIAky5U+VyhugXozL4pQQX7lJQLAFhMK8SsARVgDX6oDA2MQj0KhGQSMFIl8nvgPjzTMl5C7r/Opg2o2HGzbab6a6ws18T9pwH2WYeTrfwtrTTeDPv25Y+mQh4P3DhNDZzJI3/HRdfhU8OV5i7wNsp5nyCyby26T9xZ1uudBch8Lf5OMFM+EBBSHBnYaxcKnfLhf8nYVQ1b/1edFzRek3S0aDbf+eI/UFFfW+px578riK/e98dHB7UycNhP+oPqj6ncNwbDqN+r6KQnqUctVgcjdNcW9iozEeyHR0fV8O8f/++LA8GvV7wMaiWctALOAcHBwflx7uj46qD48P9yj467B32gq/+8aC3XcnEWGvg39YE8H8DAAD//1DBFArwTAAA"))
+    SELECT *
+    FROM Artifact.Linux.Sigma.Base(
+       ROOT=ROOT, RuleLevel=RuleLevel, RuleStatus=RuleStatus,
+       RuleTitleFilter=RuleTitleFilter, RuleExclusions=RuleExclusions,
+       DefaultYear=DefaultYear)
