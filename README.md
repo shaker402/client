@@ -97,13 +97,17 @@ sudo ./start_all_services.sh
 
 ---
 
-## Demo — play inline (click the image)
+## Demo — Full Video (click to play)
 
-[![Watch the UnifySec SOC demo](https://raw.githubusercontent.com/shaker402/client/main/assets/thumbnail.jpg)](https://raw.githubusercontent.com/shaker402/client/main/assets/demo.mp4)
+Note: Be sure to unmute the audio in your player.
 
-**Duration:** 5:12 — Click the image to open and play the demo directly from this repository (no YouTube).
+https://github.com/user-attachments/assets/3d30a40f-63f1-45b8-8530-93a5f44a8b81
+
+**Duration:** 5:12 — Click the link above to open and play the demo directly from this repository (no YouTube).
+
 ---
 # Core Components & Actions
+
 
 ## SIEM & Correlation
 
