@@ -99,11 +99,10 @@ sudo ./start_all_services.sh
 
 ## Demo — Full Video (click to play)
 
-Note: Be sure to unmute the audio in your player.
 
 https://github.com/user-attachments/assets/3d30a40f-63f1-45b8-8530-93a5f44a8b81
 
-**Duration:** 5:12 — Click the link above to open and play the demo directly from this repository (no YouTube).
+**Duration:** 5:12 — Click the link above to open and play the demo directly from this repository .
 
 ---
 # Core Components & Actions
